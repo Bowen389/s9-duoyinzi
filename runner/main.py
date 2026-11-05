@@ -39,6 +39,24 @@ def save_accounts(accounts):
         export_csv(p/'events.csv',a['events'])
 
 
+STOCK_LABELS = dict(champion='冠军', balanced='稳健', runner='奔跑', original='原版', wild='狂暴')
+
+
+def stock_hits(results, day):
+    hits = {}
+    for version in STOCKS:
+        s = results.get(version, {})
+        if s.get('status') != 'ok' or s.get('asof') != day:
+            continue
+        for code in dict.fromkeys(x['code'] for x in s.get('picks', [])):
+            hits.setdefault(code, []).append(version)
+    return hits
+
+
+def hit_label(versions):
+    return f"{len(versions)}/5 " + '／'.join(STOCK_LABELS[v] for v in versions) if versions else '—'
+
+
 def run(day, family='all'):
     from strategies.champion_source import VERSIONS
     from .signals import stock_signals, etf_signals
@@ -102,8 +120,9 @@ def run(day, family='all'):
     save_accounts(accounts)
     # Reports always reload all families to support safe incremental recovery.
     results={n:load(data.ROOT/'signals'/day/(n+'.json'),dict(status='pending',strategy=n,asof=day)) for n in names}
+    hits=stock_hits(results,day)
     report=dict(asof=day,generated_at=str(__import__('pandas').Timestamp.now(tz='Asia/Shanghai')),
-                start=START,strategies=results,accounts={n:dict(cash=a['cash'],equity=equity(a),positions=a['lots'],last_settled=a['last_settled'],
+                start=START,strategies=results,stock_hits=hits,accounts={n:dict(cash=a['cash'],equity=equity(a),positions=a['lots'],last_settled=a['last_settled'],
                 return_pct=(equity(a)/200000-1)*100,corporate_review=a.get('corporate_review',[])) for n,a in accounts.items()},errors=errors)
     write_json(data.ROOT/'reports'/f'{day}.json',report)
     write_json(data.ROOT/'reports'/'latest.json',report)
@@ -135,11 +154,16 @@ def run(day, family='all'):
         if not picks:
             lines.append('\n当日没有通过个股/ETF基础筛选的候选。')
             continue
-        lines += ['\n|排名|代码|名称|得分|参考收盘价|', '|---:|---|---|---:|---:|']
+        if n in STOCKS:
+            lines += ['\n|排名|代码|名称|得分|参考收盘价|命中版本|', '|---:|---|---|---:|---:|---|']
+        else:
+            lines += ['\n|排名|代码|名称|得分|参考收盘价|', '|---:|---|---|---:|---:|']
         for rank,x in enumerate(picks, 1):
             ref = f"{x['ref_close']:.4f}" if x.get('ref_close') is not None else '—'
             name = str(x.get('name', '')).replace('|', '/')
-            lines.append(f"|{rank}|{x['code']}|{name}|{x['score']:.4f}|{ref}|")
+            extra = hit_label(hits.get(x['code'], [])) + '|' if n in STOCKS else ''
+            lines.append(f"|{rank}|{x['code']}|{name}|{x['score']:.4f}|{ref}|{extra}")
+    lines.append('\n命中表示进入当日各版本Top候选，门控另行判断；按5个版本统计，稳健与原版选股规则相同。')
     lines+=['\n参考排名、门控、目标权重与逐笔交易见对应 JSON 和 paper 目录。缺数据时暂停生成该策略买单，不回退旧日期。',
             '\n股票选股范围严格按上传包全 A 非 ST（含创业板、科创板）；没有替换为主板。模拟账户不继承历史回测持仓。']
     text='\n'.join(lines)+'\n'

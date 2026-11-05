@@ -93,7 +93,7 @@
           "code": "300751",
           "name": "迈为股份",
           "score": 8.59003460046467,
-          "ref_close": 165.0
+          "ref_close": 165
         },
         {
           "code": "300759",
@@ -123,7 +123,7 @@
           "code": "002428",
           "name": "云南锗业",
           "score": 8.15199747426322,
-          "ref_close": 79.0
+          "ref_close": 79
         },
         {
           "code": "688223",
@@ -146,7 +146,7 @@
           "theme_mom5": -0.5,
           "theme_zt": -0.5,
           "theme_rank": -0.5,
-          "theme_rs": 2.0,
+          "theme_rs": 2,
           "zt_premium": -0.5
         },
         "label": "冠军配置"
@@ -229,7 +229,7 @@
           "code": "002428",
           "name": "云南锗业",
           "score": 8.79767051440963,
-          "ref_close": 79.0
+          "ref_close": 79
         },
         {
           "code": "002716",
@@ -303,8 +303,8 @@
           "pos_window": 120
         },
         "weights": {
-          "theme_mom5": 1.0,
-          "theme_zt": 0.0,
+          "theme_mom5": 1,
+          "theme_zt": 0,
           "theme_rank": -0.5,
           "theme_rs": 0.5,
           "zt_premium": -0.5
@@ -419,7 +419,7 @@
           "code": "300751",
           "name": "迈为股份",
           "score": 10.508651515602503,
-          "ref_close": 165.0
+          "ref_close": 165
         },
         {
           "code": "002409",
@@ -437,7 +437,7 @@
           "code": "002428",
           "name": "云南锗业",
           "score": 9.30734440110935,
-          "ref_close": 79.0
+          "ref_close": 79
         },
         {
           "code": "300438",
@@ -463,10 +463,10 @@
           "pos_window": 120
         },
         "weights": {
-          "theme_mom5": 1.0,
+          "theme_mom5": 1,
           "theme_zt": -0.5,
-          "theme_rank": 0.0,
-          "theme_rs": 2.0,
+          "theme_rank": 0,
+          "theme_rs": 2,
           "zt_premium": -0.5
         },
         "label": "奔跑配置"
@@ -549,7 +549,7 @@
           "code": "002428",
           "name": "云南锗业",
           "score": 8.79767051440963,
-          "ref_close": 79.0
+          "ref_close": 79
         },
         {
           "code": "002716",
@@ -623,8 +623,8 @@
           "pos_window": 120
         },
         "weights": {
-          "theme_mom5": 1.0,
-          "theme_zt": 0.0,
+          "theme_mom5": 1,
+          "theme_zt": 0,
           "theme_rank": -0.5,
           "theme_rs": 0.5,
           "zt_premium": -0.5
@@ -675,8 +675,8 @@
           "pos_window": 60
         },
         "weights": {
-          "theme_mom5": 1.0,
-          "theme_zt": 1.0,
+          "theme_mom5": 1,
+          "theme_zt": 1,
           "theme_rank": -0.5,
           "theme_rs": 0.5,
           "zt_premium": -0.5
@@ -766,8 +766,8 @@
       "reasons": {},
       "params": {
         "static_pool_size": 150,
-        "static_min_amt": 0.0,
-        "dyn_min_amt": 50000000.0,
+        "static_min_amt": 0,
+        "dyn_min_amt": 50000000,
         "dyn_top": 100,
         "dyn_win": 5,
         "static_asof": "2019-12-31",
@@ -775,10 +775,10 @@
         "ma_slow": 60,
         "mom_lookback": 40,
         "mom_decay": 0.05,
-        "r2_power": 1.0,
-        "score_cap": 20.0,
+        "r2_power": 1,
+        "score_cap": 20,
         "use_vol_filter": true,
-        "vol_spike_mult": 2.0,
+        "vol_spike_mult": 2,
         "vol_win": 5,
         "stop_loss": 0.1,
         "stop_mode": "close",
@@ -793,14 +793,14 @@
         "risk_asset": "bond_gold",
         "exec_mode": "next_open",
         "cost_per_side": 0.0001,
-        "min_amt": 3000000.0,
+        "min_amt": 3000000,
         "min_age": 120,
         "top_n": 3,
         "dedupe_theme": true,
         "weight": "equal",
-        "target_vol": 0.0,
+        "target_vol": 0,
         "vol_lookback": 20,
-        "dd_brake": 0.0,
+        "dd_brake": 0,
         "dd_resume": 0.1,
         "rebalance_dow": null,
         "rebalance_buffer": 0.02
@@ -1466,7 +1466,7 @@
       "reasons": {},
       "params": {
         "static_pool_size": 150,
-        "static_min_amt": 0.0,
+        "static_min_amt": 0,
         "dyn_min_amt": 0,
         "dyn_top": 100,
         "dyn_win": 5,
@@ -1475,12 +1475,12 @@
         "ma_slow": 60,
         "mom_lookback": 40,
         "mom_decay": 0.05,
-        "r2_power": 1.0,
-        "score_cap": 20.0,
+        "r2_power": 1,
+        "score_cap": 20,
         "use_vol_filter": true,
-        "vol_spike_mult": 2.0,
+        "vol_spike_mult": 2,
         "vol_win": 5,
-        "stop_loss": 0.0,
+        "stop_loss": 0,
         "stop_mode": "close",
         "min_hold": 5,
         "cooldown": 5,
@@ -1493,14 +1493,14 @@
         "risk_asset": "bond_gold",
         "exec_mode": "next_open",
         "cost_per_side": 0.0001,
-        "min_amt": 3000000.0,
+        "min_amt": 3000000,
         "min_age": 120,
         "top_n": 2,
         "dedupe_theme": true,
         "weight": "score",
-        "target_vol": 0.0,
+        "target_vol": 0,
         "vol_lookback": 20,
-        "dd_brake": 0.0,
+        "dd_brake": 0,
         "dd_resume": 0.1,
         "rebalance_dow": null,
         "rebalance_buffer": 0.02
@@ -2166,8 +2166,8 @@
       "reasons": {},
       "params": {
         "static_pool_size": 150,
-        "static_min_amt": 0.0,
-        "dyn_min_amt": 50000000.0,
+        "static_min_amt": 0,
+        "dyn_min_amt": 50000000,
         "dyn_top": 100,
         "dyn_win": 5,
         "static_asof": "2019-12-31",
@@ -2175,10 +2175,10 @@
         "ma_slow": 60,
         "mom_lookback": 40,
         "mom_decay": 0.05,
-        "r2_power": 1.0,
-        "score_cap": 20.0,
+        "r2_power": 1,
+        "score_cap": 20,
         "use_vol_filter": true,
-        "vol_spike_mult": 2.0,
+        "vol_spike_mult": 2,
         "vol_win": 5,
         "stop_loss": 0.1,
         "stop_mode": "close",
@@ -2193,14 +2193,14 @@
         "risk_asset": "bond_gold",
         "exec_mode": "next_open",
         "cost_per_side": 0.0001,
-        "min_amt": 3000000.0,
+        "min_amt": 3000000,
         "min_age": 120,
         "top_n": 2,
         "dedupe_theme": true,
         "weight": "equal",
         "target_vol": 0.15,
         "vol_lookback": 20,
-        "dd_brake": 0.0,
+        "dd_brake": 0,
         "dd_resume": 0.1,
         "rebalance_dow": null,
         "rebalance_buffer": 0.02
@@ -2798,69 +2798,209 @@
   },
   "accounts": {
     "champion": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "balanced": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "runner": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "original": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "wild": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "B0": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "K3": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     },
     "K5": {
-      "cash": 200000.0,
-      "equity": 200000.0,
+      "cash": 200000,
+      "equity": 200000,
       "positions": [],
       "last_settled": null,
-      "return_pct": 0.0,
+      "return_pct": 0,
       "corporate_review": []
     }
   },
-  "errors": {}
+  "errors": {},
+  "stock_hits": {
+    "300438": [
+      "champion",
+      "runner"
+    ],
+    "300442": [
+      "champion"
+    ],
+    "300751": [
+      "champion",
+      "runner"
+    ],
+    "300759": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "600029": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "600206": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "600438": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "600732": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "600988": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "601012": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "601021": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "601058": [
+      "champion"
+    ],
+    "601111": [
+      "champion"
+    ],
+    "603379": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603699": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603885": [
+      "balanced",
+      "original"
+    ],
+    "603893": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688036": [
+      "champion",
+      "runner"
+    ],
+    "688223": [
+      "champion"
+    ],
+    "688411": [
+      "champion"
+    ],
+    "688472": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002131": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "002444": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002428": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002459": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002716": [
+      "balanced",
+      "original"
+    ],
+    "002409": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002468": [
+      "balanced",
+      "original"
+    ]
+  }
 }
