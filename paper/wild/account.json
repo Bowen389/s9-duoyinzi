@@ -1,0 +1,13 @@
+{
+  "strategy": "wild",
+  "start": "2026-11-06",
+  "initial_cash": 200000.0,
+  "cash": 200000.0,
+  "lots": [],
+  "last_settled": null,
+  "trades": [],
+  "nav": [],
+  "events": [],
+  "last_exit": {},
+  "peak": 200000.0
+}

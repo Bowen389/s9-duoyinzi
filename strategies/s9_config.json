@@ -1,0 +1,308 @@
+{
+ "schema": "s9-strategy-config/v1",
+ "generated_for": "2026-11-05",
+ "engine_source_of_truth": "S9_orig_backtest.py",
+ "param_merge_rule": "{**DEFAULT, **S9, **profile_overrides} — Backtest.__init__ 内部亦如此合并, 手工传参必须同规则",
+ "params_effective": {
+  "B0": {
+   "static_pool_size": 150,
+   "static_min_amt": 0.0,
+   "dyn_min_amt": 50000000.0,
+   "dyn_top": 100,
+   "dyn_win": 5,
+   "static_asof": "2019-12-31",
+   "ma_fast": 20,
+   "ma_slow": 60,
+   "mom_lookback": 40,
+   "mom_decay": 0.05,
+   "r2_power": 1.0,
+   "score_cap": 20.0,
+   "use_vol_filter": true,
+   "vol_spike_mult": 2.0,
+   "vol_win": 5,
+   "stop_loss": 0.1,
+   "stop_mode": "close",
+   "min_hold": 5,
+   "cooldown": 5,
+   "switch_margin": 0.15,
+   "use_rank_exit": true,
+   "regime": "or",
+   "regime_thr": 0.25,
+   "regime_win": 5,
+   "regime_ma": 60,
+   "risk_asset": "bond_gold",
+   "exec_mode": "next_open",
+   "cost_per_side": 0.0001,
+   "min_amt": 3000000.0,
+   "min_age": 120,
+   "top_n": 3,
+   "dedupe_theme": true,
+   "weight": "equal",
+   "target_vol": 0.0,
+   "vol_lookback": 20,
+   "dd_brake": 0.0,
+   "dd_resume": 0.1,
+   "rebalance_dow": null,
+   "rebalance_buffer": 0.02
+  },
+  "K3": {
+   "static_pool_size": 150,
+   "static_min_amt": 0.0,
+   "dyn_min_amt": 0,
+   "dyn_top": 100,
+   "dyn_win": 5,
+   "static_asof": "2019-12-31",
+   "ma_fast": 20,
+   "ma_slow": 60,
+   "mom_lookback": 40,
+   "mom_decay": 0.05,
+   "r2_power": 1.0,
+   "score_cap": 20.0,
+   "use_vol_filter": true,
+   "vol_spike_mult": 2.0,
+   "vol_win": 5,
+   "stop_loss": 0.0,
+   "stop_mode": "close",
+   "min_hold": 5,
+   "cooldown": 5,
+   "switch_margin": 0.15,
+   "use_rank_exit": true,
+   "regime": "or",
+   "regime_thr": 0.2,
+   "regime_win": 5,
+   "regime_ma": 60,
+   "risk_asset": "bond_gold",
+   "exec_mode": "next_open",
+   "cost_per_side": 0.0001,
+   "min_amt": 3000000.0,
+   "min_age": 120,
+   "top_n": 2,
+   "dedupe_theme": true,
+   "weight": "score",
+   "target_vol": 0.0,
+   "vol_lookback": 20,
+   "dd_brake": 0.0,
+   "dd_resume": 0.1,
+   "rebalance_dow": null,
+   "rebalance_buffer": 0.02
+  },
+  "K5": {
+   "static_pool_size": 150,
+   "static_min_amt": 0.0,
+   "dyn_min_amt": 50000000.0,
+   "dyn_top": 100,
+   "dyn_win": 5,
+   "static_asof": "2019-12-31",
+   "ma_fast": 20,
+   "ma_slow": 60,
+   "mom_lookback": 40,
+   "mom_decay": 0.05,
+   "r2_power": 1.0,
+   "score_cap": 20.0,
+   "use_vol_filter": true,
+   "vol_spike_mult": 2.0,
+   "vol_win": 5,
+   "stop_loss": 0.1,
+   "stop_mode": "close",
+   "min_hold": 5,
+   "cooldown": 5,
+   "switch_margin": 0.15,
+   "use_rank_exit": true,
+   "regime": "or",
+   "regime_thr": 0.2,
+   "regime_win": 5,
+   "regime_ma": 60,
+   "risk_asset": "bond_gold",
+   "exec_mode": "next_open",
+   "cost_per_side": 0.0001,
+   "min_amt": 3000000.0,
+   "min_age": 120,
+   "top_n": 2,
+   "dedupe_theme": true,
+   "weight": "equal",
+   "target_vol": 0.15,
+   "vol_lookback": 20,
+   "dd_brake": 0.0,
+   "dd_resume": 0.1,
+   "rebalance_dow": null,
+   "rebalance_buffer": 0.02
+  }
+ },
+ "params_overrides_only": {
+  "B0": {},
+  "K3": {
+   "top_n": 2,
+   "regime_thr": 0.2,
+   "dyn_min_amt": 0,
+   "weight": "score",
+   "stop_loss": 0.0
+  },
+  "K5": {
+   "target_vol": 0.15,
+   "top_n": 2,
+   "regime_thr": 0.2
+  }
+ },
+ "selection_hint": {
+  "K5": "实盘首选: 稳健(W1 sharpe 1.749/DD -10.2%/换手 25×), 目标波动 15%",
+  "K3": "激进: W1 收益最高(+2466%)/但换手 154×、DD -28%, 成本敏感(W2 20bp sharpe 0.25)",
+  "B0": "基线 S9 (top3, 无目标波动, thr 0.25)"
+ },
+ "decision_pipeline": [
+  {
+   "step": 1,
+   "name": "gate",
+   "formula": "cond_idx = bench[t] > rolling_mean(bench, regime_ma=60)[t] (GT); cond_bw = rolling_mean(breadth, regime_win=5)[t] >= regime_thr (GE, 引擎 b>=thr); mode or→(idx or bw); and→both; breadth→bw; index→idx; none→恒开; 结果 fillna(False)",
+   "breadth_formula": "breadth[t] = count(isfinite(close)&trend_ok&age_ok) / max(count(isfinite(close)&age_ok),1); trend_ok = close>MA20 and MA20>MA60"
+  },
+  {
+   "step": 2,
+   "name": "close_filters(per held, 顺序即优先级)",
+   "order": [
+    "止损(stop_loss>0, stop_mode=close: close[t]/entry_px-1 <= -stop_loss; low模式: low/entry-1)",
+    "放量离场(use_vol_filter & vol_spike: amount[t-1] > vol_spike_mult × mean(amount[t-vol_win-1:t-1]))",
+    "min_hold(t-entry_t < min_hold → 保留, 不卖)",
+    "趋势破位(not trend_ok → 卖)",
+    "其余保留; 被新候选替换者 reason=排名掉队(use_rank_exit)"
+   ]
+  },
+  {
+   "step": 3,
+   "name": "rank_adds",
+   "rule": "rank=_rank(t) 按 score 降序; 新候选需 score >= min(keep_scores)×(1+switch_margin); 跳过 t-last_exit<=cooldown; 补足到 top_n",
+   "universe_rule": "ok = tradable(amt>=min_amt=300万 & valid & close>0) & age_ok(>=min_age=120d) & equity_ok(非货币类) & finite score; pool = static_idx(150只@2019-12-31, amt>=static_min_amt) ∪ dyn_ok(amt5日均>=dyn_min_amt, dyn_win=5); dedupe_theme 每主题留rank最高"
+  },
+  {
+   "step": 4,
+   "name": "gate_off_override",
+   "rule": "if not regime[t]: target = _defensive(t) = risk_idx(bond_gold: [511260,518880], risk_adaptive=False)"
+  },
+  {
+   "step": 5,
+   "name": "membership_check",
+   "rule": "仅当 set(target) != set(held) 才执行交易; rebalance_buffer(0.02) 只在 _execute 内过滤成员已变时的权重漂移单"
+  },
+  {
+   "step": 6,
+   "name": "weights",
+   "rule": "equal→1/n; score→clip(mom,-5,5)? 否: w∝max(score,1e-3) 归一; 再 × vol_scaler=clip(target_vol/vol20,0,1) (target_vol=0→1); dd_brake=0 不缩放"
+  },
+  {
+   "step": 7,
+   "name": "execute",
+   "rule": "T+1 开盘 exec_mode=next_open; 单边成本 cost_per_side=1e-4; 跳过非有限/<=0 价; 卖先买后; 现金按 cash_ret(货币ETF) 每日计息"
+  }
+ ],
+ "formulas": {
+  "score": "score = clip(mom, -1, score_cap=20) * clip(r2, 0, 1)**r2_power  [engine L288]; mom = exp(clip(slope*252, -5, 5)) - 1  [L164]; r2 = clip(slope^2*A2/sst, 0, 1); cnt < 0.999*lookback → NaN (score 按 max(NaN→1e-3) 兜底, 见 weight=score)",
+  "wls_momentum": "log(close) 上 L=mom_lookback(40, S9覆盖; DEFAULT 25) 窗加权线性回归: w_j = exp(mom_decay*(j-(L-1))) 归一 (等价 exp(decay·j) 归一), x=中点居中; 有效点数 cnt < 0.999·L → NaN",
+  "vol20": "std(log-ret, vol_lookback=20)",
+  "vol_spike": "amount[t-1] > vol_spike_mult × mean(amount[t-vol_win-1 : t-1], vol_win)",
+  "score_cap": 20.0
+ },
+ "universe": {
+  "tradable": "amt >= min_amt(3,000,000元) & valid & close > 0",
+  "age": ">= min_age(120) 交易日",
+  "equity_exclude_regex": "货币|添益|日利|现金|保证金|理财  (source-behavior: 字面'现金'会误伤'现金流ETF' — 保留原样)",
+  "theme_key": "name → r'ETF.*$|etf.*$|联接.*$' 去 → 厂商词表(_CO, 40+家) 去 → 括号内容去 → strip; dedupe 每 key 留 rank 首位",
+  "static_pool": {
+   "file": "static_pool_full.json",
+   "size": 150,
+   "asof": "2019-12-31",
+   "sort": "amount desc, age>=120d"
+  },
+  "dynamic_pool": "5日均成交额(元) >= dyn_min_amt (K5: 5e7, K3: 0 → 全市场)"
+ },
+ "defensive": {
+  "sets": {
+   "bond": [
+    "bond"
+   ],
+   "gold": [
+    "gold"
+   ],
+   "bond_gold": [
+    "bond",
+    "gold"
+   ],
+   "adaptive": [
+    "cash",
+    "bond",
+    "gold"
+   ]
+  },
+  "codes": {
+   "bond": "511260",
+   "gold": "518880"
+  },
+  "s9_mode": "bond_gold fixed (risk_adaptive=False)"
+ },
+ "execution": {
+  "decision_time": "T 收盘后",
+  "exec_time": "T+1 开盘",
+  "prices": "前复权 close/open",
+  "cost_per_side": 0.0001,
+  "currency": "元",
+  "calendar": "沪深交易日(北京时间)",
+  "cash_yield": "cash_extra(511880) 日收益"
+ },
+ "data_contract": {
+  "sources": {
+   "klines": "data/klines/*.csv (eastmoney push2his, fqt=1 前复权, klt=101)",
+   "official_scale": "akshare fund_etf_scale_* 用于池校验"
+  },
+  "derived": [
+   "data/etf_daily.parquet ← rebuild_etf_daily.py",
+   "data/benchmark.parquet(>=2016, 2632行@11-05)",
+   "data/cash_extra.parquet(>=2016)"
+  ],
+  "invariants": [
+   "etf_last == bench_last == cash_last == klines_last",
+   "etf codes == 1717 (60 空文件正常跳过)",
+   "static pool == 150"
+  ],
+  "update_cmd": "python3 daily_orders.py --profile K5 --fetch   # 或 update_klines.py + rebuild_etf_daily.py",
+  "asof_rule": "asof = 数据最新日; 订单执行日 = 下一工作日"
+ },
+ "runtime": {
+  "daily_cmd": "python3 daily_orders.py --profile K5 [--verify] [--fetch]",
+  "output": "orders_<profile>_<asof>.json (schema s9-daily-orders/v1)",
+  "exit_codes": {
+   "0": "健康",
+   "2": "健康检查失败(文件仍写出)",
+   "nonzero": "崩溃"
+  },
+  "golden_check": {
+   "cmd": "python3 daily_orders.py --profile K5 --verify",
+   "window": "B0 2016-01-04~2019-12-31",
+   "expect_total": 0.3332458213558225,
+   "expect_sharpe_rf0": 0.5730812747686882,
+   "tol_total": 1e-06,
+   "tol_sharpe": 0.0001
+  }
+ },
+ "pitfalls": [
+  "环境每轮重置: pyarrow 丢失(daily_orders 自愈 re-exec); 大 parquet etf_daily 可能被快照剔除(自动从 klines 重建, 无需网络)",
+  "benchmark 必须 >=2016 截断, 全历史(5303行)会 OOM(SIGKILL 137)",
+  "bench panel 项必须是 pandas Series (metrics 用 .reindex)",
+  "传参必须 {**DEFAULT,**S9,**ov}: 只传 ov 会落回 regime=none 等默认值 (get_signals 曾犯)",
+  "hold_path 存 codes(str); 引擎内部 target/held 是 int 位; _weights 需要 int 位列表",
+  "trades 是 DataFrame, 不是 list",
+  "push2his 偶发 _ssl handshake timed out → update_klines 4 重试; push2 clist/akshare spot 502 → 用 scale API",
+  "口径: 旧报告 Sharpe 1.8-2 = 周频×√52/近2年/组合级; 工具输出为全历史日频×√252, 不可直接对比",
+  "现金类排除 regex 的'现金'字面命中'现金流ETF'为 source 行为, 不要'修'"
+ ],
+ "live_state_snapshot": {
+  "asof": "2026-11-05",
+  "gate": "OFF (idx 4113 < ma60 4415; breadth 0.070 < 0.20; mode=or)",
+  "holdings": [
+   "511260 十年国债ETF(135.885)",
+   "518880 黄金ETF(8.420)"
+  ],
+  "weights": {
+   "K5": "50/50",
+   "K3": "98.4/1.6 (score)"
+  },
+  "note": "本快照一次性; 以 daily_orders.py 当日输出为准"
+ }
+}

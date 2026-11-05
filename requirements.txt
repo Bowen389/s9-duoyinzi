@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.13,<2
+pyarrow>=18
+requests>=2.32
+akshare>=1.17
+exchange-calendars>=4.11
+pytest>=8
