@@ -42,7 +42,7 @@ def get_json(url, params=None):
     err = None
     for i in range(2):
         with _LOCK:
-            state = _HOSTS.setdefault(host, {'fails': 0, 'blocked_until': 0., 'next': 0.})
+            state = _HOSTS.setdefault(host, {'fails': 0, 'blocked_until': 0., 'next': 0., 'reason': None})
             now = time.monotonic()
             if state['blocked_until'] > now:
                 raise RuntimeError(f'{host}: circuit open after vendor connection/rate-limit errors; batch skipped')
@@ -51,20 +51,25 @@ def get_json(url, params=None):
         if delay:
             time.sleep(delay)
         try:
-            r = requests.get(url, params=params, timeout=(5, 12),
+            r = requests.get(url, params=params, timeout=(8, 25),
                              headers={'User-Agent': 'Mozilla/5.0', 'Referer': 'https://finance.qq.com/'})
             r.raise_for_status()
             j = r.json()
             with _LOCK:
                 state['fails'] = 0
+                if state['reason'] != 'rate_limit':
+                    state['blocked_until'] = 0.
+                    state['reason'] = None
             return j
         except Exception as e:
             err = e
             with _LOCK:
                 state['fails'] += 1
-                if state['fails'] >= 3 or getattr(getattr(e, 'response', None), 'status_code', None) == 429:
-                    # Respect rate limits: do not rotate Eastmoney subdomains to bypass a ban.
-                    state['blocked_until'] = time.monotonic() + 3600
+                limited = getattr(getattr(e, 'response', None), 'status_code', None) == 429
+                if limited or state['fails'] >= 8:
+                    # A true rate limit gets an hour; transient transport failures get a short pause.
+                    state['reason'] = 'rate_limit' if limited else 'transport'
+                    state['blocked_until'] = time.monotonic() + (3600 if limited else 60)
             if i == 0:
                 time.sleep(.4)
     raise RuntimeError(f'{host}: {type(err).__name__}: {err}')
@@ -72,7 +77,7 @@ def get_json(url, params=None):
 
 def _tx_piece(code, day, start, adjusted, index):
     symbol = ('sh' if index or code.startswith(('5', '6', '9')) else 'sz') + code
-    j = get_json('https://proxy.finance.qq.com/ifzqgtimg/appstock/app/newfqkline/get',
+    j = get_json('https://web.ifzq.gtimg.cn/appstock/app/newfqkline/get',
                  {'param': f'{symbol},day,{start},{day},640,{"qfq" if adjusted and not index else ""}'})
     d = (j.get('data') or {}).get(symbol) or {}
     rows = d.get('qfqday') if adjusted and not index else d.get('day')
@@ -174,7 +179,7 @@ def history(code, day, adjusted=True, index=False, start='2024-01-01'):
     raise RuntimeError(f'{code}: ' + ' | '.join(errors))
 
 
-def histories(codes, day, adjusted=True, start='2024-01-01', workers=3):
+def histories(codes, day, adjusted=True, start='2024-01-01', workers=8):
     codes=sorted(set(codes));frames,errors={},{}
     if not codes:
         return frames,errors
@@ -200,16 +205,28 @@ def histories(codes, day, adjusted=True, start='2024-01-01', workers=3):
     else:
         collect(rest)
     print(f'data complete: {len(frames)}/{len(codes)}, errors={len(errors)}',flush=True)
+    for c,e in list(errors.items())[:3]:
+        print(f'data error {c}: {e}',flush=True)
     return frames,errors
 
 
 def _sina_spot():
     base='https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php/Market_Center.'
     count=int(get_json(base+'getHQNodeStockCount',{'node':'hs_a'}))
+    folder=CACHE/'sina_pages_v2'/asof_now()
+    folder.mkdir(parents=True,exist_ok=True)
     def page(i):
+        saved=folder/f'{i}.json'
+        if saved.exists():
+            existing=json.loads(saved.read_text())
+            expected=min(100,count-(i-1)*100)
+            if len(existing)==expected:
+                return existing
+            saved.unlink()
         result=get_json(base+'getHQNodeData',{'page':i,'num':100,'sort':'symbol','asc':1,'node':'hs_a','symbol':'','_s_r_a':'page'})
-        if not isinstance(result,list):
+        if not isinstance(result,list) or len(result)!=min(100,count-(i-1)*100):
             raise RuntimeError('Sina malformed snapshot page')
+        saved.write_text(json.dumps(result,ensure_ascii=False))
         return result
     with ThreadPoolExecutor(max_workers=3) as ex:
         parts=list(ex.map(page,range(1,(count+99)//100+1)))
@@ -287,7 +304,7 @@ def board_mapping(day):
     valid={x['code']:x for x in catalog['boards']}
     url='https://datacenter-web.eastmoney.com/api/data/v1/get'
     base={'reportName':'RPT_F10_CORETHEME_BOARDTYPE','columns':'SECURITY_CODE,BOARD_NAME,NEW_BOARD_CODE',
-          'pageSize':5000,'sortColumns':'SECURITY_CODE,NEW_BOARD_CODE','sortTypes':'1,1'}
+          'pageSize':5000}
     folder=CACHE/'board_pages'/day
     folder.mkdir(parents=True,exist_ok=True)
     def page(i):
