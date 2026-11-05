@@ -73,12 +73,25 @@ def stock_signals(day):
     return out
 
 
-def etf_panel(day):
+def etf_panel(day, protected=()):
     codes = [x.strip() for x in (data.ROOT/'strategies/etf_codes.txt').read_text().splitlines() if x.strip() and not x.startswith('_')]
     codes = sorted(set(codes) | set(s9.POOL) | {'511260','518880','511880'})
     frames, errs = data.histories(codes, day, start='2016-01-01')
-    if len(frames) < .98*len(codes):
-        raise RuntimeError(f'ETF history coverage {len(frames)}/{len(codes)}: {list(errs)[:10]}')
+    from .eligibility import classify_unavailable
+    mandatory=set(s9.POOL) | {'511260','518880','511880'} | set(protected)
+    excluded=classify_unavailable(errs,day,protected=mandatory,min_age=120) if errs else {}
+    unresolved={c:e for c,e in errs.items() if c not in excluded}
+    expected=len(codes)-len(excluded)
+    health=dict(asof=day,total_manifest=len(codes),loaded=len(frames),
+                eligible_data_expected=expected,verified_young_or_unlisted=excluded,
+                unresolved=unresolved,coverage=len(frames)/expected if expected else 0.)
+    from .main import write_json
+    write_json(data.ROOT/'reports'/'data_quality'/f'etf-{day}.json',health)
+    print(f'ETF completeness: {len(frames)}/{expected}; manifest {len(codes)}, '
+          f'verified age-ineligible {len(excluded)}, unresolved {len(unresolved)}',flush=True)
+    if len(frames) < .98*expected:
+        raise RuntimeError(f'ETF history coverage {len(frames)}/{expected} eligible records; '
+                           f'{len(excluded)} verified age-ineligible; unresolved {list(unresolved)[:10]}')
     for c in s9.POOL + ['511260','518880','511880']:
         if c not in frames:
             raise RuntimeError(f'ETF core/defensive data missing: {c}')
@@ -95,11 +108,12 @@ def etf_panel(day):
     extra = frames['511880'].set_index('date').close.reindex(cal).ffill()
     return dict(dates=cal,codes=codes,names={c:f.iloc[-1]['name'] for c,f in frames.items()},
                 bench=pd.Series(idx.close.to_numpy(),index=cal),
-                cash_ret=extra.pct_change().fillna(0).clip(-.05,.05).to_numpy(), **fields), errs
+                cash_ret=extra.pct_change().fillna(0).clip(-.05,.05).to_numpy(), data_health=health, **fields), unresolved
 
 
 def etf_signals(day, accounts):
-    panel, errs = etf_panel(day)
+    protected={x['code'] for a in accounts.values() for x in a['lots']}
+    panel, errs = etf_panel(day,protected)
     t = len(panel['dates'])-1
     out = {}
     for profile in s9.PROFILES:
@@ -145,7 +159,7 @@ def etf_signals(day, accounts):
                           exec_day=data.next_session(day),gate_on=bool(bt.regime[t]),picks=picks,
                           weights=wmap,rebalance=changed,target_codes=[str(bt.codes[i]) for i in target],
                           reasons={str(bt.codes[c]):v for c,v in why.items()},params=params,
-                          data_warnings=errs,live_warmup='up to 640 actual sessions per ETF; no inherited historical holdings')
+                          data_warnings=errs,data_health=panel['data_health'],live_warmup='up to 640 actual sessions per ETF; no inherited historical holdings')
         # Source cooldown begins at the close decision, even if exit executes next session.
         for c in np.flatnonzero(exits > -10**6):
             a['last_exit'][str(bt.codes[c])]=str(panel['dates'][exits[c]].date())
