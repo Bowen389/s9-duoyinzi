@@ -1,0 +1,160 @@
+{
+  "strategy": "runner",
+  "label": "奔跑配置",
+  "status": "ok",
+  "asof": "2026-11-05",
+  "exec_day": "2026-11-06",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002444",
+      "name": "巨星科技",
+      "score": 14.67552744193645,
+      "ref_close": 29.92
+    },
+    {
+      "code": "688472",
+      "name": "阿特斯",
+      "score": 14.355857517508655,
+      "ref_close": 9.48
+    },
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "score": 13.91984555782906,
+      "ref_close": 4.39
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 13.540989876129501,
+      "ref_close": 38.39
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "score": 13.264132249412054,
+      "ref_close": 217.81
+    },
+    {
+      "code": "600732",
+      "name": "爱旭股份",
+      "score": 12.257618443864828,
+      "ref_close": 13.8
+    },
+    {
+      "code": "002459",
+      "name": "晶澳科技",
+      "score": 11.950195233745143,
+      "ref_close": 7.13
+    },
+    {
+      "code": "603379",
+      "name": "三美股份",
+      "score": 11.644621838490604,
+      "ref_close": 51.98
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "score": 11.566661608410621,
+      "ref_close": 37.58
+    },
+    {
+      "code": "603699",
+      "name": "纽威股份",
+      "score": 11.531362210187051,
+      "ref_close": 39.39
+    },
+    {
+      "code": "600438",
+      "name": "通威股份",
+      "score": 11.3117807414013,
+      "ref_close": 12.39
+    },
+    {
+      "code": "300759",
+      "name": "康龙化成",
+      "score": 11.151453480955627,
+      "ref_close": 49.98
+    },
+    {
+      "code": "601021",
+      "name": "春秋航空",
+      "score": 10.883684898919235,
+      "ref_close": 45.4
+    },
+    {
+      "code": "688036",
+      "name": "传音控股",
+      "score": 10.644625409905212,
+      "ref_close": 64.35
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "score": 10.508651515602503,
+      "ref_close": 165.0
+    },
+    {
+      "code": "002409",
+      "name": "雅克科技",
+      "score": 9.68437826068769,
+      "ref_close": 89.7
+    },
+    {
+      "code": "601012",
+      "name": "隆基绿能",
+      "score": 9.358478607109088,
+      "ref_close": 12.47
+    },
+    {
+      "code": "002428",
+      "name": "云南锗业",
+      "score": 9.30734440110935,
+      "ref_close": 79.0
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "score": 9.02589448727029,
+      "ref_close": 44.72
+    },
+    {
+      "code": "600029",
+      "name": "南方航空",
+      "score": 8.972227102200039,
+      "ref_close": 5.25
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-05"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

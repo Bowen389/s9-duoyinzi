@@ -1,0 +1,52 @@
+{
+  "strategy": "wild",
+  "label": "狂暴配置",
+  "status": "ok",
+  "asof": "2026-11-05",
+  "exec_day": "2026-11-06",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "score": 14.71671125067908,
+      "ref_close": 4.39
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 13.275749112676309,
+      "ref_close": 38.39
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-05"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

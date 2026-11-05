@@ -1,0 +1,792 @@
+{
+  "asof": "2026-11-05",
+  "generated_at": "2026-11-05 22:11:10.268460+08:00",
+  "start": "2026-11-06",
+  "strategies": {
+    "champion": {
+      "strategy": "champion",
+      "label": "冠军配置",
+      "status": "ok",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603699",
+          "name": "纽威股份",
+          "score": 13.543798077111951,
+          "ref_close": 39.39
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 12.489062962463425,
+          "ref_close": 4.39
+        },
+        {
+          "code": "601021",
+          "name": "春秋航空",
+          "score": 10.948198156095199,
+          "ref_close": 45.4
+        },
+        {
+          "code": "688411",
+          "name": "海博思创",
+          "score": 10.931602017230361,
+          "ref_close": 184.65
+        },
+        {
+          "code": "600732",
+          "name": "爱旭股份",
+          "score": 10.929780257738914,
+          "ref_close": 13.8
+        },
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 10.78552312084176,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688036",
+          "name": "传音控股",
+          "score": 10.259322572005217,
+          "ref_close": 64.35
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 10.16067612709976,
+          "ref_close": 217.81
+        },
+        {
+          "code": "600029",
+          "name": "南方航空",
+          "score": 10.004798176220335,
+          "ref_close": 5.25
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 9.674691915928921,
+          "ref_close": 38.39
+        },
+        {
+          "code": "601111",
+          "name": "中国国航",
+          "score": 9.616926373302483,
+          "ref_close": 6.36
+        },
+        {
+          "code": "601058",
+          "name": "赛轮轮胎",
+          "score": 9.396025180296945,
+          "ref_close": 12.75
+        },
+        {
+          "code": "300438",
+          "name": "鹏辉能源",
+          "score": 9.161074330323718,
+          "ref_close": 44.72
+        },
+        {
+          "code": "300751",
+          "name": "迈为股份",
+          "score": 8.59003460046467,
+          "ref_close": 165.0
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "score": 8.424597884099644,
+          "ref_close": 49.98
+        },
+        {
+          "code": "601012",
+          "name": "隆基绿能",
+          "score": 8.26777698704663,
+          "ref_close": 12.47
+        },
+        {
+          "code": "300442",
+          "name": "润泽科技",
+          "score": 8.203800092518994,
+          "ref_close": 59.78
+        },
+        {
+          "code": "603379",
+          "name": "三美股份",
+          "score": 8.165478212618876,
+          "ref_close": 51.98
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "score": 8.15199747426322,
+          "ref_close": 79.0
+        },
+        {
+          "code": "688223",
+          "name": "晶科能源",
+          "score": 8.06604761353893,
+          "ref_close": 4.5
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 10,
+          "to_window": 40,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": -0.5,
+          "theme_zt": -0.5,
+          "theme_rank": -0.5,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "冠军配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Eastmoney",
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-05"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+    },
+    "balanced": {
+      "strategy": "balanced",
+      "label": "稳健配置",
+      "status": "ok",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.345409405056083,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 10.952526665075471,
+          "ref_close": 9.48
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 10.51557196416487,
+          "ref_close": 4.39
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 10.1675221826629,
+          "ref_close": 38.39
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 9.93037835456506,
+          "ref_close": 217.81
+        },
+        {
+          "code": "002459",
+          "name": "晶澳科技",
+          "score": 9.792011527087583,
+          "ref_close": 7.13
+        },
+        {
+          "code": "600438",
+          "name": "通威股份",
+          "score": 8.996425029870894,
+          "ref_close": 12.39
+        },
+        {
+          "code": "600988",
+          "name": "赤峰黄金",
+          "score": 8.994170410522404,
+          "ref_close": 37.58
+        },
+        {
+          "code": "600732",
+          "name": "爱旭股份",
+          "score": 8.84407311437407,
+          "ref_close": 13.8
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "score": 8.79767051440963,
+          "ref_close": 79.0
+        },
+        {
+          "code": "002716",
+          "name": "湖南白银",
+          "score": 8.546406827064386,
+          "ref_close": 7.9
+        },
+        {
+          "code": "603699",
+          "name": "纽威股份",
+          "score": 8.485331952342744,
+          "ref_close": 39.39
+        },
+        {
+          "code": "603379",
+          "name": "三美股份",
+          "score": 8.241435141136641,
+          "ref_close": 51.98
+        },
+        {
+          "code": "601021",
+          "name": "春秋航空",
+          "score": 8.178358009778975,
+          "ref_close": 45.4
+        },
+        {
+          "code": "600029",
+          "name": "南方航空",
+          "score": 7.872074321331745,
+          "ref_close": 5.25
+        },
+        {
+          "code": "601012",
+          "name": "隆基绿能",
+          "score": 7.6763160017590675,
+          "ref_close": 12.47
+        },
+        {
+          "code": "002409",
+          "name": "雅克科技",
+          "score": 7.66029604093298,
+          "ref_close": 89.7
+        },
+        {
+          "code": "002468",
+          "name": "申通快递",
+          "score": 7.606852592980207,
+          "ref_close": 15.14
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "score": 7.252795446436865,
+          "ref_close": 49.98
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "score": 7.211390876330442,
+          "ref_close": 10.55
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "稳健配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Eastmoney",
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-05"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+    },
+    "runner": {
+      "strategy": "runner",
+      "label": "奔跑配置",
+      "status": "ok",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 14.67552744193645,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 14.355857517508655,
+          "ref_close": 9.48
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 13.91984555782906,
+          "ref_close": 4.39
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 13.540989876129501,
+          "ref_close": 38.39
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 13.264132249412054,
+          "ref_close": 217.81
+        },
+        {
+          "code": "600732",
+          "name": "爱旭股份",
+          "score": 12.257618443864828,
+          "ref_close": 13.8
+        },
+        {
+          "code": "002459",
+          "name": "晶澳科技",
+          "score": 11.950195233745143,
+          "ref_close": 7.13
+        },
+        {
+          "code": "603379",
+          "name": "三美股份",
+          "score": 11.644621838490604,
+          "ref_close": 51.98
+        },
+        {
+          "code": "600988",
+          "name": "赤峰黄金",
+          "score": 11.566661608410621,
+          "ref_close": 37.58
+        },
+        {
+          "code": "603699",
+          "name": "纽威股份",
+          "score": 11.531362210187051,
+          "ref_close": 39.39
+        },
+        {
+          "code": "600438",
+          "name": "通威股份",
+          "score": 11.3117807414013,
+          "ref_close": 12.39
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "score": 11.151453480955627,
+          "ref_close": 49.98
+        },
+        {
+          "code": "601021",
+          "name": "春秋航空",
+          "score": 10.883684898919235,
+          "ref_close": 45.4
+        },
+        {
+          "code": "688036",
+          "name": "传音控股",
+          "score": 10.644625409905212,
+          "ref_close": 64.35
+        },
+        {
+          "code": "300751",
+          "name": "迈为股份",
+          "score": 10.508651515602503,
+          "ref_close": 165.0
+        },
+        {
+          "code": "002409",
+          "name": "雅克科技",
+          "score": 9.68437826068769,
+          "ref_close": 89.7
+        },
+        {
+          "code": "601012",
+          "name": "隆基绿能",
+          "score": 9.358478607109088,
+          "ref_close": 12.47
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "score": 9.30734440110935,
+          "ref_close": 79.0
+        },
+        {
+          "code": "300438",
+          "name": "鹏辉能源",
+          "score": 9.02589448727029,
+          "ref_close": 44.72
+        },
+        {
+          "code": "600029",
+          "name": "南方航空",
+          "score": 8.972227102200039,
+          "ref_close": 5.25
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma60",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": -0.5,
+          "theme_rank": 0.0,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "奔跑配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Eastmoney",
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-05"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+    },
+    "original": {
+      "strategy": "original",
+      "label": "原版配置",
+      "status": "ok",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.345409405056083,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 10.952526665075471,
+          "ref_close": 9.48
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 10.51557196416487,
+          "ref_close": 4.39
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 10.1675221826629,
+          "ref_close": 38.39
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 9.93037835456506,
+          "ref_close": 217.81
+        },
+        {
+          "code": "002459",
+          "name": "晶澳科技",
+          "score": 9.792011527087583,
+          "ref_close": 7.13
+        },
+        {
+          "code": "600438",
+          "name": "通威股份",
+          "score": 8.996425029870894,
+          "ref_close": 12.39
+        },
+        {
+          "code": "600988",
+          "name": "赤峰黄金",
+          "score": 8.994170410522404,
+          "ref_close": 37.58
+        },
+        {
+          "code": "600732",
+          "name": "爱旭股份",
+          "score": 8.84407311437407,
+          "ref_close": 13.8
+        },
+        {
+          "code": "002428",
+          "name": "云南锗业",
+          "score": 8.79767051440963,
+          "ref_close": 79.0
+        },
+        {
+          "code": "002716",
+          "name": "湖南白银",
+          "score": 8.546406827064386,
+          "ref_close": 7.9
+        },
+        {
+          "code": "603699",
+          "name": "纽威股份",
+          "score": 8.485331952342744,
+          "ref_close": 39.39
+        },
+        {
+          "code": "603379",
+          "name": "三美股份",
+          "score": 8.241435141136641,
+          "ref_close": 51.98
+        },
+        {
+          "code": "601021",
+          "name": "春秋航空",
+          "score": 8.178358009778975,
+          "ref_close": 45.4
+        },
+        {
+          "code": "600029",
+          "name": "南方航空",
+          "score": 7.872074321331745,
+          "ref_close": 5.25
+        },
+        {
+          "code": "601012",
+          "name": "隆基绿能",
+          "score": 7.6763160017590675,
+          "ref_close": 12.47
+        },
+        {
+          "code": "002409",
+          "name": "雅克科技",
+          "score": 7.66029604093298,
+          "ref_close": 89.7
+        },
+        {
+          "code": "002468",
+          "name": "申通快递",
+          "score": 7.606852592980207,
+          "ref_close": 15.14
+        },
+        {
+          "code": "300759",
+          "name": "康龙化成",
+          "score": 7.252795446436865,
+          "ref_close": 49.98
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "score": 7.211390876330442,
+          "ref_close": 10.55
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "open",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "原版配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Eastmoney",
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-05"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+    },
+    "wild": {
+      "strategy": "wild",
+      "label": "狂暴配置",
+      "status": "ok",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 14.71671125067908,
+          "ref_close": 4.39
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 13.275749112676309,
+          "ref_close": 38.39
+        }
+      ],
+      "config": {
+        "hold": 1,
+        "top_n": 2,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 3,
+          "to_window": 20,
+          "pos_window": 60
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 1.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "狂暴配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Eastmoney",
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-05"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+    },
+    "B0": {
+      "strategy": "B0",
+      "status": "data_error",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "error": "ETF history coverage 1719/1777: ['158016', '158015', '158060', '158076', '158088', '158070', '158901', '158902', '158903', '158900']",
+      "picks": []
+    },
+    "K3": {
+      "strategy": "K3",
+      "status": "data_error",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "error": "ETF history coverage 1719/1777: ['158016', '158015', '158060', '158076', '158088', '158070', '158901', '158902', '158903', '158900']",
+      "picks": []
+    },
+    "K5": {
+      "strategy": "K5",
+      "status": "data_error",
+      "asof": "2026-11-05",
+      "exec_day": "2026-11-06",
+      "error": "ETF history coverage 1719/1777: ['158016', '158015', '158060', '158076', '158088', '158070', '158901', '158902', '158903', '158900']",
+      "picks": []
+    }
+  },
+  "accounts": {
+    "champion": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "balanced": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "runner": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "original": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "wild": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "B0": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "K3": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "K5": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": null,
+      "return_pct": 0.0,
+      "corporate_review": []
+    }
+  },
+  "errors": {
+    "etf": "ETF history coverage 1719/1777: ['158016', '158015', '158060', '158076', '158088', '158070', '158901', '158902', '158903', '158900']"
+  }
+}
