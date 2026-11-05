@@ -99,7 +99,7 @@ def run(day, family='all'):
     results={n:load(data.ROOT/'signals'/day/(n+'.json'),dict(status='pending',strategy=n,asof=day)) for n in names}
     report=dict(asof=day,generated_at=str(__import__('pandas').Timestamp.now(tz='Asia/Shanghai')),
                 start=START,strategies=results,accounts={n:dict(cash=a['cash'],equity=equity(a),positions=a['lots'],last_settled=a['last_settled'],
-                return_pct=(equity(a)/200000-1)*100) for n,a in accounts.items()},errors=errors)
+                return_pct=(equity(a)/200000-1)*100,corporate_review=a.get('corporate_review',[])) for n,a in accounts.items()},errors=errors)
     write_json(data.ROOT/'reports'/f'{day}.json',report)
     write_json(data.ROOT/'reports'/'latest.json',report)
     lines=[f'# 盘后信号 · {day}',f'\n模拟开始日：{START}；8 个独立账户，每户初始 200,000 元。次一交易日按真实开盘价记账。',
@@ -116,6 +116,8 @@ def run(day, family='all'):
                 plan='；'.join(f'{c} {w:.1%}' for c,w in s['weights'].items()) or '转现金'
             else:
                 plan='维持当前持仓（空仓则继续空仓）'
+        if a.get('corporate_review'):
+            status += '；除权核验待处理'
         lines.append(f"|{n}|{status}|{plan.replace('|','/')}|{a['cash']:.2f}|{equity(a):.2f}|{(equity(a)/200000-1)*100:+.2f}%|")
     lines+=['\n参考排名、门控、目标权重与逐笔交易见对应 JSON 和 paper 目录。缺数据时暂停生成该策略买单，不回退旧日期。',
             '\n股票选股范围严格按上传包全 A 非 ST（含创业板、科创板）；没有替换为主板。模拟账户不继承历史回测持仓。']

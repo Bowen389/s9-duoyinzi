@@ -48,6 +48,7 @@ jobs:
           git add paper signals reports
           if ! git diff --cached --quiet; then
             git commit -m 'Update dated signals and independent paper accounts'
+            git pull --rebase origin main
             git push origin HEAD:main
           fi
       - name: Save recoverable market cache

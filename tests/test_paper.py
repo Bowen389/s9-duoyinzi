@@ -91,3 +91,30 @@ def test_causal_turnover_does_not_change_past_with_future_data():
 def test_trading_calendar_skips_weekend():
     from runner.data import next_session
     assert next_session('2026-11-06')=='2026-11-09'
+
+
+def test_stock_pipeline_emits_current_date_for_all_five_versions(monkeypatch):
+    from runner import signals as s
+    dates=pd.bdate_range('2026-01-01',periods=150)
+    day=str(dates[-1].date())
+    codes=[f'600{i:03d}' for i in range(40)]
+    spot=pd.DataFrame({'代码':codes,'code6':codes,'名称':codes,'成交量':1e6,
+                       '总市值':np.linspace(1e9,1e11,len(codes))})
+    rng=np.random.default_rng(11)
+    frames={}
+    for c in codes:
+        close=10*np.exp(np.cumsum(rng.normal(.001,.015,len(dates))))
+        frames[c]=pd.DataFrame(dict(date=dates,code=c,open=close*.998,close=close,
+                                   high=close*1.01,low=close*.99,volume=rng.uniform(1e5,1e6,len(dates)),
+                                   amount=1e8,amplitude=2.,pct=rng.normal(0,2,len(dates)),
+                                   turnover=rng.uniform(.5,10,len(dates))))
+    monkeypatch.setattr(s.data,'stock_spot',lambda d:spot)
+    monkeypatch.setattr(s.data,'histories',lambda codes,d:(frames,{}))
+    monkeypatch.setattr(s.data,'board_mapping',lambda d:pd.DataFrame(dict(code=codes,board=['sample']*len(codes),kind='ind')))
+    monkeypatch.setattr(s.data,'history',lambda *a,**kw:pd.DataFrame(dict(date=dates,close=np.arange(len(dates))+3000.)))
+    monkeypatch.setattr(s.data,'next_session',lambda d:'2026-11-06')
+    result=s.stock_signals(day)
+    assert len(result)==5
+    assert all(x['status']=='ok' and x['asof']==day and x['gate_on'] for x in result.values())
+    assert len(result['wild']['picks'])==2
+    assert all(len(result[x]['picks'])==20 for x in ['champion','balanced','runner','original'])
