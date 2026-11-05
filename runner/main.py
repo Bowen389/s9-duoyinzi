@@ -119,6 +119,22 @@ def run(day, family='all'):
         if a.get('corporate_review'):
             status += '；除权核验待处理'
         lines.append(f"|{n}|{status}|{plan.replace('|','/')}|{a['cash']:.2f}|{equity(a):.2f}|{(equity(a)/200000-1)*100:+.2f}%|")
+    lines.append('\n## 每日 Top 候选（无论门控是否通过均展示）')
+    for n,s in results.items():
+        lines.append(f'\n### {n}')
+        if s['status'] != 'ok':
+            lines.append('\n当日排名暂缺：' + s.get('error', '等待扫描') + '。不使用旧日排名替代。')
+            continue
+        lines.append('\n' + ('门控通过；是否买入仍以账户操作计划为准。' if s['gate_on'] else '门控未通过：以下仅为观察排名，不构成进攻买入信号。'))
+        picks = s.get('picks', [])
+        if not picks:
+            lines.append('\n当日没有通过个股/ETF基础筛选的候选。')
+            continue
+        lines += ['\n|排名|代码|名称|得分|参考收盘价|', '|---:|---|---|---:|---:|']
+        for rank,x in enumerate(picks, 1):
+            ref = f"{x['ref_close']:.4f}" if x.get('ref_close') is not None else '—'
+            name = str(x.get('name', '')).replace('|', '/')
+            lines.append(f"|{rank}|{x['code']}|{name}|{x['score']:.4f}|{ref}|")
     lines+=['\n参考排名、门控、目标权重与逐笔交易见对应 JSON 和 paper 目录。缺数据时暂停生成该策略买单，不回退旧日期。',
             '\n股票选股范围严格按上传包全 A 非 ST（含创业板、科创板）；没有替换为主板。模拟账户不继承历史回测持仓。']
     text='\n'.join(lines)+'\n'
