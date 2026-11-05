@@ -1,0 +1,33 @@
+name: Wild last four days read-only research
+on:
+  push:
+    branches: ['research/wild-last4-20261105']
+    paths: ['runner/wild_replay.py', '.github/workflows/wild-history.yml']
+permissions:
+  contents: read
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: research-wild-no-save-${{ github.run_id }}
+          restore-keys: market-v2-
+      - name: Recompute rankings and fetch raw OHLC without changing production
+        env:
+          TZ: Asia/Shanghai
+          PYTHONUNBUFFERED: '1'
+          OPENBLAS_NUM_THREADS: '1'
+        run: python -m runner.wild_replay
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wild-last4
+          path: research_output/
