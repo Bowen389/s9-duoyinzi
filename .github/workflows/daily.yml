@@ -14,11 +14,11 @@ permissions:
   contents: write
 concurrency:
   group: independent-paper-main
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,8 +31,8 @@ jobs:
         id: market-cache
         with:
           path: cache
-          key: market-v1-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: market-v1-
+          key: market-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: market-v2-
       - name: Settle and scan all accounts
         id: scan
         env:
@@ -48,15 +48,19 @@ jobs:
           git add paper signals reports
           if ! git diff --cached --quiet; then
             git commit -m 'Update dated signals and independent paper accounts'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 2
+            done
           fi
       - name: Save recoverable market cache
         if: always()
         uses: actions/cache/save@v4
         with:
           path: cache
-          key: market-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          key: market-v2-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Publish job summary
         if: always()
         run: |

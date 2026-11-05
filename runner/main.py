@@ -83,12 +83,17 @@ def run(day, family='all'):
             continue
         members=STOCKS if group=='stock' else ETFS
         try:
+            print(f'=== {group} signal scan {day} ===',flush=True)
             stale=[n for n in members if day>=START and accounts[n]['last_settled']!=day]
             if stale:
                 raise RuntimeError(f'unsettled accounts: {stale}')
-            results.update(fn())
+            fresh=fn()
+            results.update(fresh)
+            for n,s in fresh.items():
+                write_json(data.ROOT/'signals'/day/(n+'.json'),s)
+            print(f'=== {group} scan complete: {len(fresh)} strategies ===',flush=True)
         except Exception as e:
-            traceback.print_exc()
+            print(f'{group} scan failed: {type(e).__name__}: {e}',flush=True)
             errors[group]=str(e)
             for n in members:
                 results[n]=dict(strategy=n,status='data_error',asof=day,exec_day=data.next_session(day),error=str(e),picks=[])

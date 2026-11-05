@@ -64,7 +64,9 @@ def stock_signals(day):
                  for _,r in today.head(cfg['top_n']).iterrows()]
         out[version] = dict(strategy=version, label=cfg['label'], status='ok', asof=day,
                             exec_day=data.next_session(day), gate_on=bool(gate.loc[pd.Timestamp(day)]),
-                            picks=picks, config=cfg, coverage=dict(loaded=len(frames), expected=len(codes), inactive_errors=errs),
+                            picks=picks, config=cfg, coverage=dict(loaded=len(frames), expected=len(codes), inactive_errors=errs,
+                            vendors=sorted(set(panel['source'])) if 'source' in panel else [],
+                            board_catalog_asof=str(mapping['catalog_asof'].iloc[0]) if 'catalog_asof' in mapping else day),
                             live_patch='causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback')
         del fdf
         gc.collect()
@@ -143,7 +145,7 @@ def etf_signals(day, accounts):
                           exec_day=data.next_session(day),gate_on=bool(bt.regime[t]),picks=picks,
                           weights=wmap,rebalance=changed,target_codes=[str(bt.codes[i]) for i in target],
                           reasons={str(bt.codes[c]):v for c,v in why.items()},params=params,
-                          data_warnings=errs)
+                          data_warnings=errs,live_warmup='up to 640 actual sessions per ETF; no inherited historical holdings')
         # Source cooldown begins at the close decision, even if exit executes next session.
         for c in np.flatnonzero(exits > -10**6):
             a['last_exit'][str(bt.codes[c])]=str(panel['dates'][exits[c]].date())
