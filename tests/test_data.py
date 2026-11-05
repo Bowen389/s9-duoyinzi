@@ -68,3 +68,18 @@ def test_qfq_incremental_refresh_rescales_earlier_prices(monkeypatch):
     f=data._tencent('510300','2026-11-05','2024-01-01',True,False,old)
     assert len(f)==4 and float(f.iloc[0].close)==9
     assert float(f.iloc[0].amount)==1000
+
+
+def test_partial_failure_retries_only_missing_symbols(monkeypatch):
+    from collections import Counter
+    called=Counter()
+    codes=[f'{i:06d}' for i in range(20)]
+    def sometimes(c,*a,**k):
+        called[c]+=1
+        if c=='000005' and called[c]==1:
+            raise RuntimeError('temporary upstream failure')
+        return pd.DataFrame({'code':[c]})
+    monkeypatch.setattr(data,'history',sometimes)
+    frames,errors=data.histories(codes,'2026-11-05')
+    assert len(frames)==20 and not errors
+    assert called['000005']==2 and all(n==1 for c,n in called.items() if c!='000005')

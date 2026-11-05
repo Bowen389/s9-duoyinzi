@@ -12,9 +12,6 @@ on:
     paths: ['runner/**', 'strategies/**', 'tests/**', 'requirements.txt', '.github/workflows/**']
 permissions:
   contents: write
-concurrency:
-  group: independent-paper-main
-  cancel-in-progress: ${{ github.event_name == 'push' }}
 jobs:
   preflight:
     name: Real provider connectivity
@@ -34,6 +31,9 @@ jobs:
         run: python -m runner.preflight
   scan:
     needs: preflight
+    concurrency:
+      group: independent-paper-main
+      cancel-in-progress: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     timeout-minutes: 150
     steps:
