@@ -34,6 +34,21 @@ class PartialDataTests(unittest.TestCase):
         self.assertEqual(len(warnings), 1)
         self.assertEqual(calls, ['510300', '600519', '000300'])
 
+    def test_failed_initial_probes_do_not_skip_rest(self):
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        seen = []
+        def history(code, *args):
+            seen.append(code)
+            if code in {'000000', '000002', '000004'}:
+                raise RuntimeError('symbol unavailable')
+            return code
+        fn = isolated_function('runner/data.py', 'histories',
+            dict(ThreadPoolExecutor=ThreadPoolExecutor, as_completed=as_completed, history=history))
+        with patch('builtins.print'):
+            frames, errors = fn(['000000', '000001', '000002', '000003', '000004'], '2026-11-06')
+        self.assertEqual(set(frames), {'000001', '000003'})
+        self.assertEqual(len(seen), 5)
+
     def stock_fixture(self, bad_count):
         day = '2026-11-06'
         codes = [str(i).zfill(6) for i in range(100)]
