@@ -201,16 +201,13 @@ def histories(codes, day, adjusted=True, start='2024-01-01', workers=8):
                 if i%100==0:
                     print(f'data {len(frames)+len(errors)}/{len(codes)}, failures={len(errors)}',flush=True)
     collect(probe)
-    if len(errors)==len(probe):
-        for c in rest:
-            errors[c]='provider probe failed; batch skipped without repeated downloads'
-        print(f'provider probe failed; skipped {len(rest)} requests',flush=True)
-    else:
-        collect(rest)
-        if errors and len(frames)>=len(codes)*.5:
-            retry=list(errors)
-            print(f'retrying only {len(retry)} incomplete histories; keeping {len(frames)} valid caches',flush=True)
-            collect(retry)
+    # A few failed symbols are not evidence that the entire provider is down.
+    # Host-level circuit breakers in get_json already bound outage requests.
+    collect(rest)
+    if errors and len(frames)>=len(codes)*.5:
+        retry=list(errors)
+        print(f'retrying only {len(retry)} incomplete histories; keeping {len(frames)} valid caches',flush=True)
+        collect(retry)
     print(f'data complete: {len(frames)}/{len(codes)}, errors={len(errors)}',flush=True)
     for c,e in list(errors.items())[:3]:
         print(f'data error {c}: {e}',flush=True)
