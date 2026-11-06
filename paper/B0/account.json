@@ -2,12 +2,64 @@
   "strategy": "B0",
   "start": "2026-11-06",
   "initial_cash": 200000.0,
-  "cash": 200000.0,
-  "lots": [],
-  "last_settled": null,
-  "trades": [],
-  "nav": [],
+  "cash": 19382.825128503988,
+  "lots": [
+    {
+      "code": "511260",
+      "qty": 600,
+      "entry": "2026-11-06",
+      "entry_px": 135.9851916,
+      "cost": 81599.27407149601,
+      "mark": 136.133,
+      "due": null,
+      "sell_at": null
+    },
+    {
+      "code": "518880",
+      "qty": 11900,
+      "entry": "2026-11-06",
+      "entry_px": 8.32,
+      "cost": 99017.9008,
+      "mark": 8.253,
+      "due": null,
+      "sell_at": null
+    }
+  ],
+  "last_settled": "2026-11-06",
+  "trades": [
+    {
+      "date": "2026-11-06",
+      "phase": "open",
+      "code": "511260",
+      "side": "BUY",
+      "qty": 600,
+      "price": 135.9851916,
+      "fee": 8.159111496002879,
+      "cash": 118400.72592850399
+    },
+    {
+      "date": "2026-11-06",
+      "phase": "open",
+      "code": "518880",
+      "side": "BUY",
+      "qty": 11900,
+      "price": 8.32,
+      "fee": 9.900800000003073,
+      "cash": 19382.825128503988
+    }
+  ],
+  "nav": [
+    {
+      "date": "2026-11-06",
+      "cash": 19382.825128503988,
+      "equity": 199273.325128504,
+      "return_pct": -0.36333743574800126,
+      "positions": 2,
+      "valuation_review": false
+    }
+  ],
   "events": [],
   "last_exit": {},
-  "peak": 200000.0
+  "peak": 200000.0,
+  "corporate_review": []
 }
