@@ -32,7 +32,7 @@ jobs:
           PYTHONUNBUFFERED: '1'
         run: python -m runner.preflight
   scan:
-    needs: preflight
+    # Provider probes are diagnostic and run in parallel with actual input validation.
     concurrency:
       group: independent-paper-main
       cancel-in-progress: ${{ github.event_name == 'push' }}
@@ -45,7 +45,7 @@ jobs:
           python-version: '3.11'
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python -m pytest -q
+      - run: python -m pytest -q --durations=5
       - uses: actions/cache/restore@v4
         id: market-cache
         with:
@@ -75,7 +75,8 @@ jobs:
             done
           fi
       - name: Save recoverable market cache
-        if: always()
+        # Never shadow usable history caches with an empty cache from failed tests.
+        if: always() && steps.scan.outcome != '' && steps.scan.outcome != 'skipped' && hashFiles('cache/**/*.parquet') != ''
         uses: actions/cache/save@v4
         with:
           path: cache
