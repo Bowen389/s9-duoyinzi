@@ -19,7 +19,7 @@ def test_short_legacy_kline_does_not_fabricate_turnover_or_amount(monkeypatch):
         data._tx_piece('510300','2026-11-04','2024-01-01',True,False)
 
 
-def test_outage_probes_skip_remaining_thousands(monkeypatch):
+def test_symbol_failures_are_recorded_without_abandoning_other_symbols(monkeypatch):
     called=[]
     def down(c,*a,**k):
         called.append(c)
@@ -27,7 +27,7 @@ def test_outage_probes_skip_remaining_thousands(monkeypatch):
     monkeypatch.setattr(data,'history',down)
     codes=[f'{i:06d}' for i in range(1777)]
     frames,errors=data.histories(codes,'2026-11-05')
-    assert not frames and len(errors)==1777 and len(called)==3
+    assert not frames and len(errors)==1777 and set(called)==set(codes)
 
 
 def test_host_circuit_stops_retrying_on_rate_limit(monkeypatch):
