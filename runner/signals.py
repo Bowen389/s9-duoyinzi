@@ -32,18 +32,27 @@ def stock_signals(day):
     frames, errs = data.histories(codes, day)
     active = set(spot.loc[spot['成交量'] > 0, 'code6']) & set(codes)
     bad = [c for c in active if c not in frames or str(frames[c].date.max().date()) != day]
+    for c in bad:
+        errs[c] = errs.get(c, 'missing current-session history; excluded from ranking')
+        frames.pop(c, None)
     if bad:
-        raise RuntimeError(f'stock histories incomplete: {len(bad)} active stocks; {bad[:10]}')
+        print(f'::warning::Excluded {len(bad)} active stocks with missing/stale histories: {bad[:10]}', flush=True)
     if len(frames) < len(codes)*.98:
         raise RuntimeError(f'stock coverage {len(frames)}/{len(codes)}')
+    mapping = data.board_mapping(day)
+    unmapped = set(big) - set(mapping.code)
+    if unmapped:
+        for c in unmapped:
+            errs[c] = 'board membership missing; excluded from ranking'
+            frames.pop(c, None)
+        print(f'::warning::Excluded {len(unmapped)} stocks without board membership', flush=True)
+    if len(frames) < len(codes)*.98:
+        raise RuntimeError(f'stock coverage after exclusions {len(frames)}/{len(codes)}')
+    big = [c for c in big if c in frames]
+    active &= set(frames)
     panel = pd.concat(frames.values(), ignore_index=True).rename(columns={
         'date':'日期', 'open':'开盘', 'close':'收盘', 'high':'最高', 'low':'最低',
         'volume':'成交量', 'amount':'成交额', 'amplitude':'振幅', 'pct':'涨跌幅', 'turnover':'换手率'})
-    mapping = data.board_mapping(day)
-    covered = set(mapping.code)
-    unmapped = set(big) - covered
-    if unmapped:
-        raise RuntimeError(f'board membership missing for {len(unmapped)} large-pool stocks')
     bd = ch.build_board_day(ch.daily_stats_of(panel), mapping)
     idx = data.history('000300', day, index=True).rename(columns={'date':'日期','close':'收盘'})
     if str(idx['日期'].max().date()) != day:
@@ -77,6 +86,11 @@ def etf_panel(day, protected=()):
     codes = [x.strip() for x in (data.ROOT/'strategies/etf_codes.txt').read_text().splitlines() if x.strip() and not x.startswith('_')]
     codes = sorted(set(codes) | set(s9.POOL) | {'511260','518880','511880'})
     frames, errs = data.histories(codes, day, start='2016-01-01')
+    # Never forward-fill stale current-session data into an actionable ranking.
+    for c, frame in list(frames.items()):
+        if frame.empty or str(frame.date.max().date()) != day:
+            errs[c] = 'missing current-session history; excluded from ranking'
+            frames.pop(c)
     from .eligibility import classify_unavailable
     mandatory=set(s9.POOL) | {'511260','518880','511880'} | set(protected)
     excluded=classify_unavailable(errs,day,protected=mandatory,min_age=120) if errs else {}
