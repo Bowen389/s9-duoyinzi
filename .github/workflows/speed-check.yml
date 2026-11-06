@@ -1,0 +1,56 @@
+name: Speed check without publishing accounts
+on:
+  push:
+    branches: [perf/speed-check-20261106]
+    paths: ['.github/workflows/speed-check.yml']
+permissions:
+  contents: read
+jobs:
+  preflight:
+    continue-on-error: true
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m runner.preflight
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: speed-check-readonly-${{ github.run_id }}
+          restore-keys: market-v2-
+      - name: Time full scan and compare committed baseline
+        env:
+          TZ: Asia/Shanghai
+          PYTHONUNBUFFERED: '1'
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          cp reports/2026-11-06.json /tmp/speed-baseline.json
+          cp -r paper /tmp/speed-baseline-paper
+          SECONDS=0
+          python -m runner.main --date 2026-11-06
+          echo "SCAN_SECONDS=$SECONDS" | tee /tmp/speed-time.txt
+          python scripts/compare_speed_results.py
+          cat /tmp/speed-time.txt >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: speed-check
+          path: |
+            reports/
+            /tmp/speed-time.txt
