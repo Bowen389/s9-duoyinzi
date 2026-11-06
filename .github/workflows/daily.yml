@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['runner/**', 'strategies/**', 'tests/**', 'requirements.txt', '.github/workflows/**']
+    paths: ['runner/**', 'strategies/**', 'tests/**', 'requirements.txt', '.github/workflows/**', 'scripts/recovery_guard.py', 'watchdog/s9.json']
 permissions:
   contents: write
 jobs:
@@ -35,32 +35,42 @@ jobs:
     # Provider probes are diagnostic and run in parallel with actual input validation.
     concurrency:
       group: independent-paper-main
-      cancel-in-progress: ${{ github.event_name == 'push' }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
+      - name: Refresh main after waiting for another scan
+        run: git pull --ff-only origin main
+      - name: Select unfinished current-session families
+        id: recovery
+        run: echo "family=$(python scripts/recovery_guard.py)" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-python@v5
+        if: steps.recovery.outputs.family != 'skip'
         with:
           python-version: '3.11'
           cache: pip
       - run: pip install -r requirements.txt
+        if: steps.recovery.outputs.family != 'skip'
       - run: python -m pytest -q --durations=5
+        if: steps.recovery.outputs.family != 'skip'
       - uses: actions/cache/restore@v4
         id: market-cache
+        if: steps.recovery.outputs.family != 'skip'
         with:
           path: cache
           key: market-v2-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: market-v2-
       - name: Settle and scan all accounts
         id: scan
+        if: steps.recovery.outputs.family != 'skip'
         env:
           TZ: Asia/Shanghai
           PYTHONUNBUFFERED: '1'
           OPENBLAS_NUM_THREADS: '1'
-        run: python -m runner.main
+        run: python -m runner.main --family ${{ steps.recovery.outputs.family }}
       - name: Persist accounts and signals even when a provider fails
-        if: always()
+        if: always() && steps.scan.outcome != '' && steps.scan.outcome != 'skipped'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
