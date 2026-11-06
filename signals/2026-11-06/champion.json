@@ -1,0 +1,160 @@
+{
+  "strategy": "champion",
+  "label": "冠军配置",
+  "status": "ok",
+  "asof": "2026-11-06",
+  "exec_day": "2026-11-09",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600637",
+      "name": "东方明珠",
+      "score": 14.403966010988093,
+      "ref_close": 8.08
+    },
+    {
+      "code": "600089",
+      "name": "特变电工",
+      "score": 11.079442627271192,
+      "ref_close": 18.92
+    },
+    {
+      "code": "603014",
+      "name": "威高血净",
+      "score": 11.024895894967544,
+      "ref_close": 34.86
+    },
+    {
+      "code": "300628",
+      "name": "亿联网络",
+      "score": 10.73981668971064,
+      "ref_close": 39.59
+    },
+    {
+      "code": "002459",
+      "name": "晶澳科技",
+      "score": 9.62343406287289,
+      "ref_close": 7.08
+    },
+    {
+      "code": "603233",
+      "name": "大参林",
+      "score": 9.547723748413105,
+      "ref_close": 21.49
+    },
+    {
+      "code": "601728",
+      "name": "中国电信",
+      "score": 9.192189472755834,
+      "ref_close": 6.91
+    },
+    {
+      "code": "600941",
+      "name": "中国移动",
+      "score": 9.143505973606128,
+      "ref_close": 103.49
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "score": 8.571898012065192,
+      "ref_close": 25.35
+    },
+    {
+      "code": "000598",
+      "name": "兴蓉环境",
+      "score": 8.449474991864712,
+      "ref_close": 7.35
+    },
+    {
+      "code": "600038",
+      "name": "中直股份",
+      "score": 8.25942735020563,
+      "ref_close": 28.77
+    },
+    {
+      "code": "000400",
+      "name": "许继电气",
+      "score": 8.176638568929192,
+      "ref_close": 25.25
+    },
+    {
+      "code": "601825",
+      "name": "沪农商行",
+      "score": 7.727800699455562,
+      "ref_close": 9.04
+    },
+    {
+      "code": "300747",
+      "name": "锐科激光",
+      "score": 7.663879137651374,
+      "ref_close": 43.89
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "score": 7.653937992775656,
+      "ref_close": 173.12
+    },
+    {
+      "code": "603699",
+      "name": "纽威股份",
+      "score": 7.625983505322282,
+      "ref_close": 40.24
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "score": 7.4321361333862175,
+      "ref_close": 31.4
+    },
+    {
+      "code": "688036",
+      "name": "传音控股",
+      "score": 7.41050816285362,
+      "ref_close": 65.0
+    },
+    {
+      "code": "600406",
+      "name": "国电南瑞",
+      "score": 7.3912575116332935,
+      "ref_close": 23.86
+    },
+    {
+      "code": "300003",
+      "name": "乐普医疗",
+      "score": 7.361481777149726,
+      "ref_close": 12.61
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

@@ -1,0 +1,52 @@
+{
+  "strategy": "wild",
+  "label": "狂暴配置",
+  "status": "ok",
+  "asof": "2026-11-06",
+  "exec_day": "2026-11-09",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600637",
+      "name": "东方明珠",
+      "score": 12.522499401925167,
+      "ref_close": 8.08
+    },
+    {
+      "code": "600089",
+      "name": "特变电工",
+      "score": 9.552281623253357,
+      "ref_close": 18.92
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

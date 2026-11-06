@@ -1,135 +1,135 @@
 {
-  "asof": "2026-11-05",
-  "generated_at": "2026-11-05 22:32:09.541159+08:00",
+  "asof": "2026-11-06",
+  "generated_at": "2026-11-06 17:48:09.779771+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
       "strategy": "champion",
       "label": "冠军配置",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
+          "code": "600637",
+          "name": "东方明珠",
+          "score": 14.403966010988093,
+          "ref_close": 8.08
+        },
+        {
+          "code": "600089",
+          "name": "特变电工",
+          "score": 11.079442627271192,
+          "ref_close": 18.92
+        },
+        {
+          "code": "603014",
+          "name": "威高血净",
+          "score": 11.024895894967544,
+          "ref_close": 34.86
+        },
+        {
+          "code": "300628",
+          "name": "亿联网络",
+          "score": 10.73981668971064,
+          "ref_close": 39.59
+        },
+        {
+          "code": "002459",
+          "name": "晶澳科技",
+          "score": 9.62343406287289,
+          "ref_close": 7.08
+        },
+        {
+          "code": "603233",
+          "name": "大参林",
+          "score": 9.547723748413105,
+          "ref_close": 21.49
+        },
+        {
+          "code": "601728",
+          "name": "中国电信",
+          "score": 9.192189472755834,
+          "ref_close": 6.91
+        },
+        {
+          "code": "600941",
+          "name": "中国移动",
+          "score": 9.143505973606128,
+          "ref_close": 103.49
+        },
+        {
+          "code": "001872",
+          "name": "招商港口",
+          "score": 8.571898012065192,
+          "ref_close": 25.35
+        },
+        {
+          "code": "000598",
+          "name": "兴蓉环境",
+          "score": 8.449474991864712,
+          "ref_close": 7.35
+        },
+        {
+          "code": "600038",
+          "name": "中直股份",
+          "score": 8.25942735020563,
+          "ref_close": 28.77
+        },
+        {
+          "code": "000400",
+          "name": "许继电气",
+          "score": 8.176638568929192,
+          "ref_close": 25.25
+        },
+        {
+          "code": "601825",
+          "name": "沪农商行",
+          "score": 7.727800699455562,
+          "ref_close": 9.04
+        },
+        {
+          "code": "300747",
+          "name": "锐科激光",
+          "score": 7.663879137651374,
+          "ref_close": 43.89
+        },
+        {
+          "code": "688347",
+          "name": "华虹宏力",
+          "score": 7.653937992775656,
+          "ref_close": 173.12
+        },
+        {
           "code": "603699",
           "name": "纽威股份",
-          "score": 13.543798077111951,
-          "ref_close": 39.39
+          "score": 7.625983505322282,
+          "ref_close": 40.24
         },
         {
-          "code": "002131",
-          "name": "利欧股份",
-          "score": 12.489062962463425,
-          "ref_close": 4.39
-        },
-        {
-          "code": "601021",
-          "name": "春秋航空",
-          "score": 10.948198156095199,
-          "ref_close": 45.4
-        },
-        {
-          "code": "688411",
-          "name": "海博思创",
-          "score": 10.931602017230361,
-          "ref_close": 184.65
-        },
-        {
-          "code": "600732",
-          "name": "爱旭股份",
-          "score": 10.929780257738914,
-          "ref_close": 13.8
-        },
-        {
-          "code": "002444",
-          "name": "巨星科技",
-          "score": 10.78552312084176,
-          "ref_close": 29.92
+          "code": "600641",
+          "name": "先导基电",
+          "score": 7.4321361333862175,
+          "ref_close": 31.4
         },
         {
           "code": "688036",
           "name": "传音控股",
-          "score": 10.259322572005217,
-          "ref_close": 64.35
+          "score": 7.41050816285362,
+          "ref_close": 65.0
         },
         {
-          "code": "603893",
-          "name": "瑞芯微",
-          "score": 10.16067612709976,
-          "ref_close": 217.81
+          "code": "600406",
+          "name": "国电南瑞",
+          "score": 7.3912575116332935,
+          "ref_close": 23.86
         },
         {
-          "code": "600029",
-          "name": "南方航空",
-          "score": 10.004798176220335,
-          "ref_close": 5.25
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "score": 9.674691915928921,
-          "ref_close": 38.39
-        },
-        {
-          "code": "601111",
-          "name": "中国国航",
-          "score": 9.616926373302483,
-          "ref_close": 6.36
-        },
-        {
-          "code": "601058",
-          "name": "赛轮轮胎",
-          "score": 9.396025180296945,
-          "ref_close": 12.75
-        },
-        {
-          "code": "300438",
-          "name": "鹏辉能源",
-          "score": 9.161074330323718,
-          "ref_close": 44.72
-        },
-        {
-          "code": "300751",
-          "name": "迈为股份",
-          "score": 8.59003460046467,
-          "ref_close": 165.0
-        },
-        {
-          "code": "300759",
-          "name": "康龙化成",
-          "score": 8.424597884099644,
-          "ref_close": 49.98
-        },
-        {
-          "code": "601012",
-          "name": "隆基绿能",
-          "score": 8.26777698704663,
-          "ref_close": 12.47
-        },
-        {
-          "code": "300442",
-          "name": "润泽科技",
-          "score": 8.203800092518994,
-          "ref_close": 59.78
-        },
-        {
-          "code": "603379",
-          "name": "三美股份",
-          "score": 8.165478212618876,
-          "ref_close": 51.98
-        },
-        {
-          "code": "002428",
-          "name": "云南锗业",
-          "score": 8.15199747426322,
-          "ref_close": 79.0
-        },
-        {
-          "code": "688223",
-          "name": "晶科能源",
-          "score": 8.06604761353893,
-          "ref_close": 4.5
+          "code": "300003",
+          "name": "乐普医疗",
+          "score": 7.361481777149726,
+          "ref_close": 12.61
         }
       ],
       "config": {
@@ -159,7 +159,7 @@
           "Eastmoney",
           "Tencent rich kline"
         ],
-        "board_catalog_asof": "2026-11-05"
+        "board_catalog_asof": "2026-11-06"
       },
       "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
@@ -167,129 +167,129 @@
       "strategy": "balanced",
       "label": "稳健配置",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
-          "code": "002444",
-          "name": "巨星科技",
-          "score": 11.345409405056083,
-          "ref_close": 29.92
-        },
-        {
-          "code": "688472",
-          "name": "阿特斯",
-          "score": 10.952526665075471,
-          "ref_close": 9.48
-        },
-        {
-          "code": "002131",
-          "name": "利欧股份",
-          "score": 10.51557196416487,
-          "ref_close": 4.39
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "score": 10.1675221826629,
-          "ref_close": 38.39
+          "code": "600637",
+          "name": "东方明珠",
+          "score": 12.409757117828171,
+          "ref_close": 8.08
         },
         {
           "code": "603893",
           "name": "瑞芯微",
-          "score": 9.93037835456506,
-          "ref_close": 217.81
+          "score": 10.03728636159883,
+          "ref_close": 212.68
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "score": 9.784682990972726,
+          "ref_close": 31.4
+        },
+        {
+          "code": "688235",
+          "name": "百济神州",
+          "score": 9.506575120701799,
+          "ref_close": 278.6
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 8.954351359324033,
+          "ref_close": 38.29
+        },
+        {
+          "code": "300438",
+          "name": "鹏辉能源",
+          "score": 8.845756730759758,
+          "ref_close": 43.33
         },
         {
           "code": "002459",
           "name": "晶澳科技",
-          "score": 9.792011527087583,
-          "ref_close": 7.13
+          "score": 8.84526056218737,
+          "ref_close": 7.08
+        },
+        {
+          "code": "600038",
+          "name": "中直股份",
+          "score": 8.819719534948968,
+          "ref_close": 28.77
+        },
+        {
+          "code": "600089",
+          "name": "特变电工",
+          "score": 8.56528113407034,
+          "ref_close": 18.92
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 8.471814842946578,
+          "ref_close": 4.26
+        },
+        {
+          "code": "300628",
+          "name": "亿联网络",
+          "score": 7.9831903644476725,
+          "ref_close": 39.59
+        },
+        {
+          "code": "300017",
+          "name": "网宿科技",
+          "score": 7.807749620319754,
+          "ref_close": 16.01
+        },
+        {
+          "code": "002261",
+          "name": "拓维信息",
+          "score": 7.3015249581119335,
+          "ref_close": 21.76
+        },
+        {
+          "code": "603806",
+          "name": "福斯特",
+          "score": 7.17418165436214,
+          "ref_close": 13.13
         },
         {
           "code": "600438",
           "name": "通威股份",
-          "score": 8.996425029870894,
-          "ref_close": 12.39
-        },
-        {
-          "code": "600988",
-          "name": "赤峰黄金",
-          "score": 8.994170410522404,
-          "ref_close": 37.58
-        },
-        {
-          "code": "600732",
-          "name": "爱旭股份",
-          "score": 8.84407311437407,
-          "ref_close": 13.8
-        },
-        {
-          "code": "002428",
-          "name": "云南锗业",
-          "score": 8.79767051440963,
-          "ref_close": 79.0
-        },
-        {
-          "code": "002716",
-          "name": "湖南白银",
-          "score": 8.546406827064386,
-          "ref_close": 7.9
-        },
-        {
-          "code": "603699",
-          "name": "纽威股份",
-          "score": 8.485331952342744,
-          "ref_close": 39.39
-        },
-        {
-          "code": "603379",
-          "name": "三美股份",
-          "score": 8.241435141136641,
-          "ref_close": 51.98
-        },
-        {
-          "code": "601021",
-          "name": "春秋航空",
-          "score": 8.178358009778975,
-          "ref_close": 45.4
-        },
-        {
-          "code": "600029",
-          "name": "南方航空",
-          "score": 7.872074321331745,
-          "ref_close": 5.25
+          "score": 6.852398586253663,
+          "ref_close": 12.25
         },
         {
           "code": "601012",
           "name": "隆基绿能",
-          "score": 7.6763160017590675,
-          "ref_close": 12.47
+          "score": 6.652672001787062,
+          "ref_close": 12.42
         },
         {
-          "code": "002409",
-          "name": "雅克科技",
-          "score": 7.66029604093298,
-          "ref_close": 89.7
+          "code": "603444",
+          "name": "吉比特",
+          "score": 6.615998408597069,
+          "ref_close": 349.31
         },
         {
-          "code": "002468",
-          "name": "申通快递",
-          "score": 7.606852592980207,
-          "ref_close": 15.14
+          "code": "600406",
+          "name": "国电南瑞",
+          "score": 6.502310796813892,
+          "ref_close": 23.86
         },
         {
-          "code": "300759",
-          "name": "康龙化成",
-          "score": 7.252795446436865,
-          "ref_close": 49.98
+          "code": "000738",
+          "name": "航发控制",
+          "score": 6.49378450308232,
+          "ref_close": 18.56
         },
         {
-          "code": "603885",
-          "name": "吉祥航空",
-          "score": 7.211390876330442,
-          "ref_close": 10.55
+          "code": "600977",
+          "name": "中国电影",
+          "score": 6.437941421382116,
+          "ref_close": 16.01
         }
       ],
       "config": {
@@ -319,7 +319,7 @@
           "Eastmoney",
           "Tencent rich kline"
         ],
-        "board_catalog_asof": "2026-11-05"
+        "board_catalog_asof": "2026-11-06"
       },
       "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
@@ -327,129 +327,129 @@
       "strategy": "runner",
       "label": "奔跑配置",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
-          "code": "002444",
-          "name": "巨星科技",
-          "score": 14.67552744193645,
-          "ref_close": 29.92
+          "code": "600637",
+          "name": "东方明珠",
+          "score": 16.84029708423959,
+          "ref_close": 8.08
         },
         {
-          "code": "688472",
-          "name": "阿特斯",
-          "score": 14.355857517508655,
-          "ref_close": 9.48
+          "code": "600038",
+          "name": "中直股份",
+          "score": 13.822937027757915,
+          "ref_close": 28.77
         },
         {
-          "code": "002131",
-          "name": "利欧股份",
-          "score": 13.91984555782906,
-          "ref_close": 4.39
+          "code": "688235",
+          "name": "百济神州",
+          "score": 11.95334306049024,
+          "ref_close": 278.6
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "score": 11.832665643651818,
+          "ref_close": 31.4
+        },
+        {
+          "code": "600089",
+          "name": "特变电工",
+          "score": 10.978981990522858,
+          "ref_close": 18.92
+        },
+        {
+          "code": "300413",
+          "name": "芒果超媒",
+          "score": 10.602603923364773,
+          "ref_close": 34.83
+        },
+        {
+          "code": "300628",
+          "name": "亿联网络",
+          "score": 10.017598202856789,
+          "ref_close": 39.59
         },
         {
           "code": "600206",
           "name": "有研新材",
-          "score": 13.540989876129501,
-          "ref_close": 38.39
+          "score": 9.813424286573301,
+          "ref_close": 38.29
         },
         {
           "code": "603893",
           "name": "瑞芯微",
-          "score": 13.264132249412054,
-          "ref_close": 217.81
-        },
-        {
-          "code": "600732",
-          "name": "爱旭股份",
-          "score": 12.257618443864828,
-          "ref_close": 13.8
+          "score": 9.731915315514687,
+          "ref_close": 212.68
         },
         {
           "code": "002459",
           "name": "晶澳科技",
-          "score": 11.950195233745143,
-          "ref_close": 7.13
+          "score": 9.623484294044731,
+          "ref_close": 7.08
         },
         {
-          "code": "603379",
-          "name": "三美股份",
-          "score": 11.644621838490604,
-          "ref_close": 51.98
+          "code": "600406",
+          "name": "国电南瑞",
+          "score": 8.57573159232376,
+          "ref_close": 23.86
         },
         {
-          "code": "600988",
-          "name": "赤峰黄金",
-          "score": 11.566661608410621,
-          "ref_close": 37.58
+          "code": "600977",
+          "name": "中国电影",
+          "score": 8.45638745223961,
+          "ref_close": 16.01
         },
         {
-          "code": "603699",
-          "name": "纽威股份",
-          "score": 11.531362210187051,
-          "ref_close": 39.39
+          "code": "600025",
+          "name": "华能水电",
+          "score": 8.323243063462845,
+          "ref_close": 10.97
         },
         {
-          "code": "600438",
-          "name": "通威股份",
-          "score": 11.3117807414013,
-          "ref_close": 12.39
+          "code": "000738",
+          "name": "航发控制",
+          "score": 8.198678738964183,
+          "ref_close": 18.56
         },
         {
-          "code": "300759",
-          "name": "康龙化成",
-          "score": 11.151453480955627,
-          "ref_close": 49.98
-        },
-        {
-          "code": "601021",
-          "name": "春秋航空",
-          "score": 10.883684898919235,
-          "ref_close": 45.4
-        },
-        {
-          "code": "688036",
-          "name": "传音控股",
-          "score": 10.644625409905212,
-          "ref_close": 64.35
-        },
-        {
-          "code": "300751",
-          "name": "迈为股份",
-          "score": 10.508651515602503,
-          "ref_close": 165.0
-        },
-        {
-          "code": "002409",
-          "name": "雅克科技",
-          "score": 9.68437826068769,
-          "ref_close": 89.7
-        },
-        {
-          "code": "601012",
-          "name": "隆基绿能",
-          "score": 9.358478607109088,
-          "ref_close": 12.47
-        },
-        {
-          "code": "002428",
-          "name": "云南锗业",
-          "score": 9.30734440110935,
-          "ref_close": 79.0
+          "code": "603816",
+          "name": "顾家家居",
+          "score": 8.145144480019361,
+          "ref_close": 26.21
         },
         {
           "code": "300438",
           "name": "鹏辉能源",
-          "score": 9.02589448727029,
-          "ref_close": 44.72
+          "score": 7.996202335994546,
+          "ref_close": 43.33
         },
         {
-          "code": "600029",
-          "name": "南方航空",
-          "score": 8.972227102200039,
-          "ref_close": 5.25
+          "code": "603699",
+          "name": "纽威股份",
+          "score": 7.954376993774211,
+          "ref_close": 40.24
+        },
+        {
+          "code": "001872",
+          "name": "招商港口",
+          "score": 7.880785284161099,
+          "ref_close": 25.35
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 7.710736978741866,
+          "ref_close": 4.26
+        },
+        {
+          "code": "000539",
+          "name": "粤电力Ａ",
+          "score": 7.694370834446195,
+          "ref_close": 5.16
         }
       ],
       "config": {
@@ -479,7 +479,7 @@
           "Eastmoney",
           "Tencent rich kline"
         ],
-        "board_catalog_asof": "2026-11-05"
+        "board_catalog_asof": "2026-11-06"
       },
       "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
@@ -487,129 +487,129 @@
       "strategy": "original",
       "label": "原版配置",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
-          "code": "002444",
-          "name": "巨星科技",
-          "score": 11.345409405056083,
-          "ref_close": 29.92
-        },
-        {
-          "code": "688472",
-          "name": "阿特斯",
-          "score": 10.952526665075471,
-          "ref_close": 9.48
-        },
-        {
-          "code": "002131",
-          "name": "利欧股份",
-          "score": 10.51557196416487,
-          "ref_close": 4.39
-        },
-        {
-          "code": "600206",
-          "name": "有研新材",
-          "score": 10.1675221826629,
-          "ref_close": 38.39
+          "code": "600637",
+          "name": "东方明珠",
+          "score": 12.409757117828171,
+          "ref_close": 8.08
         },
         {
           "code": "603893",
           "name": "瑞芯微",
-          "score": 9.93037835456506,
-          "ref_close": 217.81
+          "score": 10.03728636159883,
+          "ref_close": 212.68
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "score": 9.784682990972726,
+          "ref_close": 31.4
+        },
+        {
+          "code": "688235",
+          "name": "百济神州",
+          "score": 9.506575120701799,
+          "ref_close": 278.6
+        },
+        {
+          "code": "600206",
+          "name": "有研新材",
+          "score": 8.954351359324033,
+          "ref_close": 38.29
+        },
+        {
+          "code": "300438",
+          "name": "鹏辉能源",
+          "score": 8.845756730759758,
+          "ref_close": 43.33
         },
         {
           "code": "002459",
           "name": "晶澳科技",
-          "score": 9.792011527087583,
-          "ref_close": 7.13
+          "score": 8.84526056218737,
+          "ref_close": 7.08
+        },
+        {
+          "code": "600038",
+          "name": "中直股份",
+          "score": 8.819719534948968,
+          "ref_close": 28.77
+        },
+        {
+          "code": "600089",
+          "name": "特变电工",
+          "score": 8.56528113407034,
+          "ref_close": 18.92
+        },
+        {
+          "code": "002131",
+          "name": "利欧股份",
+          "score": 8.471814842946578,
+          "ref_close": 4.26
+        },
+        {
+          "code": "300628",
+          "name": "亿联网络",
+          "score": 7.9831903644476725,
+          "ref_close": 39.59
+        },
+        {
+          "code": "300017",
+          "name": "网宿科技",
+          "score": 7.807749620319754,
+          "ref_close": 16.01
+        },
+        {
+          "code": "002261",
+          "name": "拓维信息",
+          "score": 7.3015249581119335,
+          "ref_close": 21.76
+        },
+        {
+          "code": "603806",
+          "name": "福斯特",
+          "score": 7.17418165436214,
+          "ref_close": 13.13
         },
         {
           "code": "600438",
           "name": "通威股份",
-          "score": 8.996425029870894,
-          "ref_close": 12.39
-        },
-        {
-          "code": "600988",
-          "name": "赤峰黄金",
-          "score": 8.994170410522404,
-          "ref_close": 37.58
-        },
-        {
-          "code": "600732",
-          "name": "爱旭股份",
-          "score": 8.84407311437407,
-          "ref_close": 13.8
-        },
-        {
-          "code": "002428",
-          "name": "云南锗业",
-          "score": 8.79767051440963,
-          "ref_close": 79.0
-        },
-        {
-          "code": "002716",
-          "name": "湖南白银",
-          "score": 8.546406827064386,
-          "ref_close": 7.9
-        },
-        {
-          "code": "603699",
-          "name": "纽威股份",
-          "score": 8.485331952342744,
-          "ref_close": 39.39
-        },
-        {
-          "code": "603379",
-          "name": "三美股份",
-          "score": 8.241435141136641,
-          "ref_close": 51.98
-        },
-        {
-          "code": "601021",
-          "name": "春秋航空",
-          "score": 8.178358009778975,
-          "ref_close": 45.4
-        },
-        {
-          "code": "600029",
-          "name": "南方航空",
-          "score": 7.872074321331745,
-          "ref_close": 5.25
+          "score": 6.852398586253663,
+          "ref_close": 12.25
         },
         {
           "code": "601012",
           "name": "隆基绿能",
-          "score": 7.6763160017590675,
-          "ref_close": 12.47
+          "score": 6.652672001787062,
+          "ref_close": 12.42
         },
         {
-          "code": "002409",
-          "name": "雅克科技",
-          "score": 7.66029604093298,
-          "ref_close": 89.7
+          "code": "603444",
+          "name": "吉比特",
+          "score": 6.615998408597069,
+          "ref_close": 349.31
         },
         {
-          "code": "002468",
-          "name": "申通快递",
-          "score": 7.606852592980207,
-          "ref_close": 15.14
+          "code": "600406",
+          "name": "国电南瑞",
+          "score": 6.502310796813892,
+          "ref_close": 23.86
         },
         {
-          "code": "300759",
-          "name": "康龙化成",
-          "score": 7.252795446436865,
-          "ref_close": 49.98
+          "code": "000738",
+          "name": "航发控制",
+          "score": 6.49378450308232,
+          "ref_close": 18.56
         },
         {
-          "code": "603885",
-          "name": "吉祥航空",
-          "score": 7.211390876330442,
-          "ref_close": 10.55
+          "code": "600977",
+          "name": "中国电影",
+          "score": 6.437941421382116,
+          "ref_close": 16.01
         }
       ],
       "config": {
@@ -639,7 +639,7 @@
           "Eastmoney",
           "Tencent rich kline"
         ],
-        "board_catalog_asof": "2026-11-05"
+        "board_catalog_asof": "2026-11-06"
       },
       "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
@@ -647,21 +647,21 @@
       "strategy": "wild",
       "label": "狂暴配置",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
-          "code": "002131",
-          "name": "利欧股份",
-          "score": 14.71671125067908,
-          "ref_close": 4.39
+          "code": "600637",
+          "name": "东方明珠",
+          "score": 12.522499401925167,
+          "ref_close": 8.08
         },
         {
-          "code": "600206",
-          "name": "有研新材",
-          "score": 13.275749112676309,
-          "ref_close": 38.39
+          "code": "600089",
+          "name": "特变电工",
+          "score": 9.552281623253357,
+          "ref_close": 18.92
         }
       ],
       "config": {
@@ -691,7 +691,7 @@
           "Eastmoney",
           "Tencent rich kline"
         ],
-        "board_catalog_asof": "2026-11-05"
+        "board_catalog_asof": "2026-11-06"
       },
       "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
@@ -699,66 +699,63 @@
       "strategy": "B0",
       "label": "ETF S9 B0",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
+          "code": "516620",
+          "name": "影视ETF国泰",
+          "score": 0.45210153015828414
+        },
+        {
           "code": "515450",
           "name": "红利低波50ETF南方",
-          "score": 0.4001312918841054
+          "score": 0.43523294992659267
         },
         {
           "code": "515300",
           "name": "300红利低波ETF嘉实",
-          "score": 0.31900273141318025
+          "score": 0.34686243226604446
         },
         {
-          "code": "512700",
-          "name": "银行ETF南方",
-          "score": 0.31483404100342527
+          "code": "159887",
+          "name": "银行ETF富国",
+          "score": 0.3303033581045681
         },
         {
-          "code": "516620",
-          "name": "影视ETF国泰",
-          "score": 0.30735521039250674
+          "code": "515650",
+          "name": "消费50ETF富国",
+          "score": 0.2708287208423799
         },
         {
           "code": "159307",
           "name": "红利低波100ETF博时",
-          "score": 0.20019174161365147
+          "score": 0.24359427927874647
         },
         {
-          "code": "159207",
-          "name": "高股息ETF广发",
-          "score": 0.1398576319135767
-        },
-        {
-          "code": "510030",
-          "name": "价值ETF华宝",
-          "score": 0.13320889213695025
-        },
-        {
-          "code": "515170",
-          "name": "食品饮料ETF华夏",
-          "score": 0.13254024033653306
+          "code": "512690",
+          "name": "酒ETF鹏华",
+          "score": 0.21574239264248138
         },
         {
           "code": "159928",
           "name": "消费ETF汇添富",
-          "score": 0.1315152016166521
+          "score": 0.20626799278421556
         },
         {
-          "code": "513290",
-          "name": "纳指生物科技ETF汇添富",
-          "score": 0.12436949777643563
+          "code": "515170",
+          "name": "食品饮料ETF华夏",
+          "score": 0.2009213176873862
+        },
+        {
+          "code": "159207",
+          "name": "高股息ETF广发",
+          "score": 0.19820828337787805
         }
       ],
-      "weights": {
-        "511260": 0.5,
-        "518880": 0.5
-      },
-      "rebalance": true,
+      "weights": {},
+      "rebalance": false,
       "target_codes": [
         "511260",
         "518880"
@@ -812,21 +809,22 @@
         "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+        "512390": "missing current-session history; excluded from ranking"
       },
       "data_health": {
-        "asof": "2026-11-05",
+        "asof": "2026-11-06",
         "total_manifest": 1777,
         "loaded": 1719,
-        "eligible_data_expected": 1726,
+        "eligible_data_expected": 1727,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
             "name": "红利质量ETF银华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158015.html"
@@ -834,10 +832,10 @@
           "158016": {
             "code": "158016",
             "name": "工业有色ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
@@ -845,7 +843,7 @@
           "158060": {
             "code": "158060",
             "name": "创业板金融科技ETF长城",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -856,32 +854,21 @@
           "158070": {
             "code": "158070",
             "name": "港股通金融ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
           },
-          "158076": {
-            "code": "158076",
-            "name": "红利低波ETF广发",
-            "verified_asof": "2026-11-05",
-            "issue_date": "2026-10-12",
-            "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 19,
-            "required_sessions": 120,
-            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
-            "source_url": "https://fundf10.eastmoney.com/jbgk_158076.html"
-          },
           "158087": {
             "code": "158087",
             "name": "创业板电池ETF国联",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
@@ -889,10 +876,10 @@
           "158088": {
             "code": "158088",
             "name": "创业板电池ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
@@ -900,10 +887,10 @@
           "158091": {
             "code": "158091",
             "name": "创业板电池ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
@@ -911,10 +898,10 @@
           "158900": {
             "code": "158900",
             "name": "均衡主动ETF南方",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158900.html"
@@ -922,10 +909,10 @@
           "158901": {
             "code": "158901",
             "name": "价值优选主动ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
@@ -933,10 +920,10 @@
           "158902": {
             "code": "158902",
             "name": "红利智选主动ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
@@ -944,10 +931,10 @@
           "158903": {
             "code": "158903",
             "name": "价值主动ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
@@ -955,10 +942,10 @@
           "158905": {
             "code": "158905",
             "name": "红利主动ETF工银",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
@@ -966,10 +953,10 @@
           "158906": {
             "code": "158906",
             "name": "均衡主动ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-05",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
@@ -977,10 +964,10 @@
           "158907": {
             "code": "158907",
             "name": "鑫汇均衡主动ETF国泰",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
@@ -988,10 +975,10 @@
           "158908": {
             "code": "158908",
             "name": "均衡量化主动ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
@@ -999,10 +986,10 @@
           "158909": {
             "code": "158909",
             "name": "均衡优选主动ETF建信",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
@@ -1010,10 +997,10 @@
           "512490": {
             "code": "512490",
             "name": "红利低波100ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
@@ -1021,10 +1008,10 @@
           "513790": {
             "code": "513790",
             "name": "港股红利低波ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
@@ -1032,10 +1019,10 @@
           "517250": {
             "code": "517250",
             "name": "智能驾驶ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-03",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 3,
+            "maximum_possible_trading_sessions": 4,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
@@ -1043,10 +1030,10 @@
           "520800": {
             "code": "520800",
             "name": "港股通汽车ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
@@ -1054,10 +1041,10 @@
           "526020": {
             "code": "526020",
             "name": "港股通汽车ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
@@ -1065,10 +1052,10 @@
           "526080": {
             "code": "526080",
             "name": "恒生生物科技ETF东财",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
@@ -1076,10 +1063,10 @@
           "560430": {
             "code": "560430",
             "name": "A500ETF中银证券",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-26",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 46,
+            "maximum_possible_trading_sessions": 47,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
@@ -1087,10 +1074,10 @@
           "561270": {
             "code": "561270",
             "name": "家电龙头ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 48,
+            "maximum_possible_trading_sessions": 49,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
@@ -1098,10 +1085,10 @@
           "561860": {
             "code": "561860",
             "name": "银行ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
@@ -1109,10 +1096,10 @@
           "561970": {
             "code": "561970",
             "name": "稀有金属ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561970.html"
@@ -1120,10 +1107,10 @@
           "562090": {
             "code": "562090",
             "name": "汽车ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-21",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 12,
+            "maximum_possible_trading_sessions": 13,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
@@ -1131,10 +1118,10 @@
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-14",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 17,
+            "maximum_possible_trading_sessions": 18,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
@@ -1142,10 +1129,10 @@
           "562210": {
             "code": "562210",
             "name": "光伏ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
@@ -1153,10 +1140,10 @@
           "562630": {
             "code": "562630",
             "name": "通信ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 25,
+            "maximum_possible_trading_sessions": 26,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
@@ -1164,10 +1151,10 @@
           "562690": {
             "code": "562690",
             "name": "养殖ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
@@ -1175,10 +1162,10 @@
           "562710": {
             "code": "562710",
             "name": "上证指数增强ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
@@ -1186,10 +1173,10 @@
           "562720": {
             "code": "562720",
             "name": "电网设备ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562720.html"
@@ -1197,10 +1184,10 @@
           "563100": {
             "code": "563100",
             "name": "红利增长ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-30",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 5,
+            "maximum_possible_trading_sessions": 6,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
@@ -1208,10 +1195,10 @@
           "581000": {
             "code": "581000",
             "name": "大盘成长主动ETF摩根",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
@@ -1219,10 +1206,10 @@
           "581010": {
             "code": "581010",
             "name": "均衡智选主动ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
@@ -1230,10 +1217,10 @@
           "581020": {
             "code": "581020",
             "name": "均衡慧选主动ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
@@ -1241,10 +1228,10 @@
           "581030": {
             "code": "581030",
             "name": "质量主动ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
@@ -1252,10 +1239,10 @@
           "581050": {
             "code": "581050",
             "name": "品质均衡主动ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
@@ -1263,10 +1250,10 @@
           "581060": {
             "code": "581060",
             "name": "景气均衡主动ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-03",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
@@ -1274,10 +1261,10 @@
           "581070": {
             "code": "581070",
             "name": "红利主动ETF平安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
@@ -1285,10 +1272,10 @@
           "581080": {
             "code": "581080",
             "name": "价值主动ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
@@ -1296,10 +1283,10 @@
           "581090": {
             "code": "581090",
             "name": "价值精选主动ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
@@ -1307,10 +1294,10 @@
           "588490": {
             "code": "588490",
             "name": "科创创业人工智能ETF泰康",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-11",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 34,
+            "maximum_possible_trading_sessions": 35,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
@@ -1318,10 +1305,10 @@
           "588560": {
             "code": "588560",
             "name": "科创创业人工智能ETF华富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
@@ -1329,10 +1316,10 @@
           "589370": {
             "code": "589370",
             "name": "科创芯片设计ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-20",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 13,
+            "maximum_possible_trading_sessions": 14,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
@@ -1340,10 +1327,10 @@
           "589450": {
             "code": "589450",
             "name": "科创人工智能ETF兴业",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589450.html"
@@ -1351,10 +1338,10 @@
           "589590": {
             "code": "589590",
             "name": "科创芯片设计ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
@@ -1362,10 +1349,10 @@
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-15",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 16,
+            "maximum_possible_trading_sessions": 17,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
@@ -1373,7 +1360,7 @@
           "589670": {
             "code": "589670",
             "name": "科创新材料ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -1389,9 +1376,10 @@
           "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+          "512390": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9959443800695249
+        "coverage": 0.9953676896352056
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     },
@@ -1399,66 +1387,63 @@
       "strategy": "K3",
       "label": "ETF S9 K3",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
-          "code": "515450",
-          "name": "红利低波50ETF南方",
-          "score": 0.4001312918841054
+          "code": "517180",
+          "name": "中国国企ETF南方",
+          "score": 0.5216777245299333
         },
         {
-          "code": "563510",
-          "name": "A500红利低波ETF易方达",
-          "score": 0.38809613467424037
+          "code": "517090",
+          "name": "央企共赢ETF国泰",
+          "score": 0.5132937223184536
         },
         {
-          "code": "560570",
-          "name": "A500红利ETF国联安",
-          "score": 0.37915577228268516
-        },
-        {
-          "code": "515300",
-          "name": "300红利低波ETF嘉实",
-          "score": 0.31900273141318025
-        },
-        {
-          "code": "512700",
-          "name": "银行ETF南方",
-          "score": 0.31483404100342527
+          "code": "159719",
+          "name": "国企ETF平安",
+          "score": 0.5106543126005139
         },
         {
           "code": "516620",
           "name": "影视ETF国泰",
-          "score": 0.30735521039250674
+          "score": 0.45210153015828414
         },
         {
-          "code": "159355",
-          "name": "800红利低波ETF华宝",
-          "score": 0.25730525137736004
+          "code": "515450",
+          "name": "红利低波50ETF南方",
+          "score": 0.43523294992659267
         },
         {
-          "code": "159307",
-          "name": "红利低波100ETF博时",
-          "score": 0.20019174161365147
+          "code": "563510",
+          "name": "A500红利低波ETF易方达",
+          "score": 0.4236234973199128
+        },
+        {
+          "code": "560570",
+          "name": "A500红利ETF国联安",
+          "score": 0.4110653250710424
+        },
+        {
+          "code": "515300",
+          "name": "300红利低波ETF嘉实",
+          "score": 0.34686243226604446
+        },
+        {
+          "code": "159887",
+          "name": "银行ETF富国",
+          "score": 0.3303033581045681
         },
         {
           "code": "159798",
           "name": "消费ETF易方达",
-          "score": 0.19946778613883948
-        },
-        {
-          "code": "159549",
-          "name": "红利低波ETF天弘",
-          "score": 0.195732567494504
+          "score": 0.29837708862024753
         }
       ],
-      "weights": {
-        "511260": 0.9841507970858561,
-        "518880": 0.015849202914143892
-      },
-      "rebalance": true,
+      "weights": {},
+      "rebalance": false,
       "target_codes": [
         "511260",
         "518880"
@@ -1512,21 +1497,22 @@
         "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+        "512390": "missing current-session history; excluded from ranking"
       },
       "data_health": {
-        "asof": "2026-11-05",
+        "asof": "2026-11-06",
         "total_manifest": 1777,
         "loaded": 1719,
-        "eligible_data_expected": 1726,
+        "eligible_data_expected": 1727,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
             "name": "红利质量ETF银华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158015.html"
@@ -1534,10 +1520,10 @@
           "158016": {
             "code": "158016",
             "name": "工业有色ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
@@ -1545,7 +1531,7 @@
           "158060": {
             "code": "158060",
             "name": "创业板金融科技ETF长城",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -1556,32 +1542,21 @@
           "158070": {
             "code": "158070",
             "name": "港股通金融ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
           },
-          "158076": {
-            "code": "158076",
-            "name": "红利低波ETF广发",
-            "verified_asof": "2026-11-05",
-            "issue_date": "2026-10-12",
-            "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 19,
-            "required_sessions": 120,
-            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
-            "source_url": "https://fundf10.eastmoney.com/jbgk_158076.html"
-          },
           "158087": {
             "code": "158087",
             "name": "创业板电池ETF国联",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
@@ -1589,10 +1564,10 @@
           "158088": {
             "code": "158088",
             "name": "创业板电池ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
@@ -1600,10 +1575,10 @@
           "158091": {
             "code": "158091",
             "name": "创业板电池ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
@@ -1611,10 +1586,10 @@
           "158900": {
             "code": "158900",
             "name": "均衡主动ETF南方",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158900.html"
@@ -1622,10 +1597,10 @@
           "158901": {
             "code": "158901",
             "name": "价值优选主动ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
@@ -1633,10 +1608,10 @@
           "158902": {
             "code": "158902",
             "name": "红利智选主动ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
@@ -1644,10 +1619,10 @@
           "158903": {
             "code": "158903",
             "name": "价值主动ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
@@ -1655,10 +1630,10 @@
           "158905": {
             "code": "158905",
             "name": "红利主动ETF工银",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
@@ -1666,10 +1641,10 @@
           "158906": {
             "code": "158906",
             "name": "均衡主动ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-05",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
@@ -1677,10 +1652,10 @@
           "158907": {
             "code": "158907",
             "name": "鑫汇均衡主动ETF国泰",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
@@ -1688,10 +1663,10 @@
           "158908": {
             "code": "158908",
             "name": "均衡量化主动ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
@@ -1699,10 +1674,10 @@
           "158909": {
             "code": "158909",
             "name": "均衡优选主动ETF建信",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
@@ -1710,10 +1685,10 @@
           "512490": {
             "code": "512490",
             "name": "红利低波100ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
@@ -1721,10 +1696,10 @@
           "513790": {
             "code": "513790",
             "name": "港股红利低波ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
@@ -1732,10 +1707,10 @@
           "517250": {
             "code": "517250",
             "name": "智能驾驶ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-03",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 3,
+            "maximum_possible_trading_sessions": 4,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
@@ -1743,10 +1718,10 @@
           "520800": {
             "code": "520800",
             "name": "港股通汽车ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
@@ -1754,10 +1729,10 @@
           "526020": {
             "code": "526020",
             "name": "港股通汽车ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
@@ -1765,10 +1740,10 @@
           "526080": {
             "code": "526080",
             "name": "恒生生物科技ETF东财",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
@@ -1776,10 +1751,10 @@
           "560430": {
             "code": "560430",
             "name": "A500ETF中银证券",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-26",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 46,
+            "maximum_possible_trading_sessions": 47,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
@@ -1787,10 +1762,10 @@
           "561270": {
             "code": "561270",
             "name": "家电龙头ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 48,
+            "maximum_possible_trading_sessions": 49,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
@@ -1798,10 +1773,10 @@
           "561860": {
             "code": "561860",
             "name": "银行ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
@@ -1809,10 +1784,10 @@
           "561970": {
             "code": "561970",
             "name": "稀有金属ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561970.html"
@@ -1820,10 +1795,10 @@
           "562090": {
             "code": "562090",
             "name": "汽车ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-21",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 12,
+            "maximum_possible_trading_sessions": 13,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
@@ -1831,10 +1806,10 @@
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-14",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 17,
+            "maximum_possible_trading_sessions": 18,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
@@ -1842,10 +1817,10 @@
           "562210": {
             "code": "562210",
             "name": "光伏ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
@@ -1853,10 +1828,10 @@
           "562630": {
             "code": "562630",
             "name": "通信ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 25,
+            "maximum_possible_trading_sessions": 26,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
@@ -1864,10 +1839,10 @@
           "562690": {
             "code": "562690",
             "name": "养殖ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
@@ -1875,10 +1850,10 @@
           "562710": {
             "code": "562710",
             "name": "上证指数增强ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
@@ -1886,10 +1861,10 @@
           "562720": {
             "code": "562720",
             "name": "电网设备ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562720.html"
@@ -1897,10 +1872,10 @@
           "563100": {
             "code": "563100",
             "name": "红利增长ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-30",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 5,
+            "maximum_possible_trading_sessions": 6,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
@@ -1908,10 +1883,10 @@
           "581000": {
             "code": "581000",
             "name": "大盘成长主动ETF摩根",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
@@ -1919,10 +1894,10 @@
           "581010": {
             "code": "581010",
             "name": "均衡智选主动ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
@@ -1930,10 +1905,10 @@
           "581020": {
             "code": "581020",
             "name": "均衡慧选主动ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
@@ -1941,10 +1916,10 @@
           "581030": {
             "code": "581030",
             "name": "质量主动ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
@@ -1952,10 +1927,10 @@
           "581050": {
             "code": "581050",
             "name": "品质均衡主动ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
@@ -1963,10 +1938,10 @@
           "581060": {
             "code": "581060",
             "name": "景气均衡主动ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-03",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
@@ -1974,10 +1949,10 @@
           "581070": {
             "code": "581070",
             "name": "红利主动ETF平安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
@@ -1985,10 +1960,10 @@
           "581080": {
             "code": "581080",
             "name": "价值主动ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
@@ -1996,10 +1971,10 @@
           "581090": {
             "code": "581090",
             "name": "价值精选主动ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
@@ -2007,10 +1982,10 @@
           "588490": {
             "code": "588490",
             "name": "科创创业人工智能ETF泰康",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-11",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 34,
+            "maximum_possible_trading_sessions": 35,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
@@ -2018,10 +1993,10 @@
           "588560": {
             "code": "588560",
             "name": "科创创业人工智能ETF华富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
@@ -2029,10 +2004,10 @@
           "589370": {
             "code": "589370",
             "name": "科创芯片设计ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-20",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 13,
+            "maximum_possible_trading_sessions": 14,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
@@ -2040,10 +2015,10 @@
           "589450": {
             "code": "589450",
             "name": "科创人工智能ETF兴业",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589450.html"
@@ -2051,10 +2026,10 @@
           "589590": {
             "code": "589590",
             "name": "科创芯片设计ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
@@ -2062,10 +2037,10 @@
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-15",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 16,
+            "maximum_possible_trading_sessions": 17,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
@@ -2073,7 +2048,7 @@
           "589670": {
             "code": "589670",
             "name": "科创新材料ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -2089,9 +2064,10 @@
           "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+          "512390": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9959443800695249
+        "coverage": 0.9953676896352056
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     },
@@ -2099,66 +2075,63 @@
       "strategy": "K5",
       "label": "ETF S9 K5",
       "status": "ok",
-      "asof": "2026-11-05",
-      "exec_day": "2026-11-06",
+      "asof": "2026-11-06",
+      "exec_day": "2026-11-09",
       "gate_on": false,
       "picks": [
         {
+          "code": "516620",
+          "name": "影视ETF国泰",
+          "score": 0.45210153015828414
+        },
+        {
           "code": "515450",
           "name": "红利低波50ETF南方",
-          "score": 0.4001312918841054
+          "score": 0.43523294992659267
         },
         {
           "code": "515300",
           "name": "300红利低波ETF嘉实",
-          "score": 0.31900273141318025
+          "score": 0.34686243226604446
         },
         {
-          "code": "512700",
-          "name": "银行ETF南方",
-          "score": 0.31483404100342527
+          "code": "159887",
+          "name": "银行ETF富国",
+          "score": 0.3303033581045681
         },
         {
-          "code": "516620",
-          "name": "影视ETF国泰",
-          "score": 0.30735521039250674
+          "code": "515650",
+          "name": "消费50ETF富国",
+          "score": 0.2708287208423799
         },
         {
           "code": "159307",
           "name": "红利低波100ETF博时",
-          "score": 0.20019174161365147
+          "score": 0.24359427927874647
         },
         {
-          "code": "159207",
-          "name": "高股息ETF广发",
-          "score": 0.1398576319135767
-        },
-        {
-          "code": "510030",
-          "name": "价值ETF华宝",
-          "score": 0.13320889213695025
-        },
-        {
-          "code": "515170",
-          "name": "食品饮料ETF华夏",
-          "score": 0.13254024033653306
+          "code": "512690",
+          "name": "酒ETF鹏华",
+          "score": 0.21574239264248138
         },
         {
           "code": "159928",
           "name": "消费ETF汇添富",
-          "score": 0.1315152016166521
+          "score": 0.20626799278421556
         },
         {
-          "code": "513290",
-          "name": "纳指生物科技ETF汇添富",
-          "score": 0.12436949777643563
+          "code": "515170",
+          "name": "食品饮料ETF华夏",
+          "score": 0.2009213176873862
+        },
+        {
+          "code": "159207",
+          "name": "高股息ETF广发",
+          "score": 0.19820828337787805
         }
       ],
-      "weights": {
-        "511260": 0.5,
-        "518880": 0.5
-      },
-      "rebalance": true,
+      "weights": {},
+      "rebalance": false,
       "target_codes": [
         "511260",
         "518880"
@@ -2212,21 +2185,22 @@
         "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+        "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+        "512390": "missing current-session history; excluded from ranking"
       },
       "data_health": {
-        "asof": "2026-11-05",
+        "asof": "2026-11-06",
         "total_manifest": 1777,
         "loaded": 1719,
-        "eligible_data_expected": 1726,
+        "eligible_data_expected": 1727,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
             "name": "红利质量ETF银华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158015.html"
@@ -2234,10 +2208,10 @@
           "158016": {
             "code": "158016",
             "name": "工业有色ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158016.html"
@@ -2245,7 +2219,7 @@
           "158060": {
             "code": "158060",
             "name": "创业板金融科技ETF长城",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -2256,32 +2230,21 @@
           "158070": {
             "code": "158070",
             "name": "港股通金融ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158070.html"
           },
-          "158076": {
-            "code": "158076",
-            "name": "红利低波ETF广发",
-            "verified_asof": "2026-11-05",
-            "issue_date": "2026-10-12",
-            "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 19,
-            "required_sessions": 120,
-            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
-            "source_url": "https://fundf10.eastmoney.com/jbgk_158076.html"
-          },
           "158087": {
             "code": "158087",
             "name": "创业板电池ETF国联",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158087.html"
@@ -2289,10 +2252,10 @@
           "158088": {
             "code": "158088",
             "name": "创业板电池ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158088.html"
@@ -2300,10 +2263,10 @@
           "158091": {
             "code": "158091",
             "name": "创业板电池ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158091.html"
@@ -2311,10 +2274,10 @@
           "158900": {
             "code": "158900",
             "name": "均衡主动ETF南方",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158900.html"
@@ -2322,10 +2285,10 @@
           "158901": {
             "code": "158901",
             "name": "价值优选主动ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158901.html"
@@ -2333,10 +2296,10 @@
           "158902": {
             "code": "158902",
             "name": "红利智选主动ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158902.html"
@@ -2344,10 +2307,10 @@
           "158903": {
             "code": "158903",
             "name": "价值主动ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158903.html"
@@ -2355,10 +2318,10 @@
           "158905": {
             "code": "158905",
             "name": "红利主动ETF工银",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158905.html"
@@ -2366,10 +2329,10 @@
           "158906": {
             "code": "158906",
             "name": "均衡主动ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-05",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158906.html"
@@ -2377,10 +2340,10 @@
           "158907": {
             "code": "158907",
             "name": "鑫汇均衡主动ETF国泰",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158907.html"
@@ -2388,10 +2351,10 @@
           "158908": {
             "code": "158908",
             "name": "均衡量化主动ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158908.html"
@@ -2399,10 +2362,10 @@
           "158909": {
             "code": "158909",
             "name": "均衡优选主动ETF建信",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_158909.html"
@@ -2410,10 +2373,10 @@
           "512490": {
             "code": "512490",
             "name": "红利低波100ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_512490.html"
@@ -2421,10 +2384,10 @@
           "513790": {
             "code": "513790",
             "name": "港股红利低波ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_513790.html"
@@ -2432,10 +2395,10 @@
           "517250": {
             "code": "517250",
             "name": "智能驾驶ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-03",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 3,
+            "maximum_possible_trading_sessions": 4,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_517250.html"
@@ -2443,10 +2406,10 @@
           "520800": {
             "code": "520800",
             "name": "港股通汽车ETF嘉实",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_520800.html"
@@ -2454,10 +2417,10 @@
           "526020": {
             "code": "526020",
             "name": "港股通汽车ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526020.html"
@@ -2465,10 +2428,10 @@
           "526080": {
             "code": "526080",
             "name": "恒生生物科技ETF东财",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_526080.html"
@@ -2476,10 +2439,10 @@
           "560430": {
             "code": "560430",
             "name": "A500ETF中银证券",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-26",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 46,
+            "maximum_possible_trading_sessions": 47,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_560430.html"
@@ -2487,10 +2450,10 @@
           "561270": {
             "code": "561270",
             "name": "家电龙头ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-08-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 48,
+            "maximum_possible_trading_sessions": 49,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561270.html"
@@ -2498,10 +2461,10 @@
           "561860": {
             "code": "561860",
             "name": "银行ETF大成",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
@@ -2509,10 +2472,10 @@
           "561970": {
             "code": "561970",
             "name": "稀有金属ETF博时",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561970.html"
@@ -2520,10 +2483,10 @@
           "562090": {
             "code": "562090",
             "name": "汽车ETF富国",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-21",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 12,
+            "maximum_possible_trading_sessions": 13,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
@@ -2531,10 +2494,10 @@
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-14",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 17,
+            "maximum_possible_trading_sessions": 18,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562100.html"
@@ -2542,10 +2505,10 @@
           "562210": {
             "code": "562210",
             "name": "光伏ETF华宝",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-08",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 21,
+            "maximum_possible_trading_sessions": 22,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562210.html"
@@ -2553,10 +2516,10 @@
           "562630": {
             "code": "562630",
             "name": "通信ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-24",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 25,
+            "maximum_possible_trading_sessions": 26,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562630.html"
@@ -2564,10 +2527,10 @@
           "562690": {
             "code": "562690",
             "name": "养殖ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562690.html"
@@ -2575,10 +2538,10 @@
           "562710": {
             "code": "562710",
             "name": "上证指数增强ETF鹏华",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562710.html"
@@ -2586,10 +2549,10 @@
           "562720": {
             "code": "562720",
             "name": "电网设备ETF天弘",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_562720.html"
@@ -2597,10 +2560,10 @@
           "563100": {
             "code": "563100",
             "name": "红利增长ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-30",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 5,
+            "maximum_possible_trading_sessions": 6,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_563100.html"
@@ -2608,10 +2571,10 @@
           "581000": {
             "code": "581000",
             "name": "大盘成长主动ETF摩根",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581000.html"
@@ -2619,10 +2582,10 @@
           "581010": {
             "code": "581010",
             "name": "均衡智选主动ETF汇添富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581010.html"
@@ -2630,10 +2593,10 @@
           "581020": {
             "code": "581020",
             "name": "均衡慧选主动ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-02",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581020.html"
@@ -2641,10 +2604,10 @@
           "581030": {
             "code": "581030",
             "name": "质量主动ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581030.html"
@@ -2652,10 +2615,10 @@
           "581050": {
             "code": "581050",
             "name": "品质均衡主动ETF易方达",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-28",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581050.html"
@@ -2663,10 +2626,10 @@
           "581060": {
             "code": "581060",
             "name": "景气均衡主动ETF永赢",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-11-03",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581060.html"
@@ -2674,10 +2637,10 @@
           "581070": {
             "code": "581070",
             "name": "红利主动ETF平安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581070.html"
@@ -2685,10 +2648,10 @@
           "581080": {
             "code": "581080",
             "name": "价值主动ETF招商",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-30",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581080.html"
@@ -2696,10 +2659,10 @@
           "581090": {
             "code": "581090",
             "name": "价值精选主动ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-23",
             "establishment_date": "2026-10-29",
-            "maximum_possible_trading_sessions": 10,
+            "maximum_possible_trading_sessions": 11,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_581090.html"
@@ -2707,10 +2670,10 @@
           "588490": {
             "code": "588490",
             "name": "科创创业人工智能ETF泰康",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-11",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 34,
+            "maximum_possible_trading_sessions": 35,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588490.html"
@@ -2718,10 +2681,10 @@
           "588560": {
             "code": "588560",
             "name": "科创创业人工智能ETF华富",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-19",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 14,
+            "maximum_possible_trading_sessions": 15,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_588560.html"
@@ -2729,10 +2692,10 @@
           "589370": {
             "code": "589370",
             "name": "科创芯片设计ETF华安",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-20",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 13,
+            "maximum_possible_trading_sessions": 14,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
@@ -2740,10 +2703,10 @@
           "589450": {
             "code": "589450",
             "name": "科创人工智能ETF兴业",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-09-01",
             "establishment_date": "2026-11-04",
-            "maximum_possible_trading_sessions": 42,
+            "maximum_possible_trading_sessions": 43,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589450.html"
@@ -2751,10 +2714,10 @@
           "589590": {
             "code": "589590",
             "name": "科创芯片设计ETF华泰柏瑞",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-12",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 19,
+            "maximum_possible_trading_sessions": 20,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
@@ -2762,10 +2725,10 @@
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-10-15",
             "establishment_date": null,
-            "maximum_possible_trading_sessions": 16,
+            "maximum_possible_trading_sessions": 17,
             "required_sessions": 120,
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589610.html"
@@ -2773,7 +2736,7 @@
           "589670": {
             "code": "589670",
             "name": "科创新材料ETF华夏",
-            "verified_asof": "2026-11-05",
+            "verified_asof": "2026-11-06",
             "issue_date": "2026-11-09",
             "establishment_date": null,
             "maximum_possible_trading_sessions": 0,
@@ -2789,151 +2752,170 @@
           "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history"
+          "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
+          "512390": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9959443800695249
+        "coverage": 0.9953676896352056
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     }
   },
   "stock_hits": {
-    "603699": [
-      "champion",
-      "balanced",
-      "runner",
-      "original"
-    ],
-    "002131": [
+    "600637": [
       "champion",
       "balanced",
       "runner",
       "original",
       "wild"
     ],
-    "601021": [
+    "600089": [
       "champion",
       "balanced",
       "runner",
-      "original"
+      "original",
+      "wild"
     ],
-    "688411": [
+    "603014": [
       "champion"
     ],
-    "600732": [
+    "300628": [
       "champion",
       "balanced",
       "runner",
       "original"
     ],
-    "002444": [
+    "002459": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603233": [
+      "champion"
+    ],
+    "601728": [
+      "champion"
+    ],
+    "600941": [
+      "champion"
+    ],
+    "001872": [
+      "champion",
+      "runner"
+    ],
+    "000598": [
+      "champion"
+    ],
+    "600038": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "000400": [
+      "champion"
+    ],
+    "601825": [
+      "champion"
+    ],
+    "300747": [
+      "champion"
+    ],
+    "688347": [
+      "champion"
+    ],
+    "603699": [
+      "champion",
+      "runner"
+    ],
+    "600641": [
       "champion",
       "balanced",
       "runner",
       "original"
     ],
     "688036": [
-      "champion",
-      "runner"
+      "champion"
     ],
-    "603893": [
+    "600406": [
       "champion",
       "balanced",
       "runner",
       "original"
     ],
-    "600029": [
-      "champion",
+    "300003": [
+      "champion"
+    ],
+    "603893": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688235": [
       "balanced",
       "runner",
       "original"
     ],
     "600206": [
-      "champion",
       "balanced",
       "runner",
-      "original",
-      "wild"
-    ],
-    "601111": [
-      "champion"
-    ],
-    "601058": [
-      "champion"
+      "original"
     ],
     "300438": [
-      "champion",
-      "runner"
-    ],
-    "300751": [
-      "champion",
-      "runner"
-    ],
-    "300759": [
-      "champion",
       "balanced",
       "runner",
       "original"
     ],
-    "601012": [
-      "champion",
+    "002131": [
       "balanced",
       "runner",
       "original"
     ],
-    "300442": [
-      "champion"
-    ],
-    "603379": [
-      "champion",
+    "300017": [
       "balanced",
-      "runner",
       "original"
     ],
-    "002428": [
-      "champion",
+    "002261": [
       "balanced",
-      "runner",
       "original"
     ],
-    "688223": [
-      "champion"
-    ],
-    "688472": [
+    "603806": [
       "balanced",
-      "runner",
-      "original"
-    ],
-    "002459": [
-      "balanced",
-      "runner",
       "original"
     ],
     "600438": [
       "balanced",
-      "runner",
       "original"
     ],
-    "600988": [
+    "601012": [
+      "balanced",
+      "original"
+    ],
+    "603444": [
+      "balanced",
+      "original"
+    ],
+    "000738": [
       "balanced",
       "runner",
       "original"
     ],
-    "002716": [
-      "balanced",
-      "original"
-    ],
-    "002409": [
+    "600977": [
       "balanced",
       "runner",
       "original"
     ],
-    "002468": [
-      "balanced",
-      "original"
+    "300413": [
+      "runner"
     ],
-    "603885": [
-      "balanced",
-      "original"
+    "600025": [
+      "runner"
+    ],
+    "603816": [
+      "runner"
+    ],
+    "000539": [
+      "runner"
     ]
   },
   "accounts": {
@@ -2941,7 +2923,7 @@
       "cash": 200000.0,
       "equity": 200000.0,
       "positions": [],
-      "last_settled": null,
+      "last_settled": "2026-11-06",
       "return_pct": 0.0,
       "corporate_review": []
     },
@@ -2949,7 +2931,7 @@
       "cash": 200000.0,
       "equity": 200000.0,
       "positions": [],
-      "last_settled": null,
+      "last_settled": "2026-11-06",
       "return_pct": 0.0,
       "corporate_review": []
     },
@@ -2957,7 +2939,7 @@
       "cash": 200000.0,
       "equity": 200000.0,
       "positions": [],
-      "last_settled": null,
+      "last_settled": "2026-11-06",
       "return_pct": 0.0,
       "corporate_review": []
     },
@@ -2965,7 +2947,7 @@
       "cash": 200000.0,
       "equity": 200000.0,
       "positions": [],
-      "last_settled": null,
+      "last_settled": "2026-11-06",
       "return_pct": 0.0,
       "corporate_review": []
     },
@@ -2973,32 +2955,95 @@
       "cash": 200000.0,
       "equity": 200000.0,
       "positions": [],
-      "last_settled": null,
+      "last_settled": "2026-11-06",
       "return_pct": 0.0,
       "corporate_review": []
     },
     "B0": {
-      "cash": 200000.0,
-      "equity": 200000.0,
-      "positions": [],
-      "last_settled": null,
-      "return_pct": 0.0,
+      "cash": 19382.825128503988,
+      "equity": 199273.325128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 136.133,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 8.253,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-06",
+      "return_pct": -0.36333743574800126,
       "corporate_review": []
     },
     "K3": {
-      "cash": 200000.0,
-      "equity": 200000.0,
-      "positions": [],
-      "last_settled": null,
-      "return_pct": 0.0,
+      "cash": 21532.572845091985,
+      "equity": 200156.072845092,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 1300,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 176798.42715490801,
+          "mark": 136.133,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 200,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 1669.0,
+          "mark": 8.253,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-06",
+      "return_pct": 0.07803642254600174,
       "corporate_review": []
     },
     "K5": {
-      "cash": 200000.0,
-      "equity": 200000.0,
-      "positions": [],
-      "last_settled": null,
-      "return_pct": 0.0,
+      "cash": 19382.825128503988,
+      "equity": 199273.325128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 136.133,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 8.253,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-06",
+      "return_pct": -0.36333743574800126,
       "corporate_review": []
     }
   },

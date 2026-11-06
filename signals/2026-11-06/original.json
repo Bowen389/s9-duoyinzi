@@ -1,0 +1,160 @@
+{
+  "strategy": "original",
+  "label": "原版配置",
+  "status": "ok",
+  "asof": "2026-11-06",
+  "exec_day": "2026-11-09",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600637",
+      "name": "东方明珠",
+      "score": 12.409757117828171,
+      "ref_close": 8.08
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "score": 10.03728636159883,
+      "ref_close": 212.68
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "score": 9.784682990972726,
+      "ref_close": 31.4
+    },
+    {
+      "code": "688235",
+      "name": "百济神州",
+      "score": 9.506575120701799,
+      "ref_close": 278.6
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 8.954351359324033,
+      "ref_close": 38.29
+    },
+    {
+      "code": "300438",
+      "name": "鹏辉能源",
+      "score": 8.845756730759758,
+      "ref_close": 43.33
+    },
+    {
+      "code": "002459",
+      "name": "晶澳科技",
+      "score": 8.84526056218737,
+      "ref_close": 7.08
+    },
+    {
+      "code": "600038",
+      "name": "中直股份",
+      "score": 8.819719534948968,
+      "ref_close": 28.77
+    },
+    {
+      "code": "600089",
+      "name": "特变电工",
+      "score": 8.56528113407034,
+      "ref_close": 18.92
+    },
+    {
+      "code": "002131",
+      "name": "利欧股份",
+      "score": 8.471814842946578,
+      "ref_close": 4.26
+    },
+    {
+      "code": "300628",
+      "name": "亿联网络",
+      "score": 7.9831903644476725,
+      "ref_close": 39.59
+    },
+    {
+      "code": "300017",
+      "name": "网宿科技",
+      "score": 7.807749620319754,
+      "ref_close": 16.01
+    },
+    {
+      "code": "002261",
+      "name": "拓维信息",
+      "score": 7.3015249581119335,
+      "ref_close": 21.76
+    },
+    {
+      "code": "603806",
+      "name": "福斯特",
+      "score": 7.17418165436214,
+      "ref_close": 13.13
+    },
+    {
+      "code": "600438",
+      "name": "通威股份",
+      "score": 6.852398586253663,
+      "ref_close": 12.25
+    },
+    {
+      "code": "601012",
+      "name": "隆基绿能",
+      "score": 6.652672001787062,
+      "ref_close": 12.42
+    },
+    {
+      "code": "603444",
+      "name": "吉比特",
+      "score": 6.615998408597069,
+      "ref_close": 349.31
+    },
+    {
+      "code": "600406",
+      "name": "国电南瑞",
+      "score": 6.502310796813892,
+      "ref_close": 23.86
+    },
+    {
+      "code": "000738",
+      "name": "航发控制",
+      "score": 6.49378450308232,
+      "ref_close": 18.56
+    },
+    {
+      "code": "600977",
+      "name": "中国电影",
+      "score": 6.437941421382116,
+      "ref_close": 16.01
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "open",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "原版配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}
