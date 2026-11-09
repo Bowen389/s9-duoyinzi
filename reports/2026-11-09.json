@@ -1,6 +1,6 @@
 {
   "asof": "2026-11-09",
-  "generated_at": "2026-11-09 17:02:39.664267+08:00",
+  "generated_at": "2026-11-09 17:48:04.483766+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
@@ -8,7 +8,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "stock coverage 904/1600",
+      "error": "champion: not enough current scores",
       "picks": []
     },
     "balanced": {
@@ -16,7 +16,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "stock coverage 904/1600",
+      "error": "champion: not enough current scores",
       "picks": []
     },
     "runner": {
@@ -24,7 +24,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "stock coverage 904/1600",
+      "error": "champion: not enough current scores",
       "picks": []
     },
     "original": {
@@ -32,7 +32,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "stock coverage 904/1600",
+      "error": "champion: not enough current scores",
       "picks": []
     },
     "wild": {
@@ -40,7 +40,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "stock coverage 904/1600",
+      "error": "champion: not enough current scores",
       "picks": []
     },
     "B0": {
@@ -48,7 +48,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "ETF history coverage 1615/1727 eligible records; 50 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159001', '159003']",
+      "error": "ETF core/defensive data missing: 511820",
       "picks": []
     },
     "K3": {
@@ -56,7 +56,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "ETF history coverage 1615/1727 eligible records; 50 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159001', '159003']",
+      "error": "ETF core/defensive data missing: 511820",
       "picks": []
     },
     "K5": {
@@ -64,7 +64,7 @@
       "status": "data_error",
       "asof": "2026-11-09",
       "exec_day": "2026-11-10",
-      "error": "ETF history coverage 1615/1727 eligible records; 50 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159001', '159003']",
+      "error": "ETF core/defensive data missing: 511820",
       "picks": []
     }
   },
@@ -199,7 +199,7 @@
     }
   },
   "errors": {
-    "stock": "stock coverage 904/1600",
-    "etf": "ETF history coverage 1615/1727 eligible records; 50 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159001', '159003']"
+    "stock": "champion: not enough current scores",
+    "etf": "ETF core/defensive data missing: 511820"
   }
 }
