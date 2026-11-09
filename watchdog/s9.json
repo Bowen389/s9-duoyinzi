@@ -1,7 +1,7 @@
 {
   "purpose": "S9 independent post-close recovery",
   "market_date": "2026-11-09",
-  "requested_at": "2026-11-09T16:45:44+08:00",
+  "requested_at": "2026-11-09T17:42:56+08:00",
   "missing_strategies": [
     "champion",
     "balanced",
@@ -12,5 +12,5 @@
     "K3",
     "K5"
   ],
-  "reason": "Current report and signals missing, all accounts last settled 2026-11-06, and no eligible daily.yml scan running"
+  "reason": "Previous scan failed: stock coverage 904/1600, ETF history coverage 1615/1727; all eight signals data_error and no eligible scan queued or running"
 }
