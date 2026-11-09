@@ -1,8 +1,160 @@
 {
   "strategy": "original",
-  "status": "data_error",
+  "label": "原版配置",
+  "status": "ok",
   "asof": "2026-11-09",
   "exec_day": "2026-11-10",
-  "error": "champion: not enough current scores",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 12.657182627284831,
+      "ref_close": 216.02
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "score": 10.16471357856596,
+      "ref_close": 32.72
+    },
+    {
+      "code": "600637",
+      "name": "东方明珠",
+      "score": 9.581124795305136,
+      "ref_close": 8.64
+    },
+    {
+      "code": "600038",
+      "name": "中直股份",
+      "score": 9.05126403901555,
+      "ref_close": 28.6
+    },
+    {
+      "code": "300433",
+      "name": "蓝思科技",
+      "score": 8.966914151034889,
+      "ref_close": 28.81
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "score": 8.745791958386752,
+      "ref_close": 162.6
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 8.71799016539563,
+      "ref_close": 24.72
+    },
+    {
+      "code": "688387",
+      "name": "信科移动",
+      "score": 8.353775452325696,
+      "ref_close": 11.44
+    },
+    {
+      "code": "688818",
+      "name": "电科蓝天",
+      "score": 8.329963200302611,
+      "ref_close": 45.85
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "score": 8.0814363364285,
+      "ref_close": 62.29
+    },
+    {
+      "code": "688568",
+      "name": "中科星图",
+      "score": 7.749371773211422,
+      "ref_close": 31.96
+    },
+    {
+      "code": "301717",
+      "name": "超纯应材",
+      "score": 7.687070077421041,
+      "ref_close": 276.24
+    },
+    {
+      "code": "688385",
+      "name": "复旦微电",
+      "score": 7.125444755892321,
+      "ref_close": 49.88
+    },
+    {
+      "code": "603119",
+      "name": "浙江荣泰",
+      "score": 7.061888561499868,
+      "ref_close": 63.8
+    },
+    {
+      "code": "688279",
+      "name": "峰岹科技",
+      "score": 7.013540962276471,
+      "ref_close": 205.85
+    },
+    {
+      "code": "688235",
+      "name": "百济神州",
+      "score": 6.9022532219404304,
+      "ref_close": 285.0
+    },
+    {
+      "code": "688801",
+      "name": "燧原科技",
+      "score": 6.824513161919404,
+      "ref_close": 432.8
+    },
+    {
+      "code": "603920",
+      "name": "世运电路",
+      "score": 6.621415469332512,
+      "ref_close": 33.58
+    },
+    {
+      "code": "688836",
+      "name": "宇树科技",
+      "score": 6.5626264523558016,
+      "ref_close": 716.0
+    },
+    {
+      "code": "002459",
+      "name": "晶澳科技",
+      "score": 6.534645693752488,
+      "ref_close": 6.9
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "open",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "原版配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

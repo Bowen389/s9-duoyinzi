@@ -1,8 +1,160 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-09",
   "exec_day": "2026-11-10",
-  "error": "champion: not enough current scores",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 13.82890281788129,
+      "ref_close": 216.02
+    },
+    {
+      "code": "600637",
+      "name": "东方明珠",
+      "score": 11.651659177632734,
+      "ref_close": 8.64
+    },
+    {
+      "code": "300972",
+      "name": "万辰集团",
+      "score": 10.836392029735428,
+      "ref_close": 134.62
+    },
+    {
+      "code": "300433",
+      "name": "蓝思科技",
+      "score": 10.641068659232278,
+      "ref_close": 28.81
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 10.319721609308983,
+      "ref_close": 24.72
+    },
+    {
+      "code": "600498",
+      "name": "烽火通信",
+      "score": 10.018547694295176,
+      "ref_close": 28.83
+    },
+    {
+      "code": "688387",
+      "name": "信科移动",
+      "score": 10.016754720077808,
+      "ref_close": 11.44
+    },
+    {
+      "code": "300136",
+      "name": "信维通信",
+      "score": 10.007627516076088,
+      "ref_close": 47.7
+    },
+    {
+      "code": "688836",
+      "name": "宇树科技",
+      "score": 9.364812552361549,
+      "ref_close": 716.0
+    },
+    {
+      "code": "603920",
+      "name": "世运电路",
+      "score": 9.183442624274491,
+      "ref_close": 33.58
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "score": 8.768386604249894,
+      "ref_close": 162.6
+    },
+    {
+      "code": "688568",
+      "name": "中科星图",
+      "score": 8.758352849628046,
+      "ref_close": 31.96
+    },
+    {
+      "code": "002025",
+      "name": "航天电器",
+      "score": 8.74382333589979,
+      "ref_close": 54.6
+    },
+    {
+      "code": "600118",
+      "name": "中国卫星",
+      "score": 8.67309819174638,
+      "ref_close": 57.5
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "score": 8.413204460826352,
+      "ref_close": 62.29
+    },
+    {
+      "code": "603268",
+      "name": "松发股份",
+      "score": 8.398822927676264,
+      "ref_close": 155.26
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 8.170565155780151,
+      "ref_close": 49.3
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "score": 8.085975253082438,
+      "ref_close": 46.7
+    },
+    {
+      "code": "301165",
+      "name": "锐捷网络",
+      "score": 8.05001891906026,
+      "ref_close": 72.06
+    },
+    {
+      "code": "600879",
+      "name": "航天电子",
+      "score": 8.023908075818289,
+      "ref_close": 13.56
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

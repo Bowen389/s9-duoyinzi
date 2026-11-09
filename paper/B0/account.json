@@ -67,7 +67,9 @@
     }
   ],
   "events": [],
-  "last_exit": {},
+  "last_exit": {
+    "511260": "2026-11-09"
+  },
   "peak": 200718.525128504,
   "corporate_review": []
 }

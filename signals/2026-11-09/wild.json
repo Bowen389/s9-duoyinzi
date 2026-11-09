@@ -1,8 +1,52 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-09",
   "exec_day": "2026-11-10",
-  "error": "champion: not enough current scores",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 16.015646564194434,
+      "ref_close": 216.02
+    },
+    {
+      "code": "300433",
+      "name": "蓝思科技",
+      "score": 10.554953191359203,
+      "ref_close": 28.81
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-06"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
