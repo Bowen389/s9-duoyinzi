@@ -556,13 +556,13 @@
     }
   },
   "unresolved": {
-    "159319": "159319: 159319: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "159585": "159585: 159585: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+    "159319": "159319: 159319: Tencent rich kline missing amount/turnover | 159319: no Eastmoney history",
+    "159756": "159756: 159756: Tencent rich kline missing amount/turnover | 159756: no Eastmoney history",
+    "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
+    "159585": "159585: 159585: Tencent rich kline missing amount/turnover | 159585: no Eastmoney history",
+    "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
+    "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
+    "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
     "511820": "missing current-session history; excluded from ranking",
     "512390": "missing current-session history; excluded from ranking",
     "515160": "missing current-session history; excluded from ranking"
