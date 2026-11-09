@@ -106,7 +106,9 @@ def etf_panel(day, protected=()):
     if len(frames) < .98*expected:
         raise RuntimeError(f'ETF history coverage {len(frames)}/{expected} eligible records; '
                            f'{len(excluded)} verified age-ineligible; unresolved {list(unresolved)[:10]}')
-    for c in s9.POOL + ['511260','518880','511880']:
+    # Missing static-pool members are excluded by the panel code index.
+    # Held and defensive instruments still require fresh prices.
+    for c in sorted({'511260','518880','511880'} | set(protected)):
         if c not in frames:
             raise RuntimeError(f'ETF core/defensive data missing: {c}')
     idx = data.history('000300', day, index=True, start='2016-01-01')

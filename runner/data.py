@@ -147,6 +147,21 @@ def _eastmoney(code, day, start, adjusted, index):
     return df
 
 
+def _complete_bar_fields(frame):
+    frame = frame.sort_values('date').copy()
+    previous = frame.close.shift()
+    derived = {
+        'pct': frame.close.pct_change(fill_method=None) * 100,
+        'amplitude': (frame.high - frame.low) / previous * 100,
+        'change': frame.close.diff(),
+    }
+    for name, values in derived.items():
+        frame[name] = frame[name].fillna(values) if name in frame else values
+        if len(frame) and pd.isna(frame.iloc[0][name]):
+            frame.loc[frame.index[0], name] = 0.
+    return frame
+
+
 def history(code, day, adjusted=True, index=False, start='2024-01-01'):
     folder=CACHE/('index' if index else ('qfq' if adjusted else 'raw'))/start
     folder.mkdir(parents=True,exist_ok=True)
@@ -155,7 +170,11 @@ def history(code, day, adjusted=True, index=False, start='2024-01-01'):
     if old is not None:
         old=old[old.date<=pd.Timestamp(day)]
         if len(old) and str(old.date.max().date())==day and 'source' in old:
-            return old
+            if old.reindex(columns=['pct','amplitude','change']).notna().all().all():
+                return old
+            repaired = _complete_bar_fields(old)
+            tmp=p.with_suffix('.tmp.parquet'); repaired.to_parquet(tmp,index=False); tmp.replace(p)
+            return repaired
     errors=[]
     for fn in [lambda:_tencent(code,day,start,adjusted,index,old),lambda:_eastmoney(code,day,start,adjusted,index)]:
         try:
@@ -165,13 +184,7 @@ def history(code, day, adjusted=True, index=False, start='2024-01-01'):
                 raise RuntimeError('invalid/missing OHLCV, turnover or amount')
             if (df.close<=0).any() or (df.amount<0).any():
                 raise RuntimeError('nonpositive close or negative amount')
-            if 'pct' not in df:
-                prev=df.close.shift(1)
-                df['pct']=df.close.pct_change()*100
-                df['amplitude']=(df.high-df.low)/prev*100
-                df['change']=df.close.diff()
-                # First row is warmup, never used for live signals/execution.
-                df.loc[df.index[0],['pct','amplitude','change']]=0.
+            df = _complete_bar_fields(df)
             tmp=p.with_suffix('.tmp.parquet');df.to_parquet(tmp,index=False);tmp.replace(p)
             return df
         except Exception as e:
