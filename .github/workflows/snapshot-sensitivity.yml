@@ -1,0 +1,77 @@
+name: Fixed snapshot comparison
+on:
+  push:
+    branches: [research/snapshot-sensitivity-20261105]
+    paths: [.github/workflows/snapshot-sensitivity.yml]
+permissions:
+  contents: write
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: snapshot-study-${{ github.run_id }}
+          restore-keys: market-v2-
+      - run: pip install -r requirements.txt
+      - name: Replay with fixed state
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+        run: |
+          python - <<'PY'
+          import json, traceback
+          from pathlib import Path
+          import pandas as pd
+          from runner import data, signals
+          day, fixed = '2026-11-05', '2026-11-06'
+          out = {'signal_date': day, 'fixed_snapshot': fixed}
+          try:
+              required = [data.CACHE / f'{kind}_{d}.parquet' for d in (day, fixed) for kind in ('spot', 'board_mapping')]
+              out['snapshot_presence'] = {p.name: p.exists() for p in required}
+              def offline_history(code, day, adjusted=True, index=False, start='2024-01-01'):
+                  path = data.CACHE / ('index' if index else ('qfq' if adjusted else 'raw')) / start / f'{code}.parquet'
+                  frame = pd.read_parquet(path)
+                  return frame.loc[frame.date <= pd.Timestamp(day)].copy()
+              data.history = offline_history
+              spot, mapping = data.stock_spot, data.board_mapping
+              def scan(snapshot):
+                  for kind in ('spot', 'board_mapping'):
+                      if not (data.CACHE / f'{kind}_{snapshot}.parquet').is_file():
+                          raise FileNotFoundError(f'{kind}_{snapshot}.parquet')
+                  frozen_spot = spot(snapshot)
+                  frozen_map = mapping(snapshot)
+                  data.stock_spot = lambda _: frozen_spot
+                  data.board_mapping = lambda _: frozen_map
+                  return signals.stock_signals(day)
+              try:
+                  base = scan(day)
+                  out['baseline_source'] = 'same-engine replay with dated cache'
+              except Exception as e:
+                  out['baseline_source'] = 'archived signal'
+                  out['baseline_replay_error'] = str(e)
+                  base = {v: json.loads(Path(f'signals/{day}/{v}.json').read_text()) for v in ('balanced', 'runner', 'original')}
+              trial = scan(fixed)
+              out['comparison'] = {}
+              for v in ('balanced', 'runner', 'original'):
+                  a, b = base[v], trial[v]
+                  old, new = [x['code'] for x in a['picks']], [x['code'] for x in b['picks']]
+                  out['comparison'][v] = {'baseline_top2': a['picks'][:2], 'fixed_top2': b['picks'][:2],
+                      'top2_overlap': len(set(old[:2]) & set(new[:2])), 'top20_overlap': len(set(old) & set(new)),
+                      'baseline_gate': a['gate_on'], 'fixed_gate': b['gate_on']}
+          except Exception:
+              out['error'] = traceback.format_exc()
+          Path('snapshot-sensitivity-20261105.json').write_text(json.dumps(out, ensure_ascii=False, indent=2))
+          PY
+      - name: Save comparison on research branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add snapshot-sensitivity-20261105.json
+          git commit -m 'Record fixed snapshot sensitivity'
+          git push origin HEAD:${{ github.ref_name }}
