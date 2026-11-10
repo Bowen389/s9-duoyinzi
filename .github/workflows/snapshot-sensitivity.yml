@@ -34,7 +34,7 @@ jobs:
           from strategies import champion_source as ch
 
           start, end, snapshot = '2024-01-04', '2026-11-05', '2026-11-06'
-          output = Path('fixed-top2-results')
+          output = Path('fixed-top2-exit-grid')
           output.mkdir(exist_ok=True)
           result = {'start': start, 'end': end, 'snapshot': snapshot, 'budget_per_trade': 10000,
                     'account_denominator': 200000, 'variants': {}}
@@ -79,69 +79,69 @@ jobs:
                   del f, picks
                   gc.collect()
                   gate = ch.build_trend(idx, cfg['gate'])
-                  ledger, attempted, signal_days = [], 0, 0
-                  for i, signal_day in enumerate(days):
-                      exit_i = i+1+cfg['hold']
-                      if exit_i >= len(days):
-                          break
-                      if not bool(gate.get(signal_day, False)):
-                          continue
-                      ranked_today = ranked.get(signal_day, [])
-                      if len(ranked_today) < 2:
-                          continue
-                      signal_days += 1
-                      buy_day, sell_day = days[i+1], days[exit_i]
-                      for rank, (_, code, score) in enumerate(ranked_today, 1):
-                          attempted += 1
-                          if (buy_day,code) not in bars.index or (sell_day,code) not in bars.index:
+                  result['variants'][version] = {}
+                  for hold in (2, 3, 4):
+                      ledger, attempted, signal_days = [], 0, 0
+                      for i, signal_day in enumerate(days):
+                          exit_i = i+1+hold
+                          if i+1+4 >= len(days):
+                              break
+                          if not bool(gate.get(signal_day, False)):
                               continue
-                          b = bars.loc[(buy_day,code)]
-                          s = bars.loc[(sell_day,code)]
-                          buy_px = float(b['开盘'])
-                          sell_px = float(s['开盘' if cfg['sell_at']=='open' else '收盘'])
-                          if not (math.isfinite(buy_px) and math.isfinite(sell_px) and buy_px>0 and sell_px>0):
+                          ranked_today = ranked.get(signal_day, [])
+                          if len(ranked_today) < 2:
                               continue
-                          if abs(buy_px-float(b['最高']))/buy_px < .002:
-                              continue
-                          if cfg['sell_at']=='open' and abs(sell_px-float(s['最低']))/sell_px < .002:
-                              continue
-                          ret = (sell_px/(1+ch.SELL_COST))/(buy_px/(1-ch.BUY_COST))-1
-                          rounded = round(buy_px,3)
-                          if rounded <= 0:
-                              continue
-                          shares = math.floor(10000/rounded)
-                          shares = (shares if shares>=200 else 0) if code.startswith('688') else shares//100*100
-                          principal = shares*rounded
-                          ledger.append(dict(signal_date=str(signal_day.date()),rank=rank,code=code,name=names.get(code,code),
-                                             score=score,buy_date=str(buy_day.date()),sell_date=str(sell_day.date()),
-                                             buy_px=buy_px,sell_px=sell_px,net_return=ret,full_budget_pnl=ret*10000,
-                                             shares=shares,lot_principal=principal,lot_pnl=ret*principal))
-                  lots = [r for r in ledger if r['shares']]
-                  events = defaultdict(lambda: [0.,0.,0.])
-                  for r in lots:
-                      events[r['buy_date']][0] += r['lot_principal']
-                      events[r['sell_date']][1] += r['lot_principal']
-                      events[r['sell_date']][2] += r['lot_pnl']
-                  realized = high = dd = held = max_held = 0.
-                  for d in sorted(events):
-                      entries, exits, pnl = events[d]
-                      held += entries
-                      max_held = max(max_held,held)
-                      held -= exits
-                      realized += pnl
-                      high = max(high,realized)
-                      dd = max(dd,high-realized)
-                  result['variants'][version] = dict(signal_days=signal_days,attempted=attempted,
-                      full_budget_trades=len(ledger),full_budget_pnl=sum(r['full_budget_pnl'] for r in ledger),
-                      lot_trades=len(lots),lot_pnl=realized,lot_account_return=realized/200000,
-                      lot_win_rate=sum(r['lot_pnl']>0 for r in lots)/len(lots) if lots else None,
-                      peak_principal_upper_bound=max_held,realized_drawdown_yuan=dd)
-                  print(version, result['variants'][version], flush=True)
-                  if ledger:
-                      with (output/f'{version}.csv').open('w',newline='',encoding='utf-8-sig') as file:
-                          writer=csv.DictWriter(file,fieldnames=list(ledger[0]))
-                          writer.writeheader()
-                          writer.writerows(ledger)
+                          signal_days += 1
+                          buy_day, sell_day = days[i+1], days[exit_i]
+                          for rank, (_, code, score) in enumerate(ranked_today, 1):
+                              attempted += 1
+                              if (buy_day,code) not in bars.index or (sell_day,code) not in bars.index:
+                                  continue
+                              b = bars.loc[(buy_day,code)]
+                              s = bars.loc[(sell_day,code)]
+                              buy_px = float(b['开盘'])
+                              sell_px = float(s['收盘'])
+                              if not (math.isfinite(buy_px) and math.isfinite(sell_px) and buy_px>0 and sell_px>0):
+                                  continue
+                              if abs(buy_px-float(b['最高']))/buy_px < .002:
+                                  continue
+                              ret = (sell_px/(1+ch.SELL_COST))/(buy_px/(1-ch.BUY_COST))-1
+                              rounded = round(buy_px,3)
+                              if rounded <= 0:
+                                  continue
+                              shares = math.floor(10000/rounded)
+                              shares = (shares if shares>=200 else 0) if code.startswith('688') else shares//100*100
+                              principal = shares*rounded
+                              ledger.append(dict(signal_date=str(signal_day.date()),rank=rank,code=code,name=names.get(code,code),
+                                                 score=score,buy_date=str(buy_day.date()),sell_date=str(sell_day.date()),
+                                                 buy_px=buy_px,sell_px=sell_px,net_return=ret,full_budget_pnl=ret*10000,
+                                                 shares=shares,lot_principal=principal,lot_pnl=ret*principal))
+                      lots = [r for r in ledger if r['shares']]
+                      events = defaultdict(lambda: [0.,0.,0.])
+                      for r in lots:
+                          events[r['buy_date']][0] += r['lot_principal']
+                          events[r['sell_date']][1] += r['lot_principal']
+                          events[r['sell_date']][2] += r['lot_pnl']
+                      realized = high = dd = held = max_held = 0.
+                      for d in sorted(events):
+                          entries, exits, pnl = events[d]
+                          held += entries
+                          max_held = max(max_held,held)
+                          held -= exits
+                          realized += pnl
+                          high = max(high,realized)
+                          dd = max(dd,high-realized)
+                      result['variants'][version][str(hold)] = dict(signal_days=signal_days,attempted=attempted,
+                          full_budget_trades=len(ledger),full_budget_pnl=sum(r['full_budget_pnl'] for r in ledger),
+                          lot_trades=len(lots),lot_pnl=realized,lot_account_return=realized/200000,
+                          lot_win_rate=sum(r['lot_pnl']>0 for r in lots)/len(lots) if lots else None,
+                          peak_principal_upper_bound=max_held,realized_drawdown_yuan=dd)
+                      print(version, result['variants'][version], flush=True)
+                      if ledger:
+                          with (output/f'{version}-plus{hold}.csv').open('w',newline='',encoding='utf-8-sig') as file:
+                              writer=csv.DictWriter(file,fieldnames=list(ledger[0]))
+                              writer.writeheader()
+                              writer.writerows(ledger)
           except Exception:
               result['error'] = traceback.format_exc()
           (output/'summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
@@ -150,6 +150,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fixed-top2-results
+          git add fixed-top2-exit-grid
           git commit -m 'Record fixed-snapshot Top2 backtest'
           git push origin HEAD:${{ github.ref_name }}
