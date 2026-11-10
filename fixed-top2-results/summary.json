@@ -4,12 +4,73 @@
   "snapshot": "2026-11-06",
   "budget_per_trade": 10000,
   "account_denominator": 200000,
-  "variants": {},
+  "variants": {
+    "champion": {
+      "signal_days": 455,
+      "attempted": 910,
+      "full_budget_trades": 807,
+      "full_budget_pnl": 84098.44917587482,
+      "lot_trades": 719,
+      "lot_pnl": 72674.32591622986,
+      "lot_account_return": 0.3633716295811493,
+      "lot_win_rate": 0.4853963838664812,
+      "peak_principal_upper_bound": 75836.01999999999,
+      "realized_drawdown_yuan": 20169.337539161355
+    },
+    "balanced": {
+      "signal_days": 342,
+      "attempted": 684,
+      "full_budget_trades": 593,
+      "full_budget_pnl": 96535.72701120007,
+      "lot_trades": 532,
+      "lot_pnl": 91792.51640652171,
+      "lot_account_return": 0.45896258203260853,
+      "lot_win_rate": 0.4755639097744361,
+      "peak_principal_upper_bound": 75819.55,
+      "realized_drawdown_yuan": 11236.055473829094
+    },
+    "runner": {
+      "signal_days": 398,
+      "attempted": 796,
+      "full_budget_trades": 688,
+      "full_budget_pnl": 103116.2486578589,
+      "lot_trades": 610,
+      "lot_pnl": 94289.13017440637,
+      "lot_account_return": 0.47144565087203183,
+      "lot_win_rate": 0.5016393442622951,
+      "peak_principal_upper_bound": 77248.0,
+      "realized_drawdown_yuan": 11654.30729990212
+    },
+    "original": {
+      "signal_days": 342,
+      "attempted": 684,
+      "full_budget_trades": 526,
+      "full_budget_pnl": 81143.57493453937,
+      "lot_trades": 468,
+      "lot_pnl": 76644.54025302864,
+      "lot_account_return": 0.3832227012651432,
+      "lot_win_rate": 0.47435897435897434,
+      "peak_principal_upper_bound": 75232.0,
+      "realized_drawdown_yuan": 7723.877658092624
+    },
+    "wild": {
+      "signal_days": 455,
+      "attempted": 910,
+      "full_budget_trades": 788,
+      "full_budget_pnl": 50738.55042581276,
+      "lot_trades": 716,
+      "lot_pnl": 34617.269689502304,
+      "lot_account_return": 0.17308634844751153,
+      "lot_win_rate": 0.4762569832402235,
+      "peak_principal_upper_bound": 39604.25,
+      "realized_drawdown_yuan": 20008.75115239551
+    }
+  },
   "coverage": {
     "loaded": 1600,
     "expected": 1600,
     "scored_universe": 800,
     "history_errors": 0
   },
-  "error": "Traceback (most recent call last):\n  File \"<stdin>\", line 36, in <module>\nRuntimeError: Index history does not cover requested window\n"
+  "sessions": 685
 }
