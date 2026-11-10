@@ -1,0 +1,116 @@
+{
+  "signal_date": "2026-11-05",
+  "fixed_snapshot": "2026-11-06",
+  "snapshot_presence": {
+    "spot_2026-11-05.parquet": false,
+    "board_mapping_2026-11-05.parquet": false,
+    "spot_2026-11-06.parquet": true,
+    "board_mapping_2026-11-06.parquet": true
+  },
+  "baseline_source": "archived signal",
+  "baseline_replay_error": "spot_2026-11-05.parquet",
+  "comparison": {
+    "balanced": {
+      "baseline_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.345409405056083,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 10.952526665075471,
+          "ref_close": 9.48
+        }
+      ],
+      "fixed_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.479032919192298,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 11.335174168933932,
+          "ref_close": 9.48
+        }
+      ],
+      "top2_overlap": 2,
+      "top20_overlap": 19,
+      "baseline_gate": false,
+      "fixed_gate": false
+    },
+    "runner": {
+      "baseline_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 14.67552744193645,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 14.355857517508655,
+          "ref_close": 9.48
+        }
+      ],
+      "fixed_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 14.853474261614652,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 14.643060076449352,
+          "ref_close": 9.48
+        }
+      ],
+      "top2_overlap": 2,
+      "top20_overlap": 19,
+      "baseline_gate": false,
+      "fixed_gate": false
+    },
+    "original": {
+      "baseline_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.345409405056083,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 10.952526665075471,
+          "ref_close": 9.48
+        }
+      ],
+      "fixed_top2": [
+        {
+          "code": "002444",
+          "name": "巨星科技",
+          "score": 11.479032919192298,
+          "ref_close": 29.92
+        },
+        {
+          "code": "688472",
+          "name": "阿特斯",
+          "score": 11.335174168933932,
+          "ref_close": 9.48
+        }
+      ],
+      "top2_overlap": 2,
+      "top20_overlap": 19,
+      "baseline_gate": false,
+      "fixed_gate": false
+    }
+  }
+}
