@@ -58,9 +58,13 @@ jobs:
               large = panel[panel.code.isin(big)].copy()
               del panel
               idx = data.history('000300', end, index=True).rename(columns={'date':'日期','close':'收盘'})
+              if idx['日期'].min() > pd.Timestamp(start):
+                  older = data._tx_piece('000300', '2025-12-31', '2024-01-01', False, True)
+                  older = older.rename(columns={'date':'日期','close':'收盘'})
+                  idx = pd.concat([older, idx], ignore_index=True).drop_duplicates('日期', keep='last')
               days = list(idx.loc[idx['日期'].between(start,end), '日期'].sort_values())
               if not days or str(days[0].date()) != start or str(days[-1].date()) != end:
-                  raise RuntimeError('Index history does not cover requested window')
+                  raise RuntimeError(f'Index history {idx["日期"].min()} to {idx["日期"].max()}, requested slice {days[:1]} to {days[-1:]}')
               result['sessions'] = len(days)
               ch.piecewise_reverse = signals.causal_piecewise
               ch.add_zt_ecofactors = signals.causal_ecology
