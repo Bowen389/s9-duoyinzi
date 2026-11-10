@@ -34,7 +34,7 @@ jobs:
           from strategies import champion_source as ch
 
           start, end, snapshot = '2024-01-04', '2026-11-05', '2026-11-06'
-          output = Path('fixed-top2-exit-grid')
+          output = Path('fixed-top2-optimization')
           output.mkdir(exist_ok=True)
           result = {'start': start, 'end': end, 'snapshot': snapshot, 'budget_per_trade': 10000,
                     'account_denominator': 200000, 'variants': {}}
@@ -70,7 +70,8 @@ jobs:
               ch.add_zt_ecofactors = signals.causal_ecology
               bars = large.set_index(['日期','code'])[['开盘','最高','最低','收盘','成交量']]
               names = spot.set_index('code6')['名称'].to_dict()
-              for version, cfg in ch.VERSIONS.items():
+              for version in ('balanced', 'runner', 'wild'):
+                  cfg = ch.VERSIONS[version]
                   print('Scoring', version, flush=True)
                   f = ch.compute_factors(large, cfg['windows'], cfg['weights'], mapping, bd, spot)
                   f = f.loc[f['成交量'].gt(0), ['日期','code','score']].replace([np.inf,-np.inf],np.nan).dropna()
@@ -78,16 +79,14 @@ jobs:
                   ranked = {d: list(g.itertuples(index=False,name=None)) for d,g in picks.groupby('日期')}
                   del f, picks
                   gc.collect()
-                  gate = ch.build_trend(idx, cfg['gate'])
+                  gates = {ma: ch.build_trend(idx, f'ma{ma}') for ma in (20, 40, 60, 90, 120)}
                   result['variants'][version] = {}
-                  for hold in (2, 3, 4):
+                  for hold in ((1, 4) if version == 'balanced' else (1,)):
                       ledger, attempted, signal_days = [], 0, 0
                       for i, signal_day in enumerate(days):
                           exit_i = i+1+hold
                           if i+1+4 >= len(days):
                               break
-                          if not bool(gate.get(signal_day, False)):
-                              continue
                           ranked_today = ranked.get(signal_day, [])
                           if len(ranked_today) < 2:
                               continue
@@ -116,32 +115,33 @@ jobs:
                                                  score=score,buy_date=str(buy_day.date()),sell_date=str(sell_day.date()),
                                                  buy_px=buy_px,sell_px=sell_px,net_return=ret,full_budget_pnl=ret*10000,
                                                  shares=shares,lot_principal=principal,lot_pnl=ret*principal))
-                      lots = [r for r in ledger if r['shares']]
-                      events = defaultdict(lambda: [0.,0.,0.])
-                      for r in lots:
-                          events[r['buy_date']][0] += r['lot_principal']
-                          events[r['sell_date']][1] += r['lot_principal']
-                          events[r['sell_date']][2] += r['lot_pnl']
-                      realized = high = dd = held = max_held = 0.
-                      for d in sorted(events):
-                          entries, exits, pnl = events[d]
-                          held += entries
-                          max_held = max(max_held,held)
-                          held -= exits
-                          realized += pnl
-                          high = max(high,realized)
-                          dd = max(dd,high-realized)
-                      result['variants'][version][str(hold)] = dict(signal_days=signal_days,attempted=attempted,
-                          full_budget_trades=len(ledger),full_budget_pnl=sum(r['full_budget_pnl'] for r in ledger),
-                          lot_trades=len(lots),lot_pnl=realized,lot_account_return=realized/200000,
-                          lot_win_rate=sum(r['lot_pnl']>0 for r in lots)/len(lots) if lots else None,
-                          peak_principal_upper_bound=max_held,realized_drawdown_yuan=dd)
-                      print(version, result['variants'][version], flush=True)
+                      by_key = result['variants'][version][str(hold)] = {}
+                      ma_values = (20,40,60) if version == 'balanced' else (60,90,120)
+                      cut = '2026-01-01'
+                      def metrics(rows):
+                          daily = defaultdict(float)
+                          for row in rows:
+                              daily[row['sell_date']] += row['lot_pnl']
+                          pnl = high = dd = 0.
+                          for d in sorted(daily):
+                              pnl += daily[d]
+                              high = max(high,pnl)
+                              dd = max(dd,high-pnl)
+                          return dict(trades=len(rows),pnl=pnl,drawdown=dd,
+                                      avg=pnl/len(rows) if rows else None,
+                                      win_rate=sum(r['lot_pnl']>0 for r in rows)/len(rows) if rows else None)
+                      for ma in ma_values:
+                          for top in (1,2):
+                              lots = [r for r in ledger if r['shares'] and r['rank'] <= top and
+                                      bool(gates[ma].get(pd.Timestamp(r['signal_date']),False))]
+                              by_key[f'MA{ma}/Top{top}'] = dict(full=metrics(lots),
+                                  train=metrics([r for r in lots if r['sell_date'] < cut]),
+                                  test=metrics([r for r in lots if r['signal_date'] >= cut]))
                       if ledger:
                           with (output/f'{version}-plus{hold}.csv').open('w',newline='',encoding='utf-8-sig') as file:
-                              writer=csv.DictWriter(file,fieldnames=list(ledger[0]))
+                              writer=csv.DictWriter(file,fieldnames=list(ledger[0])+['gate20','gate40','gate60','gate90','gate120'])
                               writer.writeheader()
-                              writer.writerows(ledger)
+                              writer.writerows(dict(r, **{f'gate{ma}':bool(g.get(pd.Timestamp(r['signal_date']),False)) for ma,g in gates.items()}) for r in ledger)
           except Exception:
               result['error'] = traceback.format_exc()
           (output/'summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
@@ -150,6 +150,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fixed-top2-exit-grid
+          git add fixed-top2-optimization
           git commit -m 'Record fixed-snapshot Top2 backtest'
           git push origin HEAD:${{ github.ref_name }}
