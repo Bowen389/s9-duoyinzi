@@ -1,47 +1,694 @@
 {
   "asof": "2026-11-10",
-  "generated_at": "2026-11-10 17:19:47.922835+08:00",
+  "generated_at": "2026-11-10 17:33:18.094590+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
       "strategy": "champion",
-      "status": "data_error",
+      "label": "冠军配置",
+      "status": "ok",
       "asof": "2026-11-10",
       "exec_day": "2026-11-11",
-      "error": "stock coverage 1539/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "score": 15.171227349880375,
+          "ref_close": 57.65
+        },
+        {
+          "code": "688781",
+          "name": "视涯科技",
+          "score": 12.868567705443656,
+          "ref_close": 56.16
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 12.300103247506888,
+          "ref_close": 233.2
+        },
+        {
+          "code": "688568",
+          "name": "中科星图",
+          "score": 10.2820708735158,
+          "ref_close": 33.41
+        },
+        {
+          "code": "688301",
+          "name": "奕瑞科技",
+          "score": 10.197553089720309,
+          "ref_close": 81.0
+        },
+        {
+          "code": "603920",
+          "name": "世运电路",
+          "score": 9.914755608449624,
+          "ref_close": 36.37
+        },
+        {
+          "code": "603298",
+          "name": "杭叉集团",
+          "score": 9.848261551683697,
+          "ref_close": 24.94
+        },
+        {
+          "code": "001232",
+          "name": "嘉立创",
+          "score": 9.71052210788353,
+          "ref_close": 174.78
+        },
+        {
+          "code": "000657",
+          "name": "中钨高新",
+          "score": 9.403424606261742,
+          "ref_close": 40.9
+        },
+        {
+          "code": "600029",
+          "name": "南方航空",
+          "score": 9.075578140251247,
+          "ref_close": 5.29
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "score": 9.048613763839453,
+          "ref_close": 10.55
+        },
+        {
+          "code": "301018",
+          "name": "申菱环境",
+          "score": 8.997587731219244,
+          "ref_close": 66.43
+        },
+        {
+          "code": "000811",
+          "name": "冰轮环境",
+          "score": 8.925239539894992,
+          "ref_close": 23.7
+        },
+        {
+          "code": "301536",
+          "name": "星宸科技",
+          "score": 8.521490374078857,
+          "ref_close": 99.5
+        },
+        {
+          "code": "688018",
+          "name": "乐鑫科技",
+          "score": 8.116341702249475,
+          "ref_close": 176.15
+        },
+        {
+          "code": "601111",
+          "name": "中国国航",
+          "score": 7.756297394169451,
+          "ref_close": 6.42
+        },
+        {
+          "code": "300811",
+          "name": "铂科新材",
+          "score": 7.614651104378577,
+          "ref_close": 63.14
+        },
+        {
+          "code": "603596",
+          "name": "XR伯特利",
+          "score": 7.576431674759317,
+          "ref_close": 19.53
+        },
+        {
+          "code": "002920",
+          "name": "德赛西威",
+          "score": 7.56533457706369,
+          "ref_close": 83.09
+        },
+        {
+          "code": "301699",
+          "name": "洛轴股份",
+          "score": 7.50290235545489,
+          "ref_close": 33.44
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 10,
+          "to_window": 40,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": -0.5,
+          "theme_zt": -0.5,
+          "theme_rank": -0.5,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "冠军配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-10"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "balanced": {
       "strategy": "balanced",
-      "status": "data_error",
+      "label": "稳健配置",
+      "status": "ok",
       "asof": "2026-11-10",
       "exec_day": "2026-11-11",
-      "error": "stock coverage 1539/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "688781",
+          "name": "视涯科技",
+          "score": 13.916794746538137,
+          "ref_close": 56.16
+        },
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "score": 12.039581843319574,
+          "ref_close": 57.65
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 11.120631528292414,
+          "ref_close": 233.2
+        },
+        {
+          "code": "603920",
+          "name": "世运电路",
+          "score": 10.291916040394312,
+          "ref_close": 36.37
+        },
+        {
+          "code": "001232",
+          "name": "嘉立创",
+          "score": 9.442261702421957,
+          "ref_close": 174.78
+        },
+        {
+          "code": "688568",
+          "name": "中科星图",
+          "score": 9.187335193953441,
+          "ref_close": 33.41
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 8.708620239795492,
+          "ref_close": 184.92
+        },
+        {
+          "code": "301536",
+          "name": "星宸科技",
+          "score": 7.8086314733209825,
+          "ref_close": 99.5
+        },
+        {
+          "code": "603596",
+          "name": "XR伯特利",
+          "score": 7.8005427835650085,
+          "ref_close": 19.53
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "score": 7.445983552818253,
+          "ref_close": 33.47
+        },
+        {
+          "code": "688279",
+          "name": "峰岹科技",
+          "score": 7.251857785247319,
+          "ref_close": 216.5
+        },
+        {
+          "code": "301699",
+          "name": "洛轴股份",
+          "score": 7.123299296266822,
+          "ref_close": 33.44
+        },
+        {
+          "code": "002241",
+          "name": "歌尔股份",
+          "score": 6.483534873509443,
+          "ref_close": 25.69
+        },
+        {
+          "code": "001389",
+          "name": "广合科技",
+          "score": 6.325687920675543,
+          "ref_close": 92.0
+        },
+        {
+          "code": "300811",
+          "name": "铂科新材",
+          "score": 6.323508494971042,
+          "ref_close": 63.14
+        },
+        {
+          "code": "002273",
+          "name": "水晶光电",
+          "score": 6.163030735471476,
+          "ref_close": 24.73
+        },
+        {
+          "code": "301018",
+          "name": "申菱环境",
+          "score": 6.109324154406257,
+          "ref_close": 66.43
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "score": 6.0874193895717905,
+          "ref_close": 10.55
+        },
+        {
+          "code": "688300",
+          "name": "联瑞新材",
+          "score": 6.075378933461495,
+          "ref_close": 83.23
+        },
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 5.993120693605444,
+          "ref_close": 106.32
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "稳健配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-10"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "runner": {
       "strategy": "runner",
-      "status": "data_error",
+      "label": "奔跑配置",
+      "status": "ok",
       "asof": "2026-11-10",
       "exec_day": "2026-11-11",
-      "error": "stock coverage 1539/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "688781",
+          "name": "视涯科技",
+          "score": 18.25805869944365,
+          "ref_close": 56.16
+        },
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "score": 15.444495581383887,
+          "ref_close": 57.65
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 14.991334449008992,
+          "ref_close": 233.2
+        },
+        {
+          "code": "603920",
+          "name": "世运电路",
+          "score": 14.815859139707825,
+          "ref_close": 36.37
+        },
+        {
+          "code": "001232",
+          "name": "嘉立创",
+          "score": 13.311460713078908,
+          "ref_close": 174.78
+        },
+        {
+          "code": "301536",
+          "name": "星宸科技",
+          "score": 12.592642066247382,
+          "ref_close": 99.5
+        },
+        {
+          "code": "688568",
+          "name": "中科星图",
+          "score": 11.86100173518168,
+          "ref_close": 33.41
+        },
+        {
+          "code": "301018",
+          "name": "申菱环境",
+          "score": 11.418503799336122,
+          "ref_close": 66.43
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 11.185913985583628,
+          "ref_close": 184.92
+        },
+        {
+          "code": "688818",
+          "name": "电科蓝天",
+          "score": 10.913505401699968,
+          "ref_close": 50.0
+        },
+        {
+          "code": "300811",
+          "name": "铂科新材",
+          "score": 10.502915450884338,
+          "ref_close": 63.14
+        },
+        {
+          "code": "688279",
+          "name": "峰岹科技",
+          "score": 10.38126079140413,
+          "ref_close": 216.5
+        },
+        {
+          "code": "688301",
+          "name": "奕瑞科技",
+          "score": 10.349158998556412,
+          "ref_close": 81.0
+        },
+        {
+          "code": "300458",
+          "name": "全志科技",
+          "score": 10.086664402684137,
+          "ref_close": 29.57
+        },
+        {
+          "code": "001389",
+          "name": "广合科技",
+          "score": 9.765019589722252,
+          "ref_close": 92.0
+        },
+        {
+          "code": "301699",
+          "name": "洛轴股份",
+          "score": 9.334790696824557,
+          "ref_close": 33.44
+        },
+        {
+          "code": "688836",
+          "name": "宇树科技",
+          "score": 9.251850906896367,
+          "ref_close": 761.01
+        },
+        {
+          "code": "603596",
+          "name": "XR伯特利",
+          "score": 9.093717363071056,
+          "ref_close": 19.53
+        },
+        {
+          "code": "688702",
+          "name": "盛科通信",
+          "score": 8.744029903266775,
+          "ref_close": 193.02
+        },
+        {
+          "code": "300548",
+          "name": "长芯博创",
+          "score": 8.648532452856697,
+          "ref_close": 118.17
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma60",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": -0.5,
+          "theme_rank": 0.0,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "奔跑配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-10"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "original": {
       "strategy": "original",
-      "status": "data_error",
+      "label": "原版配置",
+      "status": "ok",
       "asof": "2026-11-10",
       "exec_day": "2026-11-11",
-      "error": "stock coverage 1539/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "688781",
+          "name": "视涯科技",
+          "score": 13.916794746538137,
+          "ref_close": 56.16
+        },
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "score": 12.039581843319574,
+          "ref_close": 57.65
+        },
+        {
+          "code": "603893",
+          "name": "瑞芯微",
+          "score": 11.120631528292414,
+          "ref_close": 233.2
+        },
+        {
+          "code": "603920",
+          "name": "世运电路",
+          "score": 10.291916040394312,
+          "ref_close": 36.37
+        },
+        {
+          "code": "001232",
+          "name": "嘉立创",
+          "score": 9.442261702421957,
+          "ref_close": 174.78
+        },
+        {
+          "code": "688568",
+          "name": "中科星图",
+          "score": 9.187335193953441,
+          "ref_close": 33.41
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 8.708620239795492,
+          "ref_close": 184.92
+        },
+        {
+          "code": "301536",
+          "name": "星宸科技",
+          "score": 7.8086314733209825,
+          "ref_close": 99.5
+        },
+        {
+          "code": "603596",
+          "name": "XR伯特利",
+          "score": 7.8005427835650085,
+          "ref_close": 19.53
+        },
+        {
+          "code": "600641",
+          "name": "先导基电",
+          "score": 7.445983552818253,
+          "ref_close": 33.47
+        },
+        {
+          "code": "688279",
+          "name": "峰岹科技",
+          "score": 7.251857785247319,
+          "ref_close": 216.5
+        },
+        {
+          "code": "301699",
+          "name": "洛轴股份",
+          "score": 7.123299296266822,
+          "ref_close": 33.44
+        },
+        {
+          "code": "002241",
+          "name": "歌尔股份",
+          "score": 6.483534873509443,
+          "ref_close": 25.69
+        },
+        {
+          "code": "001389",
+          "name": "广合科技",
+          "score": 6.325687920675543,
+          "ref_close": 92.0
+        },
+        {
+          "code": "300811",
+          "name": "铂科新材",
+          "score": 6.323508494971042,
+          "ref_close": 63.14
+        },
+        {
+          "code": "002273",
+          "name": "水晶光电",
+          "score": 6.163030735471476,
+          "ref_close": 24.73
+        },
+        {
+          "code": "301018",
+          "name": "申菱环境",
+          "score": 6.109324154406257,
+          "ref_close": 66.43
+        },
+        {
+          "code": "603885",
+          "name": "吉祥航空",
+          "score": 6.0874193895717905,
+          "ref_close": 10.55
+        },
+        {
+          "code": "688300",
+          "name": "联瑞新材",
+          "score": 6.075378933461495,
+          "ref_close": 83.23
+        },
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 5.993120693605444,
+          "ref_close": 106.32
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "open",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "原版配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-10"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "wild": {
       "strategy": "wild",
-      "status": "data_error",
+      "label": "狂暴配置",
+      "status": "ok",
       "asof": "2026-11-10",
       "exec_day": "2026-11-11",
-      "error": "stock coverage 1539/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "688781",
+          "name": "视涯科技",
+          "score": 17.106489226593908,
+          "ref_close": 56.16
+        },
+        {
+          "code": "002432",
+          "name": "九安医疗",
+          "score": 15.217609767754649,
+          "ref_close": 57.65
+        }
+      ],
+      "config": {
+        "hold": 1,
+        "top_n": 2,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 3,
+          "to_window": 20,
+          "pos_window": 60
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 1.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "狂暴配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-10"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "B0": {
       "strategy": "B0",
@@ -2216,7 +2863,156 @@
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     }
   },
-  "stock_hits": {},
+  "stock_hits": {
+    "002432": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "688781": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "603893": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688568": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688301": [
+      "champion",
+      "runner"
+    ],
+    "603920": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603298": [
+      "champion"
+    ],
+    "001232": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "000657": [
+      "champion"
+    ],
+    "600029": [
+      "champion"
+    ],
+    "603885": [
+      "champion",
+      "balanced",
+      "original"
+    ],
+    "301018": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "000811": [
+      "champion"
+    ],
+    "301536": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688018": [
+      "champion"
+    ],
+    "601111": [
+      "champion"
+    ],
+    "300811": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603596": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002920": [
+      "champion"
+    ],
+    "301699": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "301529": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "600641": [
+      "balanced",
+      "original"
+    ],
+    "688279": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002241": [
+      "balanced",
+      "original"
+    ],
+    "001389": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002273": [
+      "balanced",
+      "original"
+    ],
+    "688300": [
+      "balanced",
+      "original"
+    ],
+    "603083": [
+      "balanced",
+      "original"
+    ],
+    "688818": [
+      "runner"
+    ],
+    "300458": [
+      "runner"
+    ],
+    "688836": [
+      "runner"
+    ],
+    "688702": [
+      "runner"
+    ],
+    "300548": [
+      "runner"
+    ]
+  },
   "accounts": {
     "champion": {
       "cash": 200000.0,
@@ -2346,7 +3142,5 @@
       "corporate_review": []
     }
   },
-  "errors": {
-    "stock": "stock coverage 1539/1600"
-  }
+  "errors": {}
 }

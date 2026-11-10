@@ -1,8 +1,159 @@
 {
   "strategy": "balanced",
-  "status": "data_error",
+  "label": "稳健配置",
+  "status": "ok",
   "asof": "2026-11-10",
   "exec_day": "2026-11-11",
-  "error": "stock coverage 1539/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "688781",
+      "name": "视涯科技",
+      "score": 13.916794746538137,
+      "ref_close": 56.16
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "score": 12.039581843319574,
+      "ref_close": 57.65
+    },
+    {
+      "code": "603893",
+      "name": "瑞芯微",
+      "score": 11.120631528292414,
+      "ref_close": 233.2
+    },
+    {
+      "code": "603920",
+      "name": "世运电路",
+      "score": 10.291916040394312,
+      "ref_close": 36.37
+    },
+    {
+      "code": "001232",
+      "name": "嘉立创",
+      "score": 9.442261702421957,
+      "ref_close": 174.78
+    },
+    {
+      "code": "688568",
+      "name": "中科星图",
+      "score": 9.187335193953441,
+      "ref_close": 33.41
+    },
+    {
+      "code": "301529",
+      "name": "福赛科技",
+      "score": 8.708620239795492,
+      "ref_close": 184.92
+    },
+    {
+      "code": "301536",
+      "name": "星宸科技",
+      "score": 7.8086314733209825,
+      "ref_close": 99.5
+    },
+    {
+      "code": "603596",
+      "name": "XR伯特利",
+      "score": 7.8005427835650085,
+      "ref_close": 19.53
+    },
+    {
+      "code": "600641",
+      "name": "先导基电",
+      "score": 7.445983552818253,
+      "ref_close": 33.47
+    },
+    {
+      "code": "688279",
+      "name": "峰岹科技",
+      "score": 7.251857785247319,
+      "ref_close": 216.5
+    },
+    {
+      "code": "301699",
+      "name": "洛轴股份",
+      "score": 7.123299296266822,
+      "ref_close": 33.44
+    },
+    {
+      "code": "002241",
+      "name": "歌尔股份",
+      "score": 6.483534873509443,
+      "ref_close": 25.69
+    },
+    {
+      "code": "001389",
+      "name": "广合科技",
+      "score": 6.325687920675543,
+      "ref_close": 92.0
+    },
+    {
+      "code": "300811",
+      "name": "铂科新材",
+      "score": 6.323508494971042,
+      "ref_close": 63.14
+    },
+    {
+      "code": "002273",
+      "name": "水晶光电",
+      "score": 6.163030735471476,
+      "ref_close": 24.73
+    },
+    {
+      "code": "301018",
+      "name": "申菱环境",
+      "score": 6.109324154406257,
+      "ref_close": 66.43
+    },
+    {
+      "code": "603885",
+      "name": "吉祥航空",
+      "score": 6.0874193895717905,
+      "ref_close": 10.55
+    },
+    {
+      "code": "688300",
+      "name": "联瑞新材",
+      "score": 6.075378933461495,
+      "ref_close": 83.23
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "score": 5.993120693605444,
+      "ref_close": 106.32
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "稳健配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-10"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

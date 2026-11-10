@@ -1,8 +1,51 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-10",
   "exec_day": "2026-11-11",
-  "error": "stock coverage 1539/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "688781",
+      "name": "视涯科技",
+      "score": 17.106489226593908,
+      "ref_close": 56.16
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "score": 15.217609767754649,
+      "ref_close": 57.65
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-10"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
