@@ -8,7 +8,7 @@ permissions:
 jobs:
   compare:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -34,7 +34,7 @@ jobs:
           from strategies import champion_source as ch
 
           start, end, snapshot = '2024-01-04', '2026-11-05', '2026-11-06'
-          output = Path('fixed-top2-optimization')
+          output = Path('factor-gate-research')
           output.mkdir(exist_ok=True)
           result = {'start': start, 'end': end, 'snapshot': snapshot, 'budget_per_trade': 10000,
                     'account_denominator': 200000, 'variants': {}}
@@ -70,18 +70,51 @@ jobs:
               ch.add_zt_ecofactors = signals.causal_ecology
               bars = large.set_index(['日期','code'])[['开盘','最高','最低','收盘','成交量']]
               names = spot.set_index('code6')['名称'].to_dict()
-              for version in ('balanced', 'runner', 'wild'):
-                  cfg = ch.VERSIONS[version]
-                  print('Scoring', version, flush=True)
-                  f = ch.compute_factors(large, cfg['windows'], cfg['weights'], mapping, bd, spot)
-                  f = f.loc[f['成交量'].gt(0), ['日期','code','score']].replace([np.inf,-np.inf],np.nan).dropna()
+              profiles = {
+                  'balanced_ref': ((5,20,120), None, 'balanced'),
+                  'runner_ref': ((5,20,120), None, 'runner'),
+                  'price_volume': (None, (1.6,.7,.8,.2,1.2,-.8,-.4,0,0,0,0), None),
+                  'relative_strength': (None, (.8,.6,.6,.4,1.0,-.5,-.4,.3,0,-.2,2.0), None),
+                  'sector_momentum': (None, (1.0,.5,.5,.5,.8,-.5,-.3,1.4,.6,.4,.8), None),
+                  'cool_sector_leader': (None, (1.2,.6,.7,.2,1.0,-.8,-.4,-.8,-.5,-.3,2.0), None),
+                  'low_vol_position': (None, (.7,1.2,.4,0,1.4,-1.2,-.5,.2,0,0,.7), None),
+                  'volume_open_impulse': (None, (2.0,.3,1.6,.8,.4,-.3,-.3,.5,.3,0,1.2), None),
+              }
+              factors = ['vol_ratio','turnover_score','open_str','zt_count','position','amplitude','mktcap',
+                         'theme_mom5','theme_zt','theme_rank','theme_rs']
+              result['factor_order'] = factors
+              result['profiles'] = profiles
+              index_close = idx.sort_values('日期').set_index('日期')['收盘']
+              ma = {n:index_close.rolling(n).mean() for n in (20,60,120)}
+              gates = {f'MA{n}': index_close.gt(m) for n,m in ma.items()}
+              gates['MA20+MA60'] = gates['MA20'] & gates['MA60']
+              gates['MA20+rising'] = gates['MA20'] & ma[20].gt(ma[20].shift(5))
+              gates['MA60+positive5d'] = gates['MA60'] & index_close.pct_change(5).gt(0)
+              result['windows'] = {'fast': [3,10,60], 'medium': [5,20,120], 'slow': [10,40,120]}
+              for window_name, window in result['windows'].items():
+                win = dict(zip(('vol_ma','to_window','pos_window'),window))
+                group_frame = ch.compute_factors(large, win, ch.VERSIONS['balanced']['weights'], mapping, bd, spot)
+                standardized = {}
+                for col in factors:
+                    g = group_frame.groupby('日期')[col]
+                    standardized[col] = ((group_frame[col]-g.transform('mean'))/(g.transform('std')+1e-12)).clip(-3,3)
+                for profile, (_, weights, reference) in profiles.items():
+                  if reference and window_name != 'medium':
+                      continue
+                  version = f'{profile}-{window_name}'
+                  if reference:
+                      score = group_frame['score_raw'] + sum(ch.VERSIONS[reference]['weights'][k]*group_frame['z_'+k]
+                                                             for k in ch.FACTORS)
+                  else:
+                      score = sum(w*standardized[k] for w,k in zip(weights,factors) if w)
+                  f = group_frame.loc[group_frame['成交量'].gt(0), ['日期','code']].copy()
+                  f['score'] = score
+                  f = f.replace([np.inf,-np.inf],np.nan).dropna()
                   picks = f.sort_values(['日期','score','code'], ascending=[True,False,True]).groupby('日期').head(2)
-                  ranked = {d: list(g.itertuples(index=False,name=None)) for d,g in picks.groupby('日期')}
+                  ranked = {day: list(g.itertuples(index=False,name=None)) for day,g in picks.groupby('日期')}
                   del f, picks
-                  gc.collect()
-                  gates = {ma: ch.build_trend(idx, f'ma{ma}') for ma in (20, 40, 60, 90, 120)}
                   result['variants'][version] = {}
-                  for hold in ((1, 4) if version == 'balanced' else (1,)):
+                  for hold in (1, 4):
                       ledger, attempted, signal_days = [], 0, 0
                       for i, signal_day in enumerate(days):
                           exit_i = i+1+hold
@@ -116,7 +149,6 @@ jobs:
                                                  buy_px=buy_px,sell_px=sell_px,net_return=ret,full_budget_pnl=ret*10000,
                                                  shares=shares,lot_principal=principal,lot_pnl=ret*principal))
                       by_key = result['variants'][version][str(hold)] = {}
-                      ma_values = (20,40,60) if version == 'balanced' else (60,90,120)
                       cut = '2026-01-01'
                       def metrics(rows):
                           daily = defaultdict(float)
@@ -130,18 +162,15 @@ jobs:
                           return dict(trades=len(rows),pnl=pnl,drawdown=dd,
                                       avg=pnl/len(rows) if rows else None,
                                       win_rate=sum(r['lot_pnl']>0 for r in rows)/len(rows) if rows else None)
-                      for ma in ma_values:
+                      for gate_name, gate in gates.items():
                           for top in (1,2):
                               lots = [r for r in ledger if r['shares'] and r['rank'] <= top and
-                                      bool(gates[ma].get(pd.Timestamp(r['signal_date']),False))]
-                              by_key[f'MA{ma}/Top{top}'] = dict(full=metrics(lots),
+                                      bool(gate.get(pd.Timestamp(r['signal_date']),False))]
+                              by_key[f'{gate_name}/Top{top}'] = dict(full=metrics(lots),
                                   train=metrics([r for r in lots if r['sell_date'] < cut]),
                                   test=metrics([r for r in lots if r['signal_date'] >= cut]))
-                      if ledger:
-                          with (output/f'{version}-plus{hold}.csv').open('w',newline='',encoding='utf-8-sig') as file:
-                              writer=csv.DictWriter(file,fieldnames=list(ledger[0])+['gate20','gate40','gate60','gate90','gate120'])
-                              writer.writeheader()
-                              writer.writerows(dict(r, **{f'gate{ma}':bool(g.get(pd.Timestamp(r['signal_date']),False)) for ma,g in gates.items()}) for r in ledger)
+                del group_frame, standardized
+                gc.collect()
           except Exception:
               result['error'] = traceback.format_exc()
           (output/'summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
@@ -150,6 +179,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fixed-top2-optimization
+          git add factor-gate-research
           git commit -m 'Record fixed-snapshot Top2 backtest'
           git push origin HEAD:${{ github.ref_name }}
