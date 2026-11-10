@@ -1,0 +1,206 @@
+{
+  "start": "2024-01-04",
+  "end": "2026-11-05",
+  "snapshot": "2026-11-06",
+  "budget_per_trade": 10000,
+  "account_denominator": 200000,
+  "variants": {
+    "champion": {
+      "2": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 807,
+        "full_budget_pnl": 56034.91331641537,
+        "lot_trades": 719,
+        "lot_pnl": 51672.43238281547,
+        "lot_account_return": 0.25836216191407735,
+        "lot_win_rate": 0.46870653685674546,
+        "peak_principal_upper_bound": 58268.0,
+        "realized_drawdown_yuan": 15460.898831041759
+      },
+      "3": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 807,
+        "full_budget_pnl": 84098.44917587482,
+        "lot_trades": 719,
+        "lot_pnl": 72674.32591622986,
+        "lot_account_return": 0.3633716295811493,
+        "lot_win_rate": 0.4853963838664812,
+        "peak_principal_upper_bound": 75836.01999999999,
+        "realized_drawdown_yuan": 20169.337539161355
+      },
+      "4": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 806,
+        "full_budget_pnl": 101437.34752955024,
+        "lot_trades": 718,
+        "lot_pnl": 87101.88308343204,
+        "lot_account_return": 0.4355094154171602,
+        "lot_win_rate": 0.4832869080779944,
+        "peak_principal_upper_bound": 93714.49999999999,
+        "realized_drawdown_yuan": 24362.820017560174
+      }
+    },
+    "balanced": {
+      "2": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 593,
+        "full_budget_pnl": 72238.43572785928,
+        "lot_trades": 532,
+        "lot_pnl": 66892.36151338016,
+        "lot_account_return": 0.3344618075669008,
+        "lot_win_rate": 0.4830827067669173,
+        "peak_principal_upper_bound": 58385.0,
+        "realized_drawdown_yuan": 8970.099194819657
+      },
+      "3": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 593,
+        "full_budget_pnl": 96535.72701120007,
+        "lot_trades": 532,
+        "lot_pnl": 91792.51640652171,
+        "lot_account_return": 0.45896258203260853,
+        "lot_win_rate": 0.4755639097744361,
+        "peak_principal_upper_bound": 75819.55,
+        "realized_drawdown_yuan": 11236.055473829094
+      },
+      "4": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 594,
+        "full_budget_pnl": 122950.45548171618,
+        "lot_trades": 533,
+        "lot_pnl": 114026.63947558563,
+        "lot_account_return": 0.5701331973779281,
+        "lot_win_rate": 0.49530956848030017,
+        "peak_principal_upper_bound": 93772.55,
+        "realized_drawdown_yuan": 10806.599447648254
+      }
+    },
+    "runner": {
+      "2": {
+        "signal_days": 398,
+        "attempted": 796,
+        "full_budget_trades": 688,
+        "full_budget_pnl": 72393.18705904557,
+        "lot_trades": 610,
+        "lot_pnl": 65062.00038852242,
+        "lot_account_return": 0.3253100019426121,
+        "lot_win_rate": 0.49508196721311476,
+        "peak_principal_upper_bound": 58132.55,
+        "realized_drawdown_yuan": 9943.00304910899
+      },
+      "3": {
+        "signal_days": 398,
+        "attempted": 796,
+        "full_budget_trades": 688,
+        "full_budget_pnl": 103116.2486578589,
+        "lot_trades": 610,
+        "lot_pnl": 94289.13017440637,
+        "lot_account_return": 0.47144565087203183,
+        "lot_win_rate": 0.5016393442622951,
+        "peak_principal_upper_bound": 77248.0,
+        "realized_drawdown_yuan": 11654.30729990212
+      },
+      "4": {
+        "signal_days": 398,
+        "attempted": 796,
+        "full_budget_trades": 689,
+        "full_budget_pnl": 118168.168452687,
+        "lot_trades": 611,
+        "lot_pnl": 101942.69044818761,
+        "lot_account_return": 0.5097134522409381,
+        "lot_win_rate": 0.49263502454991814,
+        "peak_principal_upper_bound": 93800.0,
+        "realized_drawdown_yuan": 13582.742399776424
+      }
+    },
+    "original": {
+      "2": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 593,
+        "full_budget_pnl": 72238.43572785928,
+        "lot_trades": 532,
+        "lot_pnl": 66892.36151338016,
+        "lot_account_return": 0.3344618075669008,
+        "lot_win_rate": 0.4830827067669173,
+        "peak_principal_upper_bound": 58385.0,
+        "realized_drawdown_yuan": 8970.099194819657
+      },
+      "3": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 593,
+        "full_budget_pnl": 96535.72701120007,
+        "lot_trades": 532,
+        "lot_pnl": 91792.51640652171,
+        "lot_account_return": 0.45896258203260853,
+        "lot_win_rate": 0.4755639097744361,
+        "peak_principal_upper_bound": 75819.55,
+        "realized_drawdown_yuan": 11236.055473829094
+      },
+      "4": {
+        "signal_days": 342,
+        "attempted": 684,
+        "full_budget_trades": 594,
+        "full_budget_pnl": 122950.45548171618,
+        "lot_trades": 533,
+        "lot_pnl": 114026.63947558563,
+        "lot_account_return": 0.5701331973779281,
+        "lot_win_rate": 0.49530956848030017,
+        "peak_principal_upper_bound": 93772.55,
+        "realized_drawdown_yuan": 10806.599447648254
+      }
+    },
+    "wild": {
+      "2": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 788,
+        "full_budget_pnl": 70315.88923150743,
+        "lot_trades": 716,
+        "lot_pnl": 56011.2841176946,
+        "lot_account_return": 0.280056420588473,
+        "lot_win_rate": 0.48324022346368717,
+        "peak_principal_upper_bound": 59307.8,
+        "realized_drawdown_yuan": 19858.42239099624
+      },
+      "3": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 788,
+        "full_budget_pnl": 74551.46286876762,
+        "lot_trades": 716,
+        "lot_pnl": 67383.10878275154,
+        "lot_account_return": 0.3369155439137577,
+        "lot_win_rate": 0.46368715083798884,
+        "peak_principal_upper_bound": 77563.0,
+        "realized_drawdown_yuan": 23430.043193183257
+      },
+      "4": {
+        "signal_days": 455,
+        "attempted": 910,
+        "full_budget_trades": 788,
+        "full_budget_pnl": 83537.00603579819,
+        "lot_trades": 716,
+        "lot_pnl": 72063.21163510521,
+        "lot_account_return": 0.36031605817552603,
+        "lot_win_rate": 0.4650837988826816,
+        "peak_principal_upper_bound": 94996.0,
+        "realized_drawdown_yuan": 26130.984906511105
+      }
+    }
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "scored_universe": 800,
+    "history_errors": 0
+  },
+  "sessions": 685
+}
