@@ -20,58 +20,132 @@ jobs:
           key: snapshot-study-${{ github.run_id }}
           restore-keys: market-v2-
       - run: pip install -r requirements.txt
-      - name: Replay with fixed state
+      - name: Backtest all five versions
         env:
           OPENBLAS_NUM_THREADS: '1'
         run: |
           python - <<'PY'
-          import json, traceback
+          import csv, gc, json, math, traceback
+          from collections import defaultdict
           from pathlib import Path
+          import numpy as np
           import pandas as pd
           from runner import data, signals
-          day, fixed = '2026-11-05', '2026-11-06'
-          out = {'signal_date': day, 'fixed_snapshot': fixed}
+          from strategies import champion_source as ch
+
+          start, end, snapshot = '2024-01-04', '2026-11-05', '2026-11-06'
+          output = Path('fixed-top2-results')
+          output.mkdir(exist_ok=True)
+          result = {'start': start, 'end': end, 'snapshot': snapshot, 'budget_per_trade': 10000,
+                    'account_denominator': 200000, 'variants': {}}
           try:
-              required = [data.CACHE / f'{kind}_{d}.parquet' for d in (day, fixed) for kind in ('spot', 'board_mapping')]
-              out['snapshot_presence'] = {p.name: p.exists() for p in required}
-              def offline_history(code, day, adjusted=True, index=False, start='2024-01-01'):
-                  path = data.CACHE / ('index' if index else ('qfq' if adjusted else 'raw')) / start / f'{code}.parquet'
-                  frame = pd.read_parquet(path)
-                  return frame.loc[frame.date <= pd.Timestamp(day)].copy()
-              data.history = offline_history
-              spot, mapping = data.stock_spot, data.board_mapping
-              def scan(snapshot):
-                  for kind in ('spot', 'board_mapping'):
-                      if not (data.CACHE / f'{kind}_{snapshot}.parquet').is_file():
-                          raise FileNotFoundError(f'{kind}_{snapshot}.parquet')
-                  frozen_spot = spot(snapshot)
-                  frozen_map = mapping(snapshot)
-                  data.stock_spot = lambda _: frozen_spot
-                  data.board_mapping = lambda _: frozen_map
-                  return signals.stock_signals(day)
-              try:
-                  base = scan(day)
-                  out['baseline_source'] = 'same-engine replay with dated cache'
-              except Exception as e:
-                  out['baseline_source'] = 'archived signal'
-                  out['baseline_replay_error'] = str(e)
-                  base = {v: json.loads(Path(f'signals/{day}/{v}.json').read_text()) for v in ('balanced', 'runner', 'original')}
-              trial = scan(fixed)
-              out['comparison'] = {}
-              for v in ('balanced', 'runner', 'original'):
-                  a, b = base[v], trial[v]
-                  old, new = [x['code'] for x in a['picks']], [x['code'] for x in b['picks']]
-                  out['comparison'][v] = {'baseline_top2': a['picks'][:2], 'fixed_top2': b['picks'][:2],
-                      'top2_overlap': len(set(old[:2]) & set(new[:2])), 'top20_overlap': len(set(old) & set(new)),
-                      'baseline_gate': a['gate_on'], 'fixed_gate': b['gate_on']}
+              spot = data.stock_spot(snapshot)
+              mapping = data.board_mapping(snapshot)
+              big = set(spot.head(800).code6)
+              codes = sorted(big | set(spot.tail(800).code6))
+              frames, errors = data.histories(codes, end)
+              for code in big - set(mapping.code):
+                  frames.pop(code, None)
+              result['coverage'] = {'loaded': len(frames), 'expected': len(codes),
+                                    'scored_universe': len(big & set(frames)), 'history_errors': len(errors)}
+              if len(frames) < len(codes)*.98:
+                  raise RuntimeError(f'Insufficient histories: {len(frames)}/{len(codes)}')
+              panel = pd.concat(frames.values(), ignore_index=True).rename(columns={
+                  'date':'日期','open':'开盘','close':'收盘','high':'最高','low':'最低',
+                  'volume':'成交量','amount':'成交额','amplitude':'振幅','pct':'涨跌幅','turnover':'换手率'})
+              del frames
+              bd = ch.build_board_day(ch.daily_stats_of(panel), mapping)
+              large = panel[panel.code.isin(big)].copy()
+              del panel
+              idx = data.history('000300', end, index=True).rename(columns={'date':'日期','close':'收盘'})
+              days = list(idx.loc[idx['日期'].between(start,end), '日期'].sort_values())
+              if not days or str(days[0].date()) != start or str(days[-1].date()) != end:
+                  raise RuntimeError('Index history does not cover requested window')
+              result['sessions'] = len(days)
+              ch.piecewise_reverse = signals.causal_piecewise
+              ch.add_zt_ecofactors = signals.causal_ecology
+              bars = large.set_index(['日期','code'])[['开盘','最高','最低','收盘','成交量']]
+              names = spot.set_index('code6')['名称'].to_dict()
+              for version, cfg in ch.VERSIONS.items():
+                  print('Scoring', version, flush=True)
+                  f = ch.compute_factors(large, cfg['windows'], cfg['weights'], mapping, bd, spot)
+                  f = f.loc[f['成交量'].gt(0), ['日期','code','score']].replace([np.inf,-np.inf],np.nan).dropna()
+                  picks = f.sort_values(['日期','score','code'], ascending=[True,False,True]).groupby('日期').head(2)
+                  ranked = {d: list(g.itertuples(index=False,name=None)) for d,g in picks.groupby('日期')}
+                  del f, picks
+                  gc.collect()
+                  gate = ch.build_trend(idx, cfg['gate'])
+                  ledger, attempted, signal_days = [], 0, 0
+                  for i, signal_day in enumerate(days):
+                      exit_i = i+1+cfg['hold']
+                      if exit_i >= len(days):
+                          break
+                      if not bool(gate.get(signal_day, False)):
+                          continue
+                      ranked_today = ranked.get(signal_day, [])
+                      if len(ranked_today) < 2:
+                          continue
+                      signal_days += 1
+                      buy_day, sell_day = days[i+1], days[exit_i]
+                      for rank, (_, code, score) in enumerate(ranked_today, 1):
+                          attempted += 1
+                          if (buy_day,code) not in bars.index or (sell_day,code) not in bars.index:
+                              continue
+                          b = bars.loc[(buy_day,code)]
+                          s = bars.loc[(sell_day,code)]
+                          buy_px = float(b['开盘'])
+                          sell_px = float(s['开盘' if cfg['sell_at']=='open' else '收盘'])
+                          if not (math.isfinite(buy_px) and math.isfinite(sell_px) and buy_px>0 and sell_px>0):
+                              continue
+                          if abs(buy_px-float(b['最高']))/buy_px < .002:
+                              continue
+                          if cfg['sell_at']=='open' and abs(sell_px-float(s['最低']))/sell_px < .002:
+                              continue
+                          ret = (sell_px/(1+ch.SELL_COST))/(buy_px/(1-ch.BUY_COST))-1
+                          rounded = round(buy_px,3)
+                          if rounded <= 0:
+                              continue
+                          shares = math.floor(10000/rounded)
+                          shares = (shares if shares>=200 else 0) if code.startswith('688') else shares//100*100
+                          principal = shares*rounded
+                          ledger.append(dict(signal_date=str(signal_day.date()),rank=rank,code=code,name=names.get(code,code),
+                                             score=score,buy_date=str(buy_day.date()),sell_date=str(sell_day.date()),
+                                             buy_px=buy_px,sell_px=sell_px,net_return=ret,full_budget_pnl=ret*10000,
+                                             shares=shares,lot_principal=principal,lot_pnl=ret*principal))
+                  lots = [r for r in ledger if r['shares']]
+                  events = defaultdict(lambda: [0.,0.,0.])
+                  for r in lots:
+                      events[r['buy_date']][0] += r['lot_principal']
+                      events[r['sell_date']][1] += r['lot_principal']
+                      events[r['sell_date']][2] += r['lot_pnl']
+                  realized = high = dd = held = max_held = 0.
+                  for d in sorted(events):
+                      entries, exits, pnl = events[d]
+                      held += entries
+                      max_held = max(max_held,held)
+                      held -= exits
+                      realized += pnl
+                      high = max(high,realized)
+                      dd = max(dd,high-realized)
+                  result['variants'][version] = dict(signal_days=signal_days,attempted=attempted,
+                      full_budget_trades=len(ledger),full_budget_pnl=sum(r['full_budget_pnl'] for r in ledger),
+                      lot_trades=len(lots),lot_pnl=realized,lot_account_return=realized/200000,
+                      lot_win_rate=sum(r['lot_pnl']>0 for r in lots)/len(lots) if lots else None,
+                      peak_principal_upper_bound=max_held,realized_drawdown_yuan=dd)
+                  print(version, result['variants'][version], flush=True)
+                  if ledger:
+                      with (output/f'{version}.csv').open('w',newline='',encoding='utf-8-sig') as file:
+                          writer=csv.DictWriter(file,fieldnames=list(ledger[0]))
+                          writer.writeheader()
+                          writer.writerows(ledger)
           except Exception:
-              out['error'] = traceback.format_exc()
-          Path('snapshot-sensitivity-20261105.json').write_text(json.dumps(out, ensure_ascii=False, indent=2))
+              result['error'] = traceback.format_exc()
+          (output/'summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
           PY
-      - name: Save comparison on research branch
+      - name: Save backtest on research branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add snapshot-sensitivity-20261105.json
-          git commit -m 'Record fixed snapshot sensitivity'
+          git add fixed-top2-results
+          git commit -m 'Record fixed-snapshot Top2 backtest'
           git push origin HEAD:${{ github.ref_name }}
