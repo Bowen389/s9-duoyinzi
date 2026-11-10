@@ -1,0 +1,15 @@
+{
+  "start": "2024-01-04",
+  "end": "2026-11-05",
+  "snapshot": "2026-11-06",
+  "budget_per_trade": 10000,
+  "account_denominator": 200000,
+  "variants": {},
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "scored_universe": 800,
+    "history_errors": 0
+  },
+  "error": "Traceback (most recent call last):\n  File \"<stdin>\", line 36, in <module>\nRuntimeError: Index history does not cover requested window\n"
+}
