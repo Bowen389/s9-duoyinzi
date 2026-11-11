@@ -1,8 +1,184 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-11",
   "exec_day": "2026-11-12",
-  "error": "stock coverage 775/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "001339",
+      "name": "智微智能",
+      "score": 12.453699591235647,
+      "ref_close": 69.73
+    },
+    {
+      "code": "688498",
+      "name": "源杰科技",
+      "score": 11.858301675140416,
+      "ref_close": 774.85
+    },
+    {
+      "code": "601118",
+      "name": "海南橡胶",
+      "score": 11.5707126140704,
+      "ref_close": 5.63
+    },
+    {
+      "code": "603730",
+      "name": "岱美股份",
+      "score": 10.708953027030201,
+      "ref_close": 11.19
+    },
+    {
+      "code": "300570",
+      "name": "太辰光",
+      "score": 10.216209480572733,
+      "ref_close": 125.0
+    },
+    {
+      "code": "603596",
+      "name": "伯特利",
+      "score": 9.80127625067426,
+      "ref_close": 20.5
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "score": 8.970176232223617,
+      "ref_close": 59.54
+    },
+    {
+      "code": "300684",
+      "name": "中石科技",
+      "score": 8.903521732915829,
+      "ref_close": 73.76
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "score": 8.591471653683183,
+      "ref_close": 51.25
+    },
+    {
+      "code": "600096",
+      "name": "云天化",
+      "score": 8.415331041979613,
+      "ref_close": 26.75
+    },
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "score": 7.975737022631195,
+      "ref_close": 103.93
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "score": 7.891694705145905,
+      "ref_close": 116.95
+    },
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 7.485061435894446,
+      "ref_close": 240.31
+    },
+    {
+      "code": "601156",
+      "name": "东航物流",
+      "score": 7.241453539728605,
+      "ref_close": 19.87
+    },
+    {
+      "code": "688027",
+      "name": "国盾量子",
+      "score": 7.18227528224429,
+      "ref_close": 324.9
+    },
+    {
+      "code": "300757",
+      "name": "罗博特科",
+      "score": 7.102506102977069,
+      "ref_close": 319.68
+    },
+    {
+      "code": "688313",
+      "name": "仕佳光子",
+      "score": 6.644323710064081,
+      "ref_close": 102.89
+    },
+    {
+      "code": "301536",
+      "name": "星宸科技",
+      "score": 6.546852995760636,
+      "ref_close": 102.62
+    },
+    {
+      "code": "601665",
+      "name": "齐鲁银行",
+      "score": 6.400336203187916,
+      "ref_close": 6.71
+    },
+    {
+      "code": "002920",
+      "name": "德赛西威",
+      "score": 6.345963361695738,
+      "ref_close": 85.75
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1576,
+    "expected": 1600,
+    "inactive_errors": {
+      "002273": "missing current-session history; excluded from ranking",
+      "600036": "missing current-session history; excluded from ranking",
+      "600519": "missing current-session history; excluded from ranking",
+      "001389": "missing current-session history; excluded from ranking",
+      "600392": "missing current-session history; excluded from ranking",
+      "600601": "missing current-session history; excluded from ranking",
+      "002430": "missing current-session history; excluded from ranking",
+      "000538": "missing current-session history; excluded from ranking",
+      "600018": "missing current-session history; excluded from ranking",
+      "002378": "missing current-session history; excluded from ranking",
+      "002535": "missing current-session history; excluded from ranking",
+      "000661": "missing current-session history; excluded from ranking",
+      "000932": "missing current-session history; excluded from ranking",
+      "600176": "missing current-session history; excluded from ranking",
+      "600160": "missing current-session history; excluded from ranking",
+      "000625": "missing current-session history; excluded from ranking",
+      "300394": "missing current-session history; excluded from ranking",
+      "002241": "missing current-session history; excluded from ranking",
+      "300661": "missing current-session history; excluded from ranking",
+      "002049": "missing current-session history; excluded from ranking",
+      "600148": "missing current-session history; excluded from ranking",
+      "002633": "missing current-session history; excluded from ranking",
+      "002311": "missing current-session history; excluded from ranking",
+      "002468": "missing current-session history; excluded from ranking"
+    },
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

@@ -1,8 +1,76 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-11",
   "exec_day": "2026-11-12",
-  "error": "stock coverage 775/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "001339",
+      "name": "智微智能",
+      "score": 20.907116091512005,
+      "ref_close": 69.73
+    },
+    {
+      "code": "688781",
+      "name": "视涯科技-UW",
+      "score": 13.699764029568609,
+      "ref_close": 53.0
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1576,
+    "expected": 1600,
+    "inactive_errors": {
+      "002273": "missing current-session history; excluded from ranking",
+      "600036": "missing current-session history; excluded from ranking",
+      "600519": "missing current-session history; excluded from ranking",
+      "001389": "missing current-session history; excluded from ranking",
+      "600392": "missing current-session history; excluded from ranking",
+      "600601": "missing current-session history; excluded from ranking",
+      "002430": "missing current-session history; excluded from ranking",
+      "000538": "missing current-session history; excluded from ranking",
+      "600018": "missing current-session history; excluded from ranking",
+      "002378": "missing current-session history; excluded from ranking",
+      "002535": "missing current-session history; excluded from ranking",
+      "000661": "missing current-session history; excluded from ranking",
+      "000932": "missing current-session history; excluded from ranking",
+      "600176": "missing current-session history; excluded from ranking",
+      "600160": "missing current-session history; excluded from ranking",
+      "000625": "missing current-session history; excluded from ranking",
+      "300394": "missing current-session history; excluded from ranking",
+      "002241": "missing current-session history; excluded from ranking",
+      "300661": "missing current-session history; excluded from ranking",
+      "002049": "missing current-session history; excluded from ranking",
+      "600148": "missing current-session history; excluded from ranking",
+      "002633": "missing current-session history; excluded from ranking",
+      "002311": "missing current-session history; excluded from ranking",
+      "002468": "missing current-session history; excluded from ranking"
+    },
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
