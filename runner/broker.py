@@ -4,12 +4,14 @@ import math
 
 START = '2026-11-06'
 STOCKS = ['champion', 'balanced', 'runner', 'original', 'wild']
-ETFS = ['B0', 'K3', 'K5']
+ETFS = ['B0', 'K3', 'K5', 'DUAL55']
 
 
 def initial(name):
-    return dict(strategy=name, start=START, initial_cash=200000., cash=200000., lots=[],
-                last_settled=None, trades=[], nav=[], events=[], last_exit={}, peak=200000.)
+    capital = 30000. if name == 'DUAL55' else 200000.
+    start = '2026-11-11' if name == 'DUAL55' else START
+    return dict(strategy=name, start=start, initial_cash=capital, cash=capital, lots=[],
+                last_settled=None, trades=[], nav=[], events=[], last_exit={}, peak=capital)
 
 
 def fee(value, side, stock):
@@ -50,6 +52,8 @@ def buy(a, code, day, budget, bar, stock, phase='open', due=None, sell_at=None):
         a['events'].append(dict(date=day, code=code, event='BUY_UNFILLED', reason='insufficient lot budget'))
         return
     cost = q * p + fee(q * p, 'BUY', stock)
+    if a['strategy'] == 'DUAL55' and code == '518880' and not any(x['code'] == code for x in a['lots']):
+        a['gold_anchor'] = dict(date=day, price=p)
     a['cash'] -= cost
     a['lots'].append(dict(code=code, qty=q, entry=day, entry_px=p, cost=cost,
                           mark=p, due=due, sell_at=sell_at))
@@ -107,15 +111,22 @@ def settle(account, day, signal, bars, trading_days, cfg=None):
             if lot['due'] <= day and lot['sell_at'] == 'close':
                 sell(a, lot, day, safe.get(lot['code']), True, 'close')
     elif signal and signal['exec_day'] == day and signal['status'] == 'ok' and signal['rebalance']:
-        eq = equity(a)
+        dual = a['strategy'] == 'DUAL55'
         target = signal['weights']
+        eq = (a['cash'] + sum(x['qty'] * safe.get(x['code'], {}).get('open', x['mark']) for x in a['lots'])
+              if dual else equity(a))
+        if dual and set(target) == {x['code'] for x in a['lots']} and all(c in safe for c in target):
+            within_band = all(abs(sum(x['qty'] for x in a['lots'] if x['code'] == c) * safe[c]['open'] / eq - w) <= .05
+                              for c, w in target.items())
+        else:
+            within_band = False
         # Sells before buys; failed sells consume cash and do not enable imaginary buying power.
         wanted = {}
         for c, w in target.items():
             b = safe.get(c)
             if b:
                 wanted[c] = max(0, int(eq*w/b['open']/100)*100)
-        for lot in list(a['lots']):
+        for lot in ([] if within_band else list(a['lots'])):
             c = lot['code']
             if c in target and c not in wanted:
                 continue
@@ -123,11 +134,14 @@ def settle(account, day, signal, bars, trading_days, cfg=None):
             reduction = max(0, total - wanted.get(c, 0))
             if reduction:
                 sell(a, lot, day, safe.get(c), False, qty=min(lot['qty'], reduction))
-        for c, w in target.items():
+        for c, w in ({} if within_band else target).items():
             b = safe.get(c)
             held = sum(x['qty'] for x in a['lots'] if x['code']==c)
             if b and wanted.get(c, 0) > held:
-                buy(a, c, day, (wanted[c]-held)*b['open'], b, False)
+                if dual and not held and len({x['code'] for x in a['lots']}) >= 2:
+                    continue
+                budget = max(0., eq*w-held*b['open']) if dual else (wanted[c]-held)*b['open']
+                buy(a, c, day, budget, b, False)
     for lot in a['lots']:
         if lot['code'] in bars:
             lot['mark'] = bars[lot['code']]['close']
@@ -136,7 +150,7 @@ def settle(account, day, signal, bars, trading_days, cfg=None):
     value = equity(a)
     a['peak'] = max(a['peak'], value)
     a['last_settled'] = day
-    a['nav'].append(dict(date=day, cash=a['cash'], equity=value, return_pct=(value/200000-1)*100,
+    a['nav'].append(dict(date=day, cash=a['cash'], equity=value, return_pct=(value/a['initial_cash']-1)*100,
                          positions=len(set(x['code'] for x in a['lots'])), valuation_review=bool(blocked)))
     assert a['cash'] >= -1e-6
     return a

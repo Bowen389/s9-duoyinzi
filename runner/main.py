@@ -67,7 +67,7 @@ def run(day, family='all'):
     errors={}
     selected=names if family=='all' else (STOCKS if family=='stock' else ETFS)
     for d in [x for x in all_days if START<=x<=day]:
-        todo=[n for n in selected if (not accounts[n]['last_settled'] or accounts[n]['last_settled']<d) and n not in errors]
+        todo=[n for n in selected if (not accounts[n]['last_settled'] or accounts[n]['last_settled']<d) and n not in errors and d>=accounts[n]['start']]
         needed=set()
         pending={}
         for n in todo:
@@ -103,9 +103,12 @@ def run(day, family='all'):
         try:
             print(f'=== {group} signal scan {day} ===',flush=True)
             stale=[n for n in members if day>=START and accounts[n]['last_settled']!=day]
-            if stale:
+            if any(n != 'DUAL55' for n in stale):
                 raise RuntimeError(f'unsettled accounts: {stale}')
             fresh=fn()
+            if 'DUAL55' in stale:
+                fresh['DUAL55']=dict(strategy='DUAL55', status='data_error', asof=day,
+                                    exec_day=data.next_session(day), error='DUAL55 account unsettled', picks=[])
             results.update(fresh)
             for n,s in fresh.items():
                 write_json(data.ROOT/'signals'/day/(n+'.json'),s)
@@ -123,10 +126,10 @@ def run(day, family='all'):
     hits=stock_hits(results,day)
     report=dict(asof=day,generated_at=str(__import__('pandas').Timestamp.now(tz='Asia/Shanghai')),
                 start=START,strategies=results,stock_hits=hits,accounts={n:dict(cash=a['cash'],equity=equity(a),positions=a['lots'],last_settled=a['last_settled'],
-                return_pct=(equity(a)/200000-1)*100,corporate_review=a.get('corporate_review',[])) for n,a in accounts.items()},errors=errors)
+                return_pct=(equity(a)/a['initial_cash']-1)*100,corporate_review=a.get('corporate_review',[])) for n,a in accounts.items()},errors=errors)
     write_json(data.ROOT/'reports'/f'{day}.json',report)
     write_json(data.ROOT/'reports'/'latest.json',report)
-    lines=[f'# 盘后信号 · {day}',f'\n模拟开始日：{START}；8 个独立账户，每户初始 200,000 元。次一交易日按真实开盘价记账。',
+    lines=[f'# 盘后信号 · {day}',f'\n模拟开始日：{START}；9 个独立模拟账户，DUAL55 初始 30,000 元，其余每户 200,000 元。次一交易日按模拟成交规则记账。',
            '\n|策略|状态/门控|次日计划|现金|总资产|收益|','|---|---|---|---:|---:|---:|']
     for n,s in results.items():
         a=accounts[n]

@@ -5,7 +5,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 FAMILIES = {'stock': ('champion','balanced','runner','original','wild'),
-            'etf': ('B0','K3','K5')}
+            'etf': ('B0','K3','K5','DUAL55')}
 
 
 def recovery_family(now, report, signals, accounts):

@@ -5,6 +5,7 @@ from . import data
 from .broker import equity
 from strategies import champion_source as ch, s9_source as s9
 from .s9_decision import decide
+from .dual55 import DEFENSE, dual_signal
 
 
 def causal_piecewise(s, breaks):
@@ -84,7 +85,7 @@ def stock_signals(day):
 
 def etf_panel(day, protected=()):
     codes = [x.strip() for x in (data.ROOT/'strategies/etf_codes.txt').read_text().splitlines() if x.strip() and not x.startswith('_')]
-    codes = sorted(set(codes) | set(s9.POOL) | {'511260','518880','511880'})
+    codes = sorted(set(codes) | set(s9.POOL) | {'511260','518880','511880'} | set(DEFENSE))
     frames, errs = data.histories(codes, day, start='2016-01-01')
     # Never forward-fill stale current-session data into an actionable ranking.
     for c, frame in list(frames.items()):
@@ -93,7 +94,7 @@ def etf_panel(day, protected=()):
             frames.pop(c)
     from .eligibility import classify_unavailable
     mandatory=set(s9.POOL) | {'511260','518880','511880'} | set(protected)
-    excluded=classify_unavailable(errs,day,protected=mandatory,min_age=120) if errs else {}
+    excluded=classify_unavailable(errs,day,protected=mandatory,min_age=60) if errs else {}
     unresolved={c:e for c,e in errs.items() if c not in excluded}
     expected=len(codes)-len(excluded)
     health=dict(asof=day,total_manifest=len(codes),loaded=len(frames),
@@ -121,6 +122,9 @@ def etf_panel(day, protected=()):
     for k in ['open','high','low','close','amount']:
         w = daily.pivot(index='date',columns='code',values=k).reindex(index=cal, columns=codes)
         fields[k] = (w.fillna(0) if k=='amount' else w.ffill(limit=5)).to_numpy(float)
+    fresh_close = daily.pivot(index='date',columns='code',values='close').reindex(index=cal, columns=codes)
+    fields['fresh_close'] = fresh_close.to_numpy(float)
+    fields['age'] = fresh_close.notna().cummax().cumsum().to_numpy()
     extra = frames['511880'].set_index('date').close.reindex(cal).ffill()
     return dict(dates=cal,codes=codes,names={c:f.iloc[-1]['name'] for c,f in frames.items()},
                 bench=pd.Series(idx.close.to_numpy(),index=cal),
@@ -181,4 +185,11 @@ def etf_signals(day, accounts):
             a['last_exit'][str(bt.codes[c])]=str(panel['dates'][exits[c]].date())
         del bt
         gc.collect()
+    try:
+        if accounts['DUAL55']['last_settled'] != day:
+            raise ValueError('DUAL55 account unsettled')
+        out['DUAL55'] = dual_signal(day, panel, accounts['DUAL55'])
+    except Exception as exc:
+        out['DUAL55'] = dict(strategy='DUAL55', label='ETF 双席趋势', status='data_error',
+                             asof=day, exec_day=data.next_session(day), error=str(exc), picks=[])
     return out
