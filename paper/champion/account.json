@@ -4,7 +4,7 @@
   "initial_cash": 200000.0,
   "cash": 200000.0,
   "lots": [],
-  "last_settled": "2026-11-10",
+  "last_settled": "2026-11-11",
   "trades": [],
   "nav": [
     {
@@ -25,6 +25,14 @@
     },
     {
       "date": "2026-11-10",
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "return_pct": 0.0,
+      "positions": 0,
+      "valuation_review": false
+    },
+    {
+      "date": "2026-11-11",
       "cash": 200000.0,
       "equity": 200000.0,
       "return_pct": 0.0,
