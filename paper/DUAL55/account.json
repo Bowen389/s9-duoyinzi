@@ -1,0 +1,30 @@
+{
+  "strategy": "DUAL55",
+  "start": "2026-11-11",
+  "initial_cash": 30000.0,
+  "cash": 30000.0,
+  "lots": [],
+  "last_settled": "2026-11-11",
+  "trades": [],
+  "nav": [
+    {
+      "date": "2026-11-11",
+      "cash": 30000.0,
+      "equity": 30000.0,
+      "return_pct": 0.0,
+      "positions": 0,
+      "valuation_review": false
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-11",
+      "event": "SIGNAL_MISSING",
+      "reason": "no prior committed signal; no retrospective buys"
+    }
+  ],
+  "last_exit": {},
+  "peak": 30000.0,
+  "corporate_review": [],
+  "gold_blocked": false
+}
