@@ -2,10 +2,52 @@
   "strategy": "DUAL55",
   "start": "2026-11-11",
   "initial_cash": 30000.0,
-  "cash": 30000.0,
-  "lots": [],
-  "last_settled": "2026-11-11",
-  "trades": [],
+  "cash": 4979.581600000003,
+  "lots": [
+    {
+      "code": "511260",
+      "qty": 100,
+      "entry": "2026-11-12",
+      "entry_px": 135.947184,
+      "cost": 13599.7184,
+      "mark": 135.969,
+      "due": null,
+      "sell_at": null
+    },
+    {
+      "code": "511360",
+      "qty": 100,
+      "entry": "2026-11-12",
+      "entry_px": 114.157,
+      "cost": 11420.699999999999,
+      "mark": 114.151,
+      "due": null,
+      "sell_at": null
+    }
+  ],
+  "last_settled": "2026-11-12",
+  "trades": [
+    {
+      "date": "2026-11-12",
+      "phase": "open",
+      "code": "511260",
+      "side": "BUY",
+      "qty": 100,
+      "price": 135.947184,
+      "fee": 5.0,
+      "cash": 16400.281600000002
+    },
+    {
+      "date": "2026-11-12",
+      "phase": "open",
+      "code": "511360",
+      "side": "BUY",
+      "qty": 100,
+      "price": 114.157,
+      "fee": 5.0,
+      "cash": 4979.581600000003
+    }
+  ],
   "nav": [
     {
       "date": "2026-11-11",
@@ -13,6 +55,14 @@
       "equity": 30000.0,
       "return_pct": 0.0,
       "positions": 0,
+      "valuation_review": false
+    },
+    {
+      "date": "2026-11-12",
+      "cash": 4979.581600000003,
+      "equity": 29991.581600000005,
+      "return_pct": -0.02806133333331795,
+      "positions": 2,
       "valuation_review": false
     }
   ],

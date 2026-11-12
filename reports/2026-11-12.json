@@ -1,0 +1,242 @@
+{
+  "asof": "2026-11-12",
+  "generated_at": "2026-11-12 17:00:54.545504+08:00",
+  "start": "2026-11-06",
+  "strategies": {
+    "champion": {
+      "strategy": "champion",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "stock coverage 754/1600",
+      "picks": []
+    },
+    "balanced": {
+      "strategy": "balanced",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "stock coverage 754/1600",
+      "picks": []
+    },
+    "runner": {
+      "strategy": "runner",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "stock coverage 754/1600",
+      "picks": []
+    },
+    "original": {
+      "strategy": "original",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "stock coverage 754/1600",
+      "picks": []
+    },
+    "wild": {
+      "strategy": "wild",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "stock coverage 754/1600",
+      "picks": []
+    },
+    "B0": {
+      "strategy": "B0",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "ETF history coverage 1661/1728 eligible records; 49 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159387', '159569']",
+      "picks": []
+    },
+    "K3": {
+      "strategy": "K3",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "ETF history coverage 1661/1728 eligible records; 49 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159387', '159569']",
+      "picks": []
+    },
+    "K5": {
+      "strategy": "K5",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "ETF history coverage 1661/1728 eligible records; 49 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159387', '159569']",
+      "picks": []
+    },
+    "DUAL55": {
+      "strategy": "DUAL55",
+      "status": "data_error",
+      "asof": "2026-11-12",
+      "exec_day": "2026-11-13",
+      "error": "ETF history coverage 1661/1728 eligible records; 49 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159387', '159569']",
+      "picks": []
+    }
+  },
+  "stock_hits": {},
+  "accounts": {
+    "champion": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-12",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "balanced": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-12",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "runner": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-12",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "original": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-12",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "wild": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-12",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "B0": {
+      "cash": 19382.825128503988,
+      "equity": 197175.725128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 135.969,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 8.085,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-12",
+      "return_pct": -1.4121374357479954,
+      "corporate_review": []
+    },
+    "K3": {
+      "cash": 21532.572845091985,
+      "equity": 199909.27284509197,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 1300,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 176798.42715490801,
+          "mark": 135.969,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 200,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 1669.0,
+          "mark": 8.085,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-12",
+      "return_pct": -0.0453635774540162,
+      "corporate_review": []
+    },
+    "K5": {
+      "cash": 19382.825128503988,
+      "equity": 197175.725128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 135.969,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 8.085,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-12",
+      "return_pct": -1.4121374357479954,
+      "corporate_review": []
+    },
+    "DUAL55": {
+      "cash": 4979.581600000003,
+      "equity": 29991.581600000005,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 100,
+          "entry": "2026-11-12",
+          "entry_px": 135.947184,
+          "cost": 13599.7184,
+          "mark": 135.969,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "511360",
+          "qty": 100,
+          "entry": "2026-11-12",
+          "entry_px": 114.157,
+          "cost": 11420.699999999999,
+          "mark": 114.151,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-12",
+      "return_pct": -0.02806133333331795,
+      "corporate_review": []
+    }
+  },
+  "errors": {
+    "stock": "stock coverage 754/1600",
+    "etf": "ETF history coverage 1661/1728 eligible records; 49 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '159915', '159387', '159569']"
+  }
+}
