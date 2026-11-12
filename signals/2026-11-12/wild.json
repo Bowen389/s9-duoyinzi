@@ -1,8 +1,51 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-12",
   "exec_day": "2026-11-13",
-  "error": "stock coverage 1443/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 13.77686365743995,
+      "ref_close": 99.54
+    },
+    {
+      "code": "601606",
+      "name": "长城军工",
+      "score": 12.706637024696764,
+      "ref_close": 32.62
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

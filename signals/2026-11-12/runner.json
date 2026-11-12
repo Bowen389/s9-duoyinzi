@@ -1,8 +1,159 @@
 {
   "strategy": "runner",
-  "status": "data_error",
+  "label": "奔跑配置",
+  "status": "ok",
   "asof": "2026-11-12",
   "exec_day": "2026-11-13",
-  "error": "stock coverage 1443/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "score": 17.01290406658085,
+      "ref_close": 122.85
+    },
+    {
+      "code": "688795",
+      "name": "摩尔线程",
+      "score": 15.05460437314548,
+      "ref_close": 380.22
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 14.974270735994276,
+      "ref_close": 30.8
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 13.669524802672218,
+      "ref_close": 99.54
+    },
+    {
+      "code": "601606",
+      "name": "长城军工",
+      "score": 13.639863606264033,
+      "ref_close": 32.62
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "score": 13.297639977967703,
+      "ref_close": 66.74
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "score": 13.205951335938321,
+      "ref_close": 48.36
+    },
+    {
+      "code": "688802",
+      "name": "沐曦股份",
+      "score": 12.891703439741203,
+      "ref_close": 568.99
+    },
+    {
+      "code": "301529",
+      "name": "福赛科技",
+      "score": 12.445449539442365,
+      "ref_close": 184.13
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "score": 11.694231069494133,
+      "ref_close": 225.07
+    },
+    {
+      "code": "301666",
+      "name": "大普微",
+      "score": 11.672988202115135,
+      "ref_close": 323.11
+    },
+    {
+      "code": "688729",
+      "name": "屹唐股份",
+      "score": 11.671801435318793,
+      "ref_close": 22.88
+    },
+    {
+      "code": "301165",
+      "name": "锐捷网络",
+      "score": 11.40163530929404,
+      "ref_close": 81.25
+    },
+    {
+      "code": "688502",
+      "name": "茂莱光学",
+      "score": 11.375064548743055,
+      "ref_close": 410.5
+    },
+    {
+      "code": "601091",
+      "name": "沈鼓集团",
+      "score": 11.119849935000715,
+      "ref_close": 20.92
+    },
+    {
+      "code": "300001",
+      "name": "特锐德",
+      "score": 10.897243678976867,
+      "ref_close": 30.36
+    },
+    {
+      "code": "603268",
+      "name": "松发股份",
+      "score": 10.641083819721619,
+      "ref_close": 164.8
+    },
+    {
+      "code": "600259",
+      "name": "中稀有色",
+      "score": 10.519270434177514,
+      "ref_close": 74.02
+    },
+    {
+      "code": "301717",
+      "name": "超纯应材",
+      "score": 10.39289869255256,
+      "ref_close": 308.0
+    },
+    {
+      "code": "688835",
+      "name": "高凯技术",
+      "score": 9.945118330151246,
+      "ref_close": 309.88
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

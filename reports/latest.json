@@ -1,47 +1,694 @@
 {
   "asof": "2026-11-12",
-  "generated_at": "2026-11-12 17:14:22.940264+08:00",
+  "generated_at": "2026-11-12 17:34:46.282992+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
       "strategy": "champion",
-      "status": "data_error",
+      "label": "冠军配置",
+      "status": "ok",
       "asof": "2026-11-12",
       "exec_day": "2026-11-13",
-      "error": "stock coverage 1443/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 14.230514791087543,
+          "ref_close": 122.85
+        },
+        {
+          "code": "688433",
+          "name": "华曙高科",
+          "score": 12.753109947913213,
+          "ref_close": 66.74
+        },
+        {
+          "code": "601606",
+          "name": "长城军工",
+          "score": 11.984967915080723,
+          "ref_close": 32.62
+        },
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "score": 11.774232852285763,
+          "ref_close": 48.36
+        },
+        {
+          "code": "688702",
+          "name": "盛科通信",
+          "score": 10.536228938548373,
+          "ref_close": 225.07
+        },
+        {
+          "code": "688795",
+          "name": "摩尔线程",
+          "score": 10.386330291086082,
+          "ref_close": 380.22
+        },
+        {
+          "code": "688502",
+          "name": "茂莱光学",
+          "score": 10.344720496866344,
+          "ref_close": 410.5
+        },
+        {
+          "code": "603175",
+          "name": "超颖电子",
+          "score": 10.19736926623437,
+          "ref_close": 99.54
+        },
+        {
+          "code": "300001",
+          "name": "特锐德",
+          "score": 9.97426175014391,
+          "ref_close": 30.36
+        },
+        {
+          "code": "688729",
+          "name": "屹唐股份",
+          "score": 9.807839217798582,
+          "ref_close": 22.88
+        },
+        {
+          "code": "603268",
+          "name": "松发股份",
+          "score": 9.56341379149221,
+          "ref_close": 164.8
+        },
+        {
+          "code": "301660",
+          "name": "粤芯半导",
+          "score": 9.235253749204386,
+          "ref_close": 30.8
+        },
+        {
+          "code": "301666",
+          "name": "大普微",
+          "score": 9.021318069071409,
+          "ref_close": 323.11
+        },
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "score": 8.844969518654654,
+          "ref_close": 73.3
+        },
+        {
+          "code": "688802",
+          "name": "沐曦股份",
+          "score": 8.7021054296465,
+          "ref_close": 568.99
+        },
+        {
+          "code": "603296",
+          "name": "华勤技术",
+          "score": 8.598520831585285,
+          "ref_close": 70.26
+        },
+        {
+          "code": "300058",
+          "name": "蓝色光标",
+          "score": 8.562021746347753,
+          "ref_close": 14.76
+        },
+        {
+          "code": "300919",
+          "name": "中伟新材",
+          "score": 8.499750508465151,
+          "ref_close": 32.25
+        },
+        {
+          "code": "600967",
+          "name": "内蒙一机",
+          "score": 8.329058636924735,
+          "ref_close": 13.15
+        },
+        {
+          "code": "688629",
+          "name": "华丰科技",
+          "score": 8.25763471009075,
+          "ref_close": 79.02
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 10,
+          "to_window": 40,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": -0.5,
+          "theme_zt": -0.5,
+          "theme_rank": -0.5,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "冠军配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-11"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "balanced": {
       "strategy": "balanced",
-      "status": "data_error",
+      "label": "稳健配置",
+      "status": "ok",
       "asof": "2026-11-12",
       "exec_day": "2026-11-13",
-      "error": "stock coverage 1443/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 13.347114156963487,
+          "ref_close": 122.85
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 11.061546975967673,
+          "ref_close": 184.13
+        },
+        {
+          "code": "603175",
+          "name": "超颖电子",
+          "score": 10.594374362045876,
+          "ref_close": 99.54
+        },
+        {
+          "code": "688433",
+          "name": "华曙高科",
+          "score": 10.45475812187211,
+          "ref_close": 66.74
+        },
+        {
+          "code": "300001",
+          "name": "特锐德",
+          "score": 10.191092664451496,
+          "ref_close": 30.36
+        },
+        {
+          "code": "601606",
+          "name": "长城军工",
+          "score": 9.953264575026566,
+          "ref_close": 32.62
+        },
+        {
+          "code": "688795",
+          "name": "摩尔线程",
+          "score": 9.867689050354036,
+          "ref_close": 380.22
+        },
+        {
+          "code": "301660",
+          "name": "粤芯半导",
+          "score": 9.829494920805557,
+          "ref_close": 30.8
+        },
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "score": 8.908951557071365,
+          "ref_close": 48.36
+        },
+        {
+          "code": "301666",
+          "name": "大普微",
+          "score": 8.168104970671575,
+          "ref_close": 323.11
+        },
+        {
+          "code": "600967",
+          "name": "内蒙一机",
+          "score": 7.7377912147806045,
+          "ref_close": 13.15
+        },
+        {
+          "code": "603296",
+          "name": "华勤技术",
+          "score": 7.674358208927481,
+          "ref_close": 70.26
+        },
+        {
+          "code": "688802",
+          "name": "沐曦股份",
+          "score": 7.595119153448246,
+          "ref_close": 568.99
+        },
+        {
+          "code": "601091",
+          "name": "沈鼓集团",
+          "score": 7.471891216845458,
+          "ref_close": 20.92
+        },
+        {
+          "code": "603228",
+          "name": "景旺电子",
+          "score": 7.374707771749506,
+          "ref_close": 66.87
+        },
+        {
+          "code": "688502",
+          "name": "茂莱光学",
+          "score": 7.268909026517516,
+          "ref_close": 410.5
+        },
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "score": 7.08695540203977,
+          "ref_close": 73.3
+        },
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "score": 7.063192922629911,
+          "ref_close": 81.25
+        },
+        {
+          "code": "002384",
+          "name": "东山精密",
+          "score": 6.719048979549867,
+          "ref_close": 93.69
+        },
+        {
+          "code": "301707",
+          "name": "展芯股份",
+          "score": 6.619067279771432,
+          "ref_close": 56.92
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "稳健配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-11"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "runner": {
       "strategy": "runner",
-      "status": "data_error",
+      "label": "奔跑配置",
+      "status": "ok",
       "asof": "2026-11-12",
       "exec_day": "2026-11-13",
-      "error": "stock coverage 1443/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 17.01290406658085,
+          "ref_close": 122.85
+        },
+        {
+          "code": "688795",
+          "name": "摩尔线程",
+          "score": 15.05460437314548,
+          "ref_close": 380.22
+        },
+        {
+          "code": "301660",
+          "name": "粤芯半导",
+          "score": 14.974270735994276,
+          "ref_close": 30.8
+        },
+        {
+          "code": "603175",
+          "name": "超颖电子",
+          "score": 13.669524802672218,
+          "ref_close": 99.54
+        },
+        {
+          "code": "601606",
+          "name": "长城军工",
+          "score": 13.639863606264033,
+          "ref_close": 32.62
+        },
+        {
+          "code": "688433",
+          "name": "华曙高科",
+          "score": 13.297639977967703,
+          "ref_close": 66.74
+        },
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "score": 13.205951335938321,
+          "ref_close": 48.36
+        },
+        {
+          "code": "688802",
+          "name": "沐曦股份",
+          "score": 12.891703439741203,
+          "ref_close": 568.99
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 12.445449539442365,
+          "ref_close": 184.13
+        },
+        {
+          "code": "688702",
+          "name": "盛科通信",
+          "score": 11.694231069494133,
+          "ref_close": 225.07
+        },
+        {
+          "code": "301666",
+          "name": "大普微",
+          "score": 11.672988202115135,
+          "ref_close": 323.11
+        },
+        {
+          "code": "688729",
+          "name": "屹唐股份",
+          "score": 11.671801435318793,
+          "ref_close": 22.88
+        },
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "score": 11.40163530929404,
+          "ref_close": 81.25
+        },
+        {
+          "code": "688502",
+          "name": "茂莱光学",
+          "score": 11.375064548743055,
+          "ref_close": 410.5
+        },
+        {
+          "code": "601091",
+          "name": "沈鼓集团",
+          "score": 11.119849935000715,
+          "ref_close": 20.92
+        },
+        {
+          "code": "300001",
+          "name": "特锐德",
+          "score": 10.897243678976867,
+          "ref_close": 30.36
+        },
+        {
+          "code": "603268",
+          "name": "松发股份",
+          "score": 10.641083819721619,
+          "ref_close": 164.8
+        },
+        {
+          "code": "600259",
+          "name": "中稀有色",
+          "score": 10.519270434177514,
+          "ref_close": 74.02
+        },
+        {
+          "code": "301717",
+          "name": "超纯应材",
+          "score": 10.39289869255256,
+          "ref_close": 308.0
+        },
+        {
+          "code": "688835",
+          "name": "高凯技术",
+          "score": 9.945118330151246,
+          "ref_close": 309.88
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "close",
+        "gate": "ma60",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": -0.5,
+          "theme_rank": 0.0,
+          "theme_rs": 2.0,
+          "zt_premium": -0.5
+        },
+        "label": "奔跑配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-11"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "original": {
       "strategy": "original",
-      "status": "data_error",
+      "label": "原版配置",
+      "status": "ok",
       "asof": "2026-11-12",
       "exec_day": "2026-11-13",
-      "error": "stock coverage 1443/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603083",
+          "name": "剑桥科技",
+          "score": 13.347114156963487,
+          "ref_close": 122.85
+        },
+        {
+          "code": "301529",
+          "name": "福赛科技",
+          "score": 11.061546975967673,
+          "ref_close": 184.13
+        },
+        {
+          "code": "603175",
+          "name": "超颖电子",
+          "score": 10.594374362045876,
+          "ref_close": 99.54
+        },
+        {
+          "code": "688433",
+          "name": "华曙高科",
+          "score": 10.45475812187211,
+          "ref_close": 66.74
+        },
+        {
+          "code": "300001",
+          "name": "特锐德",
+          "score": 10.191092664451496,
+          "ref_close": 30.36
+        },
+        {
+          "code": "601606",
+          "name": "长城军工",
+          "score": 9.953264575026566,
+          "ref_close": 32.62
+        },
+        {
+          "code": "688795",
+          "name": "摩尔线程",
+          "score": 9.867689050354036,
+          "ref_close": 380.22
+        },
+        {
+          "code": "301660",
+          "name": "粤芯半导",
+          "score": 9.829494920805557,
+          "ref_close": 30.8
+        },
+        {
+          "code": "002156",
+          "name": "通富微电",
+          "score": 8.908951557071365,
+          "ref_close": 48.36
+        },
+        {
+          "code": "301666",
+          "name": "大普微",
+          "score": 8.168104970671575,
+          "ref_close": 323.11
+        },
+        {
+          "code": "600967",
+          "name": "内蒙一机",
+          "score": 7.7377912147806045,
+          "ref_close": 13.15
+        },
+        {
+          "code": "603296",
+          "name": "华勤技术",
+          "score": 7.674358208927481,
+          "ref_close": 70.26
+        },
+        {
+          "code": "688802",
+          "name": "沐曦股份",
+          "score": 7.595119153448246,
+          "ref_close": 568.99
+        },
+        {
+          "code": "601091",
+          "name": "沈鼓集团",
+          "score": 7.471891216845458,
+          "ref_close": 20.92
+        },
+        {
+          "code": "603228",
+          "name": "景旺电子",
+          "score": 7.374707771749506,
+          "ref_close": 66.87
+        },
+        {
+          "code": "688502",
+          "name": "茂莱光学",
+          "score": 7.268909026517516,
+          "ref_close": 410.5
+        },
+        {
+          "code": "688141",
+          "name": "杰华特",
+          "score": 7.08695540203977,
+          "ref_close": 73.3
+        },
+        {
+          "code": "301165",
+          "name": "锐捷网络",
+          "score": 7.063192922629911,
+          "ref_close": 81.25
+        },
+        {
+          "code": "002384",
+          "name": "东山精密",
+          "score": 6.719048979549867,
+          "ref_close": 93.69
+        },
+        {
+          "code": "301707",
+          "name": "展芯股份",
+          "score": 6.619067279771432,
+          "ref_close": 56.92
+        }
+      ],
+      "config": {
+        "hold": 3,
+        "top_n": 20,
+        "sell_at": "open",
+        "gate": "ma20",
+        "windows": {
+          "vol_ma": 5,
+          "to_window": 20,
+          "pos_window": 120
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 0.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "原版配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-11"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "wild": {
       "strategy": "wild",
-      "status": "data_error",
+      "label": "狂暴配置",
+      "status": "ok",
       "asof": "2026-11-12",
       "exec_day": "2026-11-13",
-      "error": "stock coverage 1443/1600",
-      "picks": []
+      "gate_on": false,
+      "picks": [
+        {
+          "code": "603175",
+          "name": "超颖电子",
+          "score": 13.77686365743995,
+          "ref_close": 99.54
+        },
+        {
+          "code": "601606",
+          "name": "长城军工",
+          "score": 12.706637024696764,
+          "ref_close": 32.62
+        }
+      ],
+      "config": {
+        "hold": 1,
+        "top_n": 2,
+        "sell_at": "close",
+        "gate": "ma120",
+        "windows": {
+          "vol_ma": 3,
+          "to_window": 20,
+          "pos_window": 60
+        },
+        "weights": {
+          "theme_mom5": 1.0,
+          "theme_zt": 1.0,
+          "theme_rank": -0.5,
+          "theme_rs": 0.5,
+          "zt_premium": -0.5
+        },
+        "label": "狂暴配置"
+      },
+      "coverage": {
+        "loaded": 1600,
+        "expected": 1600,
+        "inactive_errors": {},
+        "vendors": [
+          "Tencent rich kline"
+        ],
+        "board_catalog_asof": "2026-11-11"
+      },
+      "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
     },
     "B0": {
       "strategy": "B0",
@@ -2197,7 +2844,148 @@
       ]
     }
   },
-  "stock_hits": {},
+  "stock_hits": {
+    "603083": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688433": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "601606": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "002156": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688702": [
+      "champion",
+      "runner"
+    ],
+    "688795": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688502": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603175": [
+      "champion",
+      "balanced",
+      "runner",
+      "original",
+      "wild"
+    ],
+    "300001": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688729": [
+      "champion",
+      "runner"
+    ],
+    "603268": [
+      "champion",
+      "runner"
+    ],
+    "301660": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "301666": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "688141": [
+      "champion",
+      "balanced",
+      "original"
+    ],
+    "688802": [
+      "champion",
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603296": [
+      "champion",
+      "balanced",
+      "original"
+    ],
+    "300058": [
+      "champion"
+    ],
+    "300919": [
+      "champion"
+    ],
+    "600967": [
+      "champion",
+      "balanced",
+      "original"
+    ],
+    "688629": [
+      "champion"
+    ],
+    "301529": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "601091": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "603228": [
+      "balanced",
+      "original"
+    ],
+    "301165": [
+      "balanced",
+      "runner",
+      "original"
+    ],
+    "002384": [
+      "balanced",
+      "original"
+    ],
+    "301707": [
+      "balanced",
+      "original"
+    ],
+    "600259": [
+      "runner"
+    ],
+    "301717": [
+      "runner"
+    ],
+    "688835": [
+      "runner"
+    ]
+  },
   "accounts": {
     "champion": {
       "cash": 200000.0,
@@ -2356,7 +3144,5 @@
       "corporate_review": []
     }
   },
-  "errors": {
-    "stock": "stock coverage 1443/1600"
-  }
+  "errors": {}
 }
