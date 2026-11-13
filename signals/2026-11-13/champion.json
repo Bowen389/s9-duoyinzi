@@ -1,8 +1,159 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-13",
   "exec_day": "2026-11-16",
-  "error": "stock coverage 639/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "000034",
+      "name": "神州数码",
+      "score": 17.168870993070176,
+      "ref_close": 21.82
+    },
+    {
+      "code": "600977",
+      "name": "中国电影",
+      "score": 14.218555530635182,
+      "ref_close": 17.05
+    },
+    {
+      "code": "002261",
+      "name": "拓维信息",
+      "score": 13.818547328493104,
+      "ref_close": 22.15
+    },
+    {
+      "code": "301236",
+      "name": "软通动力",
+      "score": 13.600589144014577,
+      "ref_close": 34.58
+    },
+    {
+      "code": "301717",
+      "name": "超纯应材",
+      "score": 13.10827168081525,
+      "ref_close": 309.65
+    },
+    {
+      "code": "002739",
+      "name": "儒意电影",
+      "score": 12.238063607363369,
+      "ref_close": 10.05
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 12.220312778212126,
+      "ref_close": 84.63
+    },
+    {
+      "code": "300474",
+      "name": "景嘉微",
+      "score": 12.147767924372758,
+      "ref_close": 48.3
+    },
+    {
+      "code": "688433",
+      "name": "华曙高科",
+      "score": 10.532960260742241,
+      "ref_close": 67.5
+    },
+    {
+      "code": "688702",
+      "name": "盛科通信",
+      "score": 10.235847965613178,
+      "ref_close": 229.0
+    },
+    {
+      "code": "301165",
+      "name": "锐捷网络",
+      "score": 9.779122669670608,
+      "ref_close": 82.5
+    },
+    {
+      "code": "601091",
+      "name": "沈鼓集团",
+      "score": 9.75501951496241,
+      "ref_close": 22.23
+    },
+    {
+      "code": "688502",
+      "name": "茂莱光学",
+      "score": 9.63053325405551,
+      "ref_close": 410.18
+    },
+    {
+      "code": "603019",
+      "name": "中科曙光",
+      "score": 9.5172369166219,
+      "ref_close": 81.43
+    },
+    {
+      "code": "600483",
+      "name": "福能股份",
+      "score": 9.316489582945575,
+      "ref_close": 11.25
+    },
+    {
+      "code": "688826",
+      "name": "频准激光",
+      "score": 8.733820443782518,
+      "ref_close": 629.35
+    },
+    {
+      "code": "688801",
+      "name": "燧原科技",
+      "score": 8.444886365899087,
+      "ref_close": 570.7
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 8.371507608427407,
+      "ref_close": 26.35
+    },
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "score": 8.323995433808339,
+      "ref_close": 2.9
+    },
+    {
+      "code": "688047",
+      "name": "龙芯中科",
+      "score": 7.968286972730218,
+      "ref_close": 93.68
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
