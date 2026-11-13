@@ -1,0 +1,8 @@
+{
+  "strategy": "K5",
+  "status": "data_error",
+  "asof": "2026-11-13",
+  "exec_day": "2026-11-16",
+  "error": "ETF history coverage 1454/1731 eligible records; 46 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '563100', '581030', '589670']",
+  "picks": []
+}

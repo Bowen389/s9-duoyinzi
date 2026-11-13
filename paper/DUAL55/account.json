@@ -10,7 +10,7 @@
       "entry": "2026-11-12",
       "entry_px": 135.947184,
       "cost": 13599.7184,
-      "mark": 135.969,
+      "mark": 135.886,
       "due": null,
       "sell_at": null
     },
@@ -20,12 +20,12 @@
       "entry": "2026-11-12",
       "entry_px": 114.157,
       "cost": 11420.699999999999,
-      "mark": 114.151,
+      "mark": 114.166,
       "due": null,
       "sell_at": null
     }
   ],
-  "last_settled": "2026-11-12",
+  "last_settled": "2026-11-13",
   "trades": [
     {
       "date": "2026-11-12",
@@ -62,6 +62,14 @@
       "cash": 4979.581600000003,
       "equity": 29991.581600000005,
       "return_pct": -0.02806133333331795,
+      "positions": 2,
+      "valuation_review": false
+    },
+    {
+      "date": "2026-11-13",
+      "cash": 4979.581600000003,
+      "equity": 29984.781600000002,
+      "return_pct": -0.05072799999998878,
       "positions": 2,
       "valuation_review": false
     }
