@@ -1,0 +1,159 @@
+{
+  "strategy": "champion",
+  "label": "冠军配置",
+  "status": "ok",
+  "asof": "2026-11-16",
+  "exec_day": "2026-11-17",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "000661",
+      "name": "长春高新",
+      "score": 12.582941658069583,
+      "ref_close": 73.41
+    },
+    {
+      "code": "600499",
+      "name": "科达制造",
+      "score": 12.280850110014402,
+      "ref_close": 12.14
+    },
+    {
+      "code": "000831",
+      "name": "中国稀土",
+      "score": 11.753564084709886,
+      "ref_close": 49.8
+    },
+    {
+      "code": "600483",
+      "name": "福能股份",
+      "score": 11.70724475576158,
+      "ref_close": 11.75
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "score": 11.206770613065027,
+      "ref_close": 26.72
+    },
+    {
+      "code": "688187",
+      "name": "时代电气",
+      "score": 10.823055755762688,
+      "ref_close": 47.42
+    },
+    {
+      "code": "601717",
+      "name": "中创智领",
+      "score": 10.617335610676651,
+      "ref_close": 15.75
+    },
+    {
+      "code": "600312",
+      "name": "平高电气",
+      "score": 10.436981763874469,
+      "ref_close": 21.93
+    },
+    {
+      "code": "601136",
+      "name": "首创证券",
+      "score": 10.040413374327843,
+      "ref_close": 13.23
+    },
+    {
+      "code": "300628",
+      "name": "亿联网络",
+      "score": 9.34702698550091,
+      "ref_close": 39.3
+    },
+    {
+      "code": "000062",
+      "name": "深圳华强",
+      "score": 9.273809699673969,
+      "ref_close": 20.88
+    },
+    {
+      "code": "603568",
+      "name": "伟明环保",
+      "score": 9.200015082807322,
+      "ref_close": 12.87
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "score": 9.188582166273036,
+      "ref_close": 23.6
+    },
+    {
+      "code": "000400",
+      "name": "许继电气",
+      "score": 8.939507776484467,
+      "ref_close": 26.19
+    },
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "score": 8.83494974633768,
+      "ref_close": 2.93
+    },
+    {
+      "code": "600535",
+      "name": "天士力",
+      "score": 8.790707961774912,
+      "ref_close": 14.39
+    },
+    {
+      "code": "600995",
+      "name": "南网储能",
+      "score": 8.44240004578544,
+      "ref_close": 11.16
+    },
+    {
+      "code": "002608",
+      "name": "江苏国信",
+      "score": 8.107543035750657,
+      "ref_close": 7.7
+    },
+    {
+      "code": "000034",
+      "name": "神州数码",
+      "score": 8.092901229998184,
+      "ref_close": 21.55
+    },
+    {
+      "code": "300677",
+      "name": "英科医疗",
+      "score": 7.897749756939143,
+      "ref_close": 46.95
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

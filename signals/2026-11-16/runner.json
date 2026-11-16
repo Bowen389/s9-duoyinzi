@@ -1,0 +1,159 @@
+{
+  "strategy": "runner",
+  "label": "奔跑配置",
+  "status": "ok",
+  "asof": "2026-11-16",
+  "exec_day": "2026-11-17",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600499",
+      "name": "科达制造",
+      "score": 15.08941384388844,
+      "ref_close": 12.14
+    },
+    {
+      "code": "002739",
+      "name": "儒意电影",
+      "score": 14.7795808498697,
+      "ref_close": 10.2
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 14.08159524552304,
+      "ref_close": 28.65
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "score": 13.953328235579438,
+      "ref_close": 26.72
+    },
+    {
+      "code": "600483",
+      "name": "福能股份",
+      "score": 12.980716644645412,
+      "ref_close": 11.75
+    },
+    {
+      "code": "000661",
+      "name": "长春高新",
+      "score": 12.531496177273354,
+      "ref_close": 73.41
+    },
+    {
+      "code": "601717",
+      "name": "中创智领",
+      "score": 12.36004907088522,
+      "ref_close": 15.75
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "score": 12.107610685158093,
+      "ref_close": 10.02
+    },
+    {
+      "code": "601136",
+      "name": "首创证券",
+      "score": 11.47305094479558,
+      "ref_close": 13.23
+    },
+    {
+      "code": "002948",
+      "name": "青岛银行",
+      "score": 11.35201259362102,
+      "ref_close": 6.69
+    },
+    {
+      "code": "600312",
+      "name": "平高电气",
+      "score": 10.819827568189343,
+      "ref_close": 21.93
+    },
+    {
+      "code": "601169",
+      "name": "北京银行",
+      "score": 10.710605215022362,
+      "ref_close": 6.32
+    },
+    {
+      "code": "688187",
+      "name": "时代电气",
+      "score": 10.661174393738184,
+      "ref_close": 47.42
+    },
+    {
+      "code": "000831",
+      "name": "中国稀土",
+      "score": 10.567614694593995,
+      "ref_close": 49.8
+    },
+    {
+      "code": "603568",
+      "name": "伟明环保",
+      "score": 10.388461994141945,
+      "ref_close": 12.87
+    },
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "score": 10.196724995502207,
+      "ref_close": 2.93
+    },
+    {
+      "code": "600995",
+      "name": "南网储能",
+      "score": 10.05957051568998,
+      "ref_close": 11.16
+    },
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "score": 9.787261089994919,
+      "ref_close": 8.97
+    },
+    {
+      "code": "600000",
+      "name": "浦发银行",
+      "score": 9.752669412905242,
+      "ref_close": 10.78
+    },
+    {
+      "code": "000895",
+      "name": "双汇发展",
+      "score": 9.71359372845846,
+      "ref_close": 25.41
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

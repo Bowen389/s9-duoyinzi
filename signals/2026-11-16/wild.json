@@ -1,0 +1,51 @@
+{
+  "strategy": "wild",
+  "label": "狂暴配置",
+  "status": "ok",
+  "asof": "2026-11-16",
+  "exec_day": "2026-11-17",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002739",
+      "name": "儒意电影",
+      "score": 17.91308923832735,
+      "ref_close": 10.2
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 13.988416299445497,
+      "ref_close": 28.65
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-11"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}
