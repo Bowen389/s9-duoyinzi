@@ -1,8 +1,159 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-17",
   "exec_day": "2026-11-18",
-  "error": "stock coverage 641/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 14.72788046781627,
+      "ref_close": 27.35
+    },
+    {
+      "code": "300866",
+      "name": "安克创新",
+      "score": 12.872153632600828,
+      "ref_close": 114.44
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 12.4920171344382,
+      "ref_close": 90.82
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "score": 12.407918047335162,
+      "ref_close": 42.13
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 11.556372029009337,
+      "ref_close": 39.33
+    },
+    {
+      "code": "000034",
+      "name": "神州数码",
+      "score": 11.300558168142716,
+      "ref_close": 22.07
+    },
+    {
+      "code": "603195",
+      "name": "公牛集团",
+      "score": 11.160472487140709,
+      "ref_close": 39.88
+    },
+    {
+      "code": "600301",
+      "name": "华锡有色",
+      "score": 10.977311429289198,
+      "ref_close": 45.85
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "score": 10.233957813787363,
+      "ref_close": 89.39
+    },
+    {
+      "code": "300604",
+      "name": "长川科技",
+      "score": 9.909682938114631,
+      "ref_close": 182.5
+    },
+    {
+      "code": "002625",
+      "name": "光启技术",
+      "score": 9.82313271284669,
+      "ref_close": 18.2
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "score": 9.785818007191772,
+      "ref_close": 172.42
+    },
+    {
+      "code": "600406",
+      "name": "国电南瑞",
+      "score": 9.593041673067752,
+      "ref_close": 24.5
+    },
+    {
+      "code": "002261",
+      "name": "拓维信息",
+      "score": 9.586998411427576,
+      "ref_close": 22.96
+    },
+    {
+      "code": "601717",
+      "name": "中创智领",
+      "score": 9.491702424954477,
+      "ref_close": 15.97
+    },
+    {
+      "code": "600642",
+      "name": "申能股份",
+      "score": 9.459310334024696,
+      "ref_close": 9.62
+    },
+    {
+      "code": "002222",
+      "name": "福晶科技",
+      "score": 9.370498416025052,
+      "ref_close": 50.3
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "score": 9.272067578695484,
+      "ref_close": 113.45
+    },
+    {
+      "code": "300677",
+      "name": "英科医疗",
+      "score": 9.18112908398071,
+      "ref_close": 49.42
+    },
+    {
+      "code": "600312",
+      "name": "平高电气",
+      "score": 8.56516080908279,
+      "ref_close": 21.93
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

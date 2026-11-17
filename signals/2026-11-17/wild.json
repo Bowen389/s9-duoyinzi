@@ -1,8 +1,51 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-17",
   "exec_day": "2026-11-18",
-  "error": "stock coverage 641/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 13.484338343883827,
+      "ref_close": 39.33
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 11.380996803692112,
+      "ref_close": 27.35
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

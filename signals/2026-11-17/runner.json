@@ -1,8 +1,159 @@
 {
   "strategy": "runner",
-  "status": "data_error",
+  "label": "奔跑配置",
+  "status": "ok",
   "asof": "2026-11-17",
   "exec_day": "2026-11-18",
-  "error": "stock coverage 641/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 15.665677899948324,
+      "ref_close": 27.35
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 14.531448852651383,
+      "ref_close": 90.82
+    },
+    {
+      "code": "300866",
+      "name": "安克创新",
+      "score": 13.842334799298692,
+      "ref_close": 114.44
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "score": 12.833382037972996,
+      "ref_close": 42.13
+    },
+    {
+      "code": "601825",
+      "name": "沪农商行",
+      "score": 11.813074772757398,
+      "ref_close": 9.7
+    },
+    {
+      "code": "000951",
+      "name": "中国重汽",
+      "score": 11.562760574765068,
+      "ref_close": 19.8
+    },
+    {
+      "code": "600642",
+      "name": "申能股份",
+      "score": 11.52864338127289,
+      "ref_close": 9.62
+    },
+    {
+      "code": "002261",
+      "name": "拓维信息",
+      "score": 11.513482026784047,
+      "ref_close": 22.96
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 11.475816479710119,
+      "ref_close": 39.33
+    },
+    {
+      "code": "603195",
+      "name": "公牛集团",
+      "score": 11.359994558948014,
+      "ref_close": 39.88
+    },
+    {
+      "code": "301606",
+      "name": "绿联科技",
+      "score": 11.191533586026893,
+      "ref_close": 61.02
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "score": 11.076168355593538,
+      "ref_close": 89.39
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 10.963201854228357,
+      "ref_close": 31.52
+    },
+    {
+      "code": "600862",
+      "name": "中航高科",
+      "score": 10.872092610031519,
+      "ref_close": 18.58
+    },
+    {
+      "code": "603345",
+      "name": "安井食品",
+      "score": 10.375480524715613,
+      "ref_close": 92.3
+    },
+    {
+      "code": "001965",
+      "name": "招商公路",
+      "score": 10.005362910247921,
+      "ref_close": 10.8
+    },
+    {
+      "code": "600023",
+      "name": "浙能电力",
+      "score": 9.823086708166443,
+      "ref_close": 5.69
+    },
+    {
+      "code": "600754",
+      "name": "锦江酒店",
+      "score": 9.612335468159976,
+      "ref_close": 21.44
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "score": 9.246595286927889,
+      "ref_close": 172.42
+    },
+    {
+      "code": "601717",
+      "name": "中创智领",
+      "score": 9.128270975303042,
+      "ref_close": 15.97
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

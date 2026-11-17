@@ -1,8 +1,104 @@
 {
   "strategy": "DUAL55",
-  "status": "data_error",
+  "label": "ETF 双席趋势",
+  "status": "ok",
   "asof": "2026-11-17",
   "exec_day": "2026-11-18",
-  "error": "ETF history coverage 1630/1729 eligible records; 48 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '510300', '159915', '159001']",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "159887",
+      "name": "银行ETF富国",
+      "score": 0.33388065170833664,
+      "ref_close": 1.501
+    },
+    {
+      "code": "512700",
+      "name": "银行ETF南方",
+      "score": 0.32025577522900883,
+      "ref_close": 1.643
+    },
+    {
+      "code": "516310",
+      "name": "银行ETF易方达",
+      "score": 0.3185871418455353,
+      "ref_close": 1.521
+    },
+    {
+      "code": "515020",
+      "name": "银行ETF华夏",
+      "score": 0.31679340576199366,
+      "ref_close": 1.968
+    },
+    {
+      "code": "512730",
+      "name": "银行ETF鹏华",
+      "score": 0.31193897752928007,
+      "ref_close": 1.88
+    },
+    {
+      "code": "515290",
+      "name": "银行ETF天弘",
+      "score": 0.31188773345354054,
+      "ref_close": 1.647
+    },
+    {
+      "code": "512800",
+      "name": "银行ETF华宝",
+      "score": 0.3103374780720744,
+      "ref_close": 0.916
+    },
+    {
+      "code": "516210",
+      "name": "银行ETF华安",
+      "score": 0.3091983056981761,
+      "ref_close": 1.56
+    },
+    {
+      "code": "159529",
+      "name": "标普消费ETF景顺",
+      "score": 0.3085140335849137,
+      "ref_close": 1.382
+    },
+    {
+      "code": "512820",
+      "name": "银行ETF汇添富",
+      "score": 0.306205198474956,
+      "ref_close": 1.608
+    }
+  ],
+  "defense_picks": [
+    {
+      "code": "511260",
+      "name": "十年国债ETF国泰",
+      "score": 0.05235301218523611
+    },
+    {
+      "code": "511010",
+      "name": "国债ETF国泰",
+      "score": 0.030339179240233365
+    },
+    {
+      "code": "511360",
+      "name": "短融ETF海富通",
+      "score": 0.01436094539472847
+    },
+    {
+      "code": "518880",
+      "name": "黄金ETF华安",
+      "score": -0.6747041997051796
+    }
+  ],
+  "benchmark_close": 3976.46,
+  "benchmark_ma75": 4390.124,
+  "gold_blocked": false,
+  "rebalance": true,
+  "weights": {
+    "511260": 0.5,
+    "511360": 0.5
+  },
+  "target_codes": [
+    "511260",
+    "511360"
+  ]
 }
