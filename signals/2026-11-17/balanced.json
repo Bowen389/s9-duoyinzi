@@ -1,0 +1,8 @@
+{
+  "strategy": "balanced",
+  "status": "data_error",
+  "asof": "2026-11-17",
+  "exec_day": "2026-11-18",
+  "error": "stock coverage 641/1600",
+  "picks": []
+}

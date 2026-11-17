@@ -1,0 +1,8 @@
+{
+  "strategy": "DUAL55",
+  "status": "data_error",
+  "asof": "2026-11-17",
+  "exec_day": "2026-11-18",
+  "error": "ETF history coverage 1630/1729 eligible records; 48 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '510300', '159915', '159001']",
+  "picks": []
+}
