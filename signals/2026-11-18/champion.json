@@ -1,0 +1,159 @@
+{
+  "strategy": "champion",
+  "label": "冠军配置",
+  "status": "ok",
+  "asof": "2026-11-18",
+  "exec_day": "2026-11-19",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 13.68524002883846,
+      "ref_close": 114.6
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 13.310076354735056,
+      "ref_close": 5.68
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "score": 13.084502414066922,
+      "ref_close": 80.19
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "score": 11.449095005973245,
+      "ref_close": 66.62
+    },
+    {
+      "code": "300122",
+      "name": "智飞生物",
+      "score": 11.0963024866222,
+      "ref_close": 14.86
+    },
+    {
+      "code": "605117",
+      "name": "德业股份",
+      "score": 10.629670141047397,
+      "ref_close": 79.76
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "score": 10.04473609195102,
+      "ref_close": 99.4
+    },
+    {
+      "code": "688141",
+      "name": "杰华特",
+      "score": 9.868517302472105,
+      "ref_close": 63.96
+    },
+    {
+      "code": "300209",
+      "name": "行云科技",
+      "score": 9.824853995671205,
+      "ref_close": 22.15
+    },
+    {
+      "code": "300857",
+      "name": "协创数据",
+      "score": 9.553930048342572,
+      "ref_close": 139.49
+    },
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "score": 9.534646466040526,
+      "ref_close": 8.88
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 8.698844538568629,
+      "ref_close": 41.62
+    },
+    {
+      "code": "603392",
+      "name": "万泰生物",
+      "score": 8.482375346770404,
+      "ref_close": 22.55
+    },
+    {
+      "code": "002432",
+      "name": "九安医疗",
+      "score": 8.405745040022776,
+      "ref_close": 56.9
+    },
+    {
+      "code": "301018",
+      "name": "申菱环境",
+      "score": 8.33265286930835,
+      "ref_close": 58.35
+    },
+    {
+      "code": "600483",
+      "name": "福能股份",
+      "score": 7.988025323944108,
+      "ref_close": 12.2
+    },
+    {
+      "code": "002340",
+      "name": "格林美",
+      "score": 7.772318638139502,
+      "ref_close": 5.48
+    },
+    {
+      "code": "000027",
+      "name": "深圳能源",
+      "score": 7.587056430357934,
+      "ref_close": 6.36
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "score": 7.558833174405457,
+      "ref_close": 60.93
+    },
+    {
+      "code": "002916",
+      "name": "深南电路",
+      "score": 7.535998082309845,
+      "ref_close": 201.19
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

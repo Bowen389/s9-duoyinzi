@@ -1,0 +1,159 @@
+{
+  "strategy": "runner",
+  "label": "奔跑配置",
+  "status": "ok",
+  "asof": "2026-11-18",
+  "exec_day": "2026-11-19",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 13.498772907893596,
+      "ref_close": 114.6
+    },
+    {
+      "code": "605117",
+      "name": "德业股份",
+      "score": 13.023999734056531,
+      "ref_close": 79.76
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "score": 13.017534325943618,
+      "ref_close": 99.4
+    },
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "score": 11.450818342013116,
+      "ref_close": 8.88
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "score": 11.19203615415686,
+      "ref_close": 80.19
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "score": 11.154075490250161,
+      "ref_close": 24.8
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "score": 11.089406359482972,
+      "ref_close": 9.23
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 11.019601097981823,
+      "ref_close": 5.68
+    },
+    {
+      "code": "300122",
+      "name": "智飞生物",
+      "score": 10.8727040783122,
+      "ref_close": 14.86
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 10.493761236172443,
+      "ref_close": 41.62
+    },
+    {
+      "code": "300209",
+      "name": "行云科技",
+      "score": 10.274381365486148,
+      "ref_close": 22.15
+    },
+    {
+      "code": "000988",
+      "name": "华工科技",
+      "score": 10.200385775790908,
+      "ref_close": 66.62
+    },
+    {
+      "code": "600548",
+      "name": "深高速",
+      "score": 9.961026082594744,
+      "ref_close": 8.87
+    },
+    {
+      "code": "600350",
+      "name": "山东高速",
+      "score": 9.780898194966262,
+      "ref_close": 11.69
+    },
+    {
+      "code": "600428",
+      "name": "中远海特",
+      "score": 9.68789523643967,
+      "ref_close": 10.93
+    },
+    {
+      "code": "000539",
+      "name": "粤电力Ａ",
+      "score": 8.791099403488708,
+      "ref_close": 5.02
+    },
+    {
+      "code": "600012",
+      "name": "皖通高速",
+      "score": 8.72054092941719,
+      "ref_close": 18.25
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 8.666403526177731,
+      "ref_close": 104.1
+    },
+    {
+      "code": "601872",
+      "name": "招商轮船",
+      "score": 8.570210010643919,
+      "ref_close": 16.05
+    },
+    {
+      "code": "601228",
+      "name": "XD广州港",
+      "score": 8.226740935709568,
+      "ref_close": 3.15
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

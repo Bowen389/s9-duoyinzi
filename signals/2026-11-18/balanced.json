@@ -1,0 +1,159 @@
+{
+  "strategy": "balanced",
+  "label": "稳健配置",
+  "status": "ok",
+  "asof": "2026-11-18",
+  "exec_day": "2026-11-19",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "score": 10.189189092228109,
+      "ref_close": 8.88
+    },
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 9.713274707224093,
+      "ref_close": 114.6
+    },
+    {
+      "code": "605117",
+      "name": "德业股份",
+      "score": 9.544123527397472,
+      "ref_close": 79.76
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "score": 9.291410050516722,
+      "ref_close": 24.8
+    },
+    {
+      "code": "600548",
+      "name": "深高速",
+      "score": 8.71158481214739,
+      "ref_close": 8.87
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "score": 8.429012873152576,
+      "ref_close": 9.23
+    },
+    {
+      "code": "688820",
+      "name": "盛合晶微",
+      "score": 7.946343248624371,
+      "ref_close": 99.4
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 7.883040298092469,
+      "ref_close": 28.37
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 7.87536735624156,
+      "ref_close": 5.68
+    },
+    {
+      "code": "600350",
+      "name": "山东高速",
+      "score": 7.47950163553343,
+      "ref_close": 11.69
+    },
+    {
+      "code": "002340",
+      "name": "格林美",
+      "score": 7.399644616637563,
+      "ref_close": 5.48
+    },
+    {
+      "code": "601228",
+      "name": "XD广州港",
+      "score": 7.397522456377562,
+      "ref_close": 3.15
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "score": 7.246888719026646,
+      "ref_close": 80.19
+    },
+    {
+      "code": "600206",
+      "name": "有研新材",
+      "score": 7.23420338155893,
+      "ref_close": 41.62
+    },
+    {
+      "code": "600372",
+      "name": "中航机载",
+      "score": 7.149286823920651,
+      "ref_close": 10.95
+    },
+    {
+      "code": "000027",
+      "name": "深圳能源",
+      "score": 6.949064187344199,
+      "ref_close": 6.36
+    },
+    {
+      "code": "600862",
+      "name": "中航高科",
+      "score": 6.7660142134094325,
+      "ref_close": 17.87
+    },
+    {
+      "code": "600004",
+      "name": "白云机场",
+      "score": 6.683096627972773,
+      "ref_close": 8.34
+    },
+    {
+      "code": "600885",
+      "name": "宏发股份",
+      "score": 6.630414079492063,
+      "ref_close": 35.15
+    },
+    {
+      "code": "600009",
+      "name": "上海机场",
+      "score": 6.571956386556488,
+      "ref_close": 24.85
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "稳健配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}
