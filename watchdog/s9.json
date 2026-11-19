@@ -1,7 +1,7 @@
 {
   "purpose": "S9 independent post-close recovery",
-  "market_date": "2026-11-18",
-  "requested_at": "2026-11-18T17:40:54+08:00",
+  "market_date": "2026-11-19",
+  "requested_at": "2026-11-19T16:38:21+08:00",
   "missing_strategies": [
     "champion",
     "balanced",
@@ -12,5 +12,5 @@
     "K3",
     "K5"
   ],
-  "reason": "Current report and all eight signals are missing, all eight accounts last settled 2026-11-17, and no eligible daily.yml scan is queued or running."
+  "reason": "Current report and all eight signals missing, accounts last settled 2026-11-18, no eligible daily.yml scan queued or running."
 }
