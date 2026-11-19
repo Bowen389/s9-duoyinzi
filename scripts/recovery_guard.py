@@ -41,6 +41,7 @@ if __name__ == '__main__':
     now = dt.datetime.now(ZoneInfo('Asia/Shanghai'))
     day = now.date().isoformat()
     names = sum((list(v) for v in FAMILIES.values()), [])
-    print(recovery_family(now, read(root/'reports'/f'{day}.json'),
+    result = recovery_family(now, read(root/'reports'/f'{day}.json'),
           {n: read(root/'signals'/day/f'{n}.json') for n in names},
-          {n: read(root/'paper'/n/'account.json') for n in names}))
+          {n: read(root/'paper'/n/'account.json') for n in names})
+    print('all' if now.time() < dt.time(15, 10) else result)
