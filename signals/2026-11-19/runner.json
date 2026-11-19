@@ -1,8 +1,159 @@
 {
   "strategy": "runner",
-  "status": "data_error",
+  "label": "奔跑配置",
+  "status": "ok",
   "asof": "2026-11-19",
   "exec_day": "2026-11-20",
-  "error": "stock coverage 1158/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "score": 15.147594875751382,
+      "ref_close": 13.03
+    },
+    {
+      "code": "688172",
+      "name": "燕东微",
+      "score": 15.091326665279839,
+      "ref_close": 37.51
+    },
+    {
+      "code": "688249",
+      "name": "晶合集成",
+      "score": 14.772173184399826,
+      "ref_close": 29.98
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "score": 13.392593925339698,
+      "ref_close": 63.42
+    },
+    {
+      "code": "688506",
+      "name": "百利天恒",
+      "score": 12.522839260449555,
+      "ref_close": 252.0
+    },
+    {
+      "code": "600863",
+      "name": "华能蒙电",
+      "score": 12.422416916073537,
+      "ref_close": 5.66
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "score": 12.180789660174383,
+      "ref_close": 9.28
+    },
+    {
+      "code": "603885",
+      "name": "吉祥航空",
+      "score": 11.931527912010257,
+      "ref_close": 10.83
+    },
+    {
+      "code": "688303",
+      "name": "大全能源",
+      "score": 11.331824809896503,
+      "ref_close": 17.3
+    },
+    {
+      "code": "000921",
+      "name": "海信家电",
+      "score": 11.143713919539092,
+      "ref_close": 26.13
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 9.338147457004773,
+      "ref_close": 30.02
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 9.325340623224797,
+      "ref_close": 5.76
+    },
+    {
+      "code": "688396",
+      "name": "华润微",
+      "score": 9.315514707839153,
+      "ref_close": 48.89
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "score": 9.249399903543205,
+      "ref_close": 43.87
+    },
+    {
+      "code": "001872",
+      "name": "招商港口",
+      "score": 8.936309854920708,
+      "ref_close": 27.55
+    },
+    {
+      "code": "000415",
+      "name": "渤海租赁",
+      "score": 8.767986845716257,
+      "ref_close": 4.81
+    },
+    {
+      "code": "688187",
+      "name": "时代电气",
+      "score": 8.756350489394777,
+      "ref_close": 48.76
+    },
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 8.56612768591131,
+      "ref_close": 113.71
+    },
+    {
+      "code": "600803",
+      "name": "新奥股份",
+      "score": 8.21232734705044,
+      "ref_close": 22.11
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "score": 8.193963597255589,
+      "ref_close": 122.25
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

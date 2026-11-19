@@ -1,8 +1,51 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-19",
   "exec_day": "2026-11-20",
-  "error": "stock coverage 1158/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "score": 14.109832776483545,
+      "ref_close": 13.03
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "score": 12.78206667701475,
+      "ref_close": 63.42
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

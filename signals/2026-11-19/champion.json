@@ -1,8 +1,159 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-19",
   "exec_day": "2026-11-20",
-  "error": "stock coverage 1158/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "score": 18.09785331719904,
+      "ref_close": 13.03
+    },
+    {
+      "code": "688172",
+      "name": "燕东微",
+      "score": 16.019845103531967,
+      "ref_close": 37.51
+    },
+    {
+      "code": "688506",
+      "name": "百利天恒",
+      "score": 11.909564060545616,
+      "ref_close": 252.0
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 11.344511753026108,
+      "ref_close": 5.76
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 10.832665728466552,
+      "ref_close": 30.02
+    },
+    {
+      "code": "688187",
+      "name": "时代电气",
+      "score": 10.730193731215465,
+      "ref_close": 48.76
+    },
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 10.590348603999818,
+      "ref_close": 113.71
+    },
+    {
+      "code": "688303",
+      "name": "大全能源",
+      "score": 10.544558540442862,
+      "ref_close": 17.3
+    },
+    {
+      "code": "300346",
+      "name": "南大光电",
+      "score": 10.307908375349758,
+      "ref_close": 43.87
+    },
+    {
+      "code": "600863",
+      "name": "华能蒙电",
+      "score": 9.597566559887946,
+      "ref_close": 5.66
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "score": 9.33086387557158,
+      "ref_close": 9.28
+    },
+    {
+      "code": "600895",
+      "name": "张江高科",
+      "score": 9.065259759061286,
+      "ref_close": 27.18
+    },
+    {
+      "code": "603629",
+      "name": "利通电子",
+      "score": 8.734939388416619,
+      "ref_close": 63.42
+    },
+    {
+      "code": "301638",
+      "name": "南网数字",
+      "score": 8.620892358451798,
+      "ref_close": 17.28
+    },
+    {
+      "code": "603049",
+      "name": "中策橡胶",
+      "score": 8.532027419749413,
+      "ref_close": 39.79
+    },
+    {
+      "code": "688981",
+      "name": "中芯国际",
+      "score": 8.47961446245768,
+      "ref_close": 122.25
+    },
+    {
+      "code": "688347",
+      "name": "华虹宏力",
+      "score": 8.45379225870338,
+      "ref_close": 199.86
+    },
+    {
+      "code": "688630",
+      "name": "芯碁微装",
+      "score": 8.446135520720585,
+      "ref_close": 228.0
+    },
+    {
+      "code": "603885",
+      "name": "吉祥航空",
+      "score": 8.352724402089542,
+      "ref_close": 10.83
+    },
+    {
+      "code": "688047",
+      "name": "龙芯中科",
+      "score": 8.300286202425104,
+      "ref_close": 96.99
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
