@@ -116,8 +116,6 @@
     "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
     "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
     "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-    "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
     "159528": "missing current-session history; excluded from ranking",
     "512390": "missing current-session history; excluded from ranking",
     "530080": "missing current-session history; excluded from ranking"
@@ -126,7 +124,7 @@
     "asof": "2026-11-20",
     "total_manifest": 1777,
     "loaded": 1721,
-    "eligible_data_expected": 1733,
+    "eligible_data_expected": 1731,
     "verified_young_or_unlisted": {
       "158015": {
         "code": "158015",
@@ -403,6 +401,17 @@
         "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
         "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
       },
+      "562090": {
+        "code": "562090",
+        "name": "汽车ETF富国",
+        "verified_asof": "2026-11-20",
+        "issue_date": "2026-10-21",
+        "establishment_date": null,
+        "maximum_possible_trading_sessions": 23,
+        "required_sessions": 60,
+        "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+        "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+      },
       "562100": {
         "code": "562100",
         "name": "工程机械ETF永赢",
@@ -590,6 +599,17 @@
         "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
         "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
       },
+      "589590": {
+        "code": "589590",
+        "name": "科创芯片设计ETF华泰柏瑞",
+        "verified_asof": "2026-11-20",
+        "issue_date": "2026-10-12",
+        "establishment_date": null,
+        "maximum_possible_trading_sessions": 30,
+        "required_sessions": 60,
+        "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+        "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+      },
       "589610": {
         "code": "589610",
         "name": "科创芯片ETF华夏",
@@ -621,13 +641,11 @@
       "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
       "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
       "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-      "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-      "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
       "159528": "missing current-session history; excluded from ranking",
       "512390": "missing current-session history; excluded from ranking",
       "530080": "missing current-session history; excluded from ranking"
     },
-    "coverage": 0.9930755914598961
+    "coverage": 0.9942229924898902
   },
   "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
 }

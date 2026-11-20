@@ -1,6 +1,6 @@
 {
   "asof": "2026-11-20",
-  "generated_at": "2026-11-20 18:31:19.005636+08:00",
+  "generated_at": "2026-11-21 01:36:52.357883+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
@@ -14,121 +14,121 @@
         {
           "code": "002157",
           "name": "正邦科技",
-          "score": 13.941257586967613,
+          "score": 13.931769118940785,
           "ref_close": 2.98
         },
         {
           "code": "000158",
           "name": "常山北明",
-          "score": 12.34877804845101,
+          "score": 12.3557866095178,
           "ref_close": 13.52
         },
         {
           "code": "300628",
           "name": "亿联网络",
-          "score": 10.730115176386807,
+          "score": 10.709872051526183,
           "ref_close": 40.88
         },
         {
           "code": "301638",
           "name": "南网数字",
-          "score": 10.64541886524945,
+          "score": 10.648744133175036,
           "ref_close": 17.55
         },
         {
           "code": "600039",
           "name": "四川路桥",
-          "score": 10.409196259482954,
+          "score": 10.386955756439356,
           "ref_close": 8.99
         },
         {
           "code": "000100",
           "name": "TCL科技",
-          "score": 10.37532128123031,
+          "score": 10.365771116531292,
           "ref_close": 4.9
         },
         {
           "code": "301660",
           "name": "粤芯半导",
-          "score": 9.815612123883865,
+          "score": 9.750599932386248,
           "ref_close": 30.61
         },
         {
           "code": "000598",
           "name": "兴蓉环境",
-          "score": 9.479232859460005,
+          "score": 9.45307281009994,
           "ref_close": 7.48
         },
         {
           "code": "601298",
           "name": "青岛港",
-          "score": 9.420567018439165,
+          "score": 9.39946911784606,
           "ref_close": 10.22
         },
         {
           "code": "600098",
           "name": "广州发展",
-          "score": 9.369436897483684,
+          "score": 9.34981645927334,
           "ref_close": 7.04
         },
         {
           "code": "600236",
           "name": "桂冠电力",
-          "score": 8.908251946055644,
+          "score": 8.89231357613097,
           "ref_close": 9.46
         },
         {
           "code": "601228",
           "name": "广州港",
-          "score": 8.868991747949263,
+          "score": 8.817936034282322,
           "ref_close": 3.09
         },
         {
           "code": "000166",
           "name": "申万宏源",
-          "score": 8.805030707826361,
+          "score": 8.784665371001246,
           "ref_close": 4.35
         },
         {
           "code": "600930",
           "name": "华电新能",
-          "score": 8.782370264247167,
+          "score": 8.76580481096695,
           "ref_close": 4.09
         },
         {
           "code": "600323",
           "name": "瀚蓝环境",
-          "score": 8.732464429274424,
+          "score": 8.710115011577543,
           "ref_close": 31.37
         },
         {
           "code": "600295",
           "name": "鄂尔多斯",
-          "score": 8.57052595738064,
+          "score": 8.547222096792416,
           "ref_close": 15.69
         },
         {
           "code": "688009",
           "name": "中国通号",
-          "score": 8.400126238788495,
+          "score": 8.37649444781197,
           "ref_close": 5.13
         },
         {
           "code": "603766",
           "name": "隆鑫通用",
-          "score": 8.386191774384546,
+          "score": 8.367746176172757,
           "ref_close": 16.28
         },
         {
           "code": "600886",
           "name": "国投电力",
-          "score": 8.311859295786707,
+          "score": 8.292941226084814,
           "ref_close": 16.82
         },
         {
           "code": "001965",
           "name": "招商公路",
-          "score": 8.224645912006837,
+          "score": 8.199886934370857,
           "ref_close": 11.05
         }
       ],
@@ -152,11 +152,9 @@
         "label": "冠军配置"
       },
       "coverage": {
-        "loaded": 1599,
+        "loaded": 1600,
         "expected": 1600,
-        "inactive_errors": {
-          "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-        },
+        "inactive_errors": {},
         "vendors": [
           "Eastmoney",
           "Tencent rich kline"
@@ -176,121 +174,121 @@
         {
           "code": "002157",
           "name": "正邦科技",
-          "score": 10.379667654888783,
+          "score": 10.385307225447836,
           "ref_close": 2.98
         },
         {
           "code": "601298",
           "name": "青岛港",
-          "score": 9.989488675067403,
+          "score": 9.981144542930412,
           "ref_close": 10.22
         },
         {
           "code": "000166",
           "name": "申万宏源",
-          "score": 9.200169294887743,
+          "score": 9.193046099179044,
           "ref_close": 4.35
         },
         {
           "code": "601228",
           "name": "广州港",
-          "score": 8.791449825732826,
+          "score": 8.790224167274792,
           "ref_close": 3.09
         },
         {
           "code": "600098",
           "name": "广州发展",
-          "score": 8.690366600293629,
+          "score": 8.685753254922112,
           "ref_close": 7.04
         },
         {
           "code": "601997",
           "name": "贵阳银行",
-          "score": 8.054818945213173,
+          "score": 8.047591120136572,
           "ref_close": 5.88
         },
         {
           "code": "601998",
           "name": "XD中信银",
-          "score": 8.023446077424634,
+          "score": 8.016924007421945,
           "ref_close": 9.66
         },
         {
           "code": "600886",
           "name": "国投电力",
-          "score": 7.937653466566028,
+          "score": 7.938111847270904,
           "ref_close": 16.82
         },
         {
           "code": "600925",
           "name": "苏能股份",
-          "score": 7.917642667056544,
+          "score": 7.89843730831777,
           "ref_close": 4.05
         },
         {
           "code": "601878",
           "name": "浙商证券",
-          "score": 7.8627149474247675,
+          "score": 7.8535513006873945,
           "ref_close": 8.56
         },
         {
           "code": "001965",
           "name": "招商公路",
-          "score": 7.859088585777287,
+          "score": 7.848905821993279,
           "ref_close": 11.05
         },
         {
           "code": "601825",
           "name": "沪农商行",
-          "score": 7.839247354512446,
+          "score": 7.83624469728623,
           "ref_close": 9.9
         },
         {
           "code": "600295",
           "name": "鄂尔多斯",
-          "score": 7.699993129038155,
+          "score": 7.691138371965341,
           "ref_close": 15.69
         },
         {
           "code": "601000",
           "name": "唐山港",
-          "score": 7.6929749503651905,
+          "score": 7.685251129602108,
           "ref_close": 5.29
         },
         {
           "code": "600970",
           "name": "中材国际",
-          "score": 7.521402696286351,
+          "score": 7.5172028121375,
           "ref_close": 7.77
         },
         {
           "code": "600236",
           "name": "桂冠电力",
-          "score": 7.486128199159992,
+          "score": 7.482590291743312,
           "ref_close": 9.46
         },
         {
           "code": "600930",
           "name": "华电新能",
-          "score": 7.445890855317163,
+          "score": 7.442273752906595,
           "ref_close": 4.09
         },
         {
           "code": "600548",
           "name": "深高速",
-          "score": 7.424052302692031,
+          "score": 7.416506527826749,
           "ref_close": 8.67
         },
         {
           "code": "000921",
           "name": "海信家电",
-          "score": 7.375074500207715,
+          "score": 7.37193005538448,
           "ref_close": 26.47
         },
         {
           "code": "600511",
           "name": "国药股份",
-          "score": 7.353472632995464,
+          "score": 7.341802025027327,
           "ref_close": 28.5
         }
       ],
@@ -314,11 +312,9 @@
         "label": "稳健配置"
       },
       "coverage": {
-        "loaded": 1599,
+        "loaded": 1600,
         "expected": 1600,
-        "inactive_errors": {
-          "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-        },
+        "inactive_errors": {},
         "vendors": [
           "Eastmoney",
           "Tencent rich kline"
@@ -338,121 +334,121 @@
         {
           "code": "002157",
           "name": "正邦科技",
-          "score": 14.315326171586692,
+          "score": 14.302791436568171,
           "ref_close": 2.98
         },
         {
           "code": "601298",
           "name": "青岛港",
-          "score": 12.407811160428771,
+          "score": 12.391648287292927,
           "ref_close": 10.22
         },
         {
           "code": "600886",
           "name": "国投电力",
-          "score": 11.714601890872112,
+          "score": 11.70341922004887,
           "ref_close": 16.82
         },
         {
           "code": "000166",
           "name": "申万宏源",
-          "score": 11.70603992008764,
+          "score": 11.691506340270461,
           "ref_close": 4.35
         },
         {
           "code": "601998",
           "name": "XD中信银",
-          "score": 11.01449516730197,
+          "score": 11.000679585460384,
           "ref_close": 9.66
         },
         {
           "code": "600098",
           "name": "广州发展",
-          "score": 10.99679606054045,
+          "score": 10.983631396331718,
           "ref_close": 7.04
         },
         {
           "code": "600295",
           "name": "鄂尔多斯",
-          "score": 10.988573887608611,
+          "score": 10.967593079836526,
           "ref_close": 15.69
         },
         {
           "code": "600039",
           "name": "四川路桥",
-          "score": 10.97316476603174,
+          "score": 10.951368031920495,
           "ref_close": 8.99
         },
         {
           "code": "600930",
           "name": "华电新能",
-          "score": 10.55448070606076,
+          "score": 10.537407684452502,
           "ref_close": 4.09
         },
         {
           "code": "001965",
           "name": "招商公路",
-          "score": 10.47959686582276,
+          "score": 10.461208477385123,
           "ref_close": 11.05
         },
         {
           "code": "601000",
           "name": "唐山港",
-          "score": 10.411547671769082,
+          "score": 10.39543515394657,
           "ref_close": 5.29
         },
         {
           "code": "600236",
           "name": "桂冠电力",
-          "score": 10.228975162381008,
+          "score": 10.217272317872226,
           "ref_close": 9.46
         },
         {
           "code": "000921",
           "name": "海信家电",
-          "score": 10.047263312828939,
+          "score": 10.032157690286752,
           "ref_close": 26.47
         },
         {
           "code": "601228",
           "name": "广州港",
-          "score": 10.010813482080124,
+          "score": 10.000704893410434,
           "ref_close": 3.09
         },
         {
           "code": "600803",
           "name": "新奥股份",
-          "score": 9.832417823826356,
+          "score": 9.807730140291241,
           "ref_close": 22.97
         },
         {
           "code": "600925",
           "name": "苏能股份",
-          "score": 9.663952150153566,
+          "score": 9.638261988303725,
           "ref_close": 4.05
         },
         {
           "code": "601825",
           "name": "沪农商行",
-          "score": 9.577355533490236,
+          "score": 9.570468403993207,
           "ref_close": 9.9
         },
         {
           "code": "000429",
           "name": "粤高速Ａ",
-          "score": 9.381654637453419,
+          "score": 9.363084831795476,
           "ref_close": 14.34
         },
         {
           "code": "600350",
           "name": "山东高速",
-          "score": 9.340565026999757,
+          "score": 9.32030862944676,
           "ref_close": 11.9
         },
         {
           "code": "000883",
           "name": "湖北能源",
-          "score": 9.328739757639385,
+          "score": 9.308312324219154,
           "ref_close": 4.51
         }
       ],
@@ -476,11 +472,9 @@
         "label": "奔跑配置"
       },
       "coverage": {
-        "loaded": 1599,
+        "loaded": 1600,
         "expected": 1600,
-        "inactive_errors": {
-          "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-        },
+        "inactive_errors": {},
         "vendors": [
           "Eastmoney",
           "Tencent rich kline"
@@ -500,121 +494,121 @@
         {
           "code": "002157",
           "name": "正邦科技",
-          "score": 10.379667654888783,
+          "score": 10.385307225447836,
           "ref_close": 2.98
         },
         {
           "code": "601298",
           "name": "青岛港",
-          "score": 9.989488675067403,
+          "score": 9.981144542930412,
           "ref_close": 10.22
         },
         {
           "code": "000166",
           "name": "申万宏源",
-          "score": 9.200169294887743,
+          "score": 9.193046099179044,
           "ref_close": 4.35
         },
         {
           "code": "601228",
           "name": "广州港",
-          "score": 8.791449825732826,
+          "score": 8.790224167274792,
           "ref_close": 3.09
         },
         {
           "code": "600098",
           "name": "广州发展",
-          "score": 8.690366600293629,
+          "score": 8.685753254922112,
           "ref_close": 7.04
         },
         {
           "code": "601997",
           "name": "贵阳银行",
-          "score": 8.054818945213173,
+          "score": 8.047591120136572,
           "ref_close": 5.88
         },
         {
           "code": "601998",
           "name": "XD中信银",
-          "score": 8.023446077424634,
+          "score": 8.016924007421945,
           "ref_close": 9.66
         },
         {
           "code": "600886",
           "name": "国投电力",
-          "score": 7.937653466566028,
+          "score": 7.938111847270904,
           "ref_close": 16.82
         },
         {
           "code": "600925",
           "name": "苏能股份",
-          "score": 7.917642667056544,
+          "score": 7.89843730831777,
           "ref_close": 4.05
         },
         {
           "code": "601878",
           "name": "浙商证券",
-          "score": 7.8627149474247675,
+          "score": 7.8535513006873945,
           "ref_close": 8.56
         },
         {
           "code": "001965",
           "name": "招商公路",
-          "score": 7.859088585777287,
+          "score": 7.848905821993279,
           "ref_close": 11.05
         },
         {
           "code": "601825",
           "name": "沪农商行",
-          "score": 7.839247354512446,
+          "score": 7.83624469728623,
           "ref_close": 9.9
         },
         {
           "code": "600295",
           "name": "鄂尔多斯",
-          "score": 7.699993129038155,
+          "score": 7.691138371965341,
           "ref_close": 15.69
         },
         {
           "code": "601000",
           "name": "唐山港",
-          "score": 7.6929749503651905,
+          "score": 7.685251129602108,
           "ref_close": 5.29
         },
         {
           "code": "600970",
           "name": "中材国际",
-          "score": 7.521402696286351,
+          "score": 7.5172028121375,
           "ref_close": 7.77
         },
         {
           "code": "600236",
           "name": "桂冠电力",
-          "score": 7.486128199159992,
+          "score": 7.482590291743312,
           "ref_close": 9.46
         },
         {
           "code": "600930",
           "name": "华电新能",
-          "score": 7.445890855317163,
+          "score": 7.442273752906595,
           "ref_close": 4.09
         },
         {
           "code": "600548",
           "name": "深高速",
-          "score": 7.424052302692031,
+          "score": 7.416506527826749,
           "ref_close": 8.67
         },
         {
           "code": "000921",
           "name": "海信家电",
-          "score": 7.375074500207715,
+          "score": 7.37193005538448,
           "ref_close": 26.47
         },
         {
           "code": "600511",
           "name": "国药股份",
-          "score": 7.353472632995464,
+          "score": 7.341802025027327,
           "ref_close": 28.5
         }
       ],
@@ -638,11 +632,9 @@
         "label": "原版配置"
       },
       "coverage": {
-        "loaded": 1599,
+        "loaded": 1600,
         "expected": 1600,
-        "inactive_errors": {
-          "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-        },
+        "inactive_errors": {},
         "vendors": [
           "Eastmoney",
           "Tencent rich kline"
@@ -662,13 +654,13 @@
         {
           "code": "002157",
           "name": "正邦科技",
-          "score": 10.183941373125023,
+          "score": 10.187612291375403,
           "ref_close": 2.98
         },
         {
           "code": "601298",
           "name": "青岛港",
-          "score": 9.135655262463487,
+          "score": 9.122835098661302,
           "ref_close": 10.22
         }
       ],
@@ -692,11 +684,9 @@
         "label": "狂暴配置"
       },
       "coverage": {
-        "loaded": 1599,
+        "loaded": 1600,
         "expected": 1600,
-        "inactive_errors": {
-          "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-        },
+        "inactive_errors": {},
         "vendors": [
           "Eastmoney",
           "Tencent rich kline"
@@ -823,8 +813,6 @@
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "159528": "missing current-session history; excluded from ranking",
         "512390": "missing current-session history; excluded from ranking",
         "530080": "missing current-session history; excluded from ranking"
@@ -833,7 +821,7 @@
         "asof": "2026-11-20",
         "total_manifest": 1777,
         "loaded": 1721,
-        "eligible_data_expected": 1733,
+        "eligible_data_expected": 1731,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
@@ -1110,6 +1098,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
           },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
@@ -1297,6 +1296,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
           },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 30,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
@@ -1328,13 +1338,11 @@
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "159528": "missing current-session history; excluded from ranking",
           "512390": "missing current-session history; excluded from ranking",
           "530080": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9930755914598961
+        "coverage": 0.9942229924898902
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     },
@@ -1456,8 +1464,6 @@
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "159528": "missing current-session history; excluded from ranking",
         "512390": "missing current-session history; excluded from ranking",
         "530080": "missing current-session history; excluded from ranking"
@@ -1466,7 +1472,7 @@
         "asof": "2026-11-20",
         "total_manifest": 1777,
         "loaded": 1721,
-        "eligible_data_expected": 1733,
+        "eligible_data_expected": 1731,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
@@ -1743,6 +1749,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
           },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
@@ -1930,6 +1947,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
           },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 30,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
@@ -1961,13 +1989,11 @@
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "159528": "missing current-session history; excluded from ranking",
           "512390": "missing current-session history; excluded from ranking",
           "530080": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9930755914598961
+        "coverage": 0.9942229924898902
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     },
@@ -2089,8 +2115,6 @@
         "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-        "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
         "159528": "missing current-session history; excluded from ranking",
         "512390": "missing current-session history; excluded from ranking",
         "530080": "missing current-session history; excluded from ranking"
@@ -2099,7 +2123,7 @@
         "asof": "2026-11-20",
         "total_manifest": 1777,
         "loaded": 1721,
-        "eligible_data_expected": 1733,
+        "eligible_data_expected": 1731,
         "verified_young_or_unlisted": {
           "158015": {
             "code": "158015",
@@ -2376,6 +2400,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_561860.html"
           },
+          "562090": {
+            "code": "562090",
+            "name": "汽车ETF富国",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-21",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 23,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_562090.html"
+          },
           "562100": {
             "code": "562100",
             "name": "工程机械ETF永赢",
@@ -2563,6 +2598,17 @@
             "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
             "source_url": "https://fundf10.eastmoney.com/jbgk_589370.html"
           },
+          "589590": {
+            "code": "589590",
+            "name": "科创芯片设计ETF华泰柏瑞",
+            "verified_asof": "2026-11-20",
+            "issue_date": "2026-10-12",
+            "establishment_date": null,
+            "maximum_possible_trading_sessions": 30,
+            "required_sessions": 60,
+            "reason": "发行/成立至今不足策略要求的交易日，尚不可能满足上市年龄过滤",
+            "source_url": "https://fundf10.eastmoney.com/jbgk_589590.html"
+          },
           "589610": {
             "code": "589610",
             "name": "科创芯片ETF华夏",
@@ -2594,13 +2640,11 @@
           "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "562090": "562090: 562090: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
-          "589590": "589590: 589590: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
           "159528": "missing current-session history; excluded from ranking",
           "512390": "missing current-session history; excluded from ranking",
           "530080": "missing current-session history; excluded from ranking"
         },
-        "coverage": 0.9930755914598961
+        "coverage": 0.9942229924898902
       },
       "live_warmup": "up to 640 actual sessions per ETF; no inherited historical holdings"
     },

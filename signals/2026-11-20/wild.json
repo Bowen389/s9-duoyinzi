@@ -9,13 +9,13 @@
     {
       "code": "002157",
       "name": "正邦科技",
-      "score": 10.183941373125023,
+      "score": 10.187612291375403,
       "ref_close": 2.98
     },
     {
       "code": "601298",
       "name": "青岛港",
-      "score": 9.135655262463487,
+      "score": 9.122835098661302,
       "ref_close": 10.22
     }
   ],
@@ -39,11 +39,9 @@
     "label": "狂暴配置"
   },
   "coverage": {
-    "loaded": 1599,
+    "loaded": 1600,
     "expected": 1600,
-    "inactive_errors": {
-      "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-    },
+    "inactive_errors": {},
     "vendors": [
       "Eastmoney",
       "Tencent rich kline"

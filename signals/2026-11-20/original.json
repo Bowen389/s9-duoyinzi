@@ -9,121 +9,121 @@
     {
       "code": "002157",
       "name": "正邦科技",
-      "score": 10.379667654888783,
+      "score": 10.385307225447836,
       "ref_close": 2.98
     },
     {
       "code": "601298",
       "name": "青岛港",
-      "score": 9.989488675067403,
+      "score": 9.981144542930412,
       "ref_close": 10.22
     },
     {
       "code": "000166",
       "name": "申万宏源",
-      "score": 9.200169294887743,
+      "score": 9.193046099179044,
       "ref_close": 4.35
     },
     {
       "code": "601228",
       "name": "广州港",
-      "score": 8.791449825732826,
+      "score": 8.790224167274792,
       "ref_close": 3.09
     },
     {
       "code": "600098",
       "name": "广州发展",
-      "score": 8.690366600293629,
+      "score": 8.685753254922112,
       "ref_close": 7.04
     },
     {
       "code": "601997",
       "name": "贵阳银行",
-      "score": 8.054818945213173,
+      "score": 8.047591120136572,
       "ref_close": 5.88
     },
     {
       "code": "601998",
       "name": "XD中信银",
-      "score": 8.023446077424634,
+      "score": 8.016924007421945,
       "ref_close": 9.66
     },
     {
       "code": "600886",
       "name": "国投电力",
-      "score": 7.937653466566028,
+      "score": 7.938111847270904,
       "ref_close": 16.82
     },
     {
       "code": "600925",
       "name": "苏能股份",
-      "score": 7.917642667056544,
+      "score": 7.89843730831777,
       "ref_close": 4.05
     },
     {
       "code": "601878",
       "name": "浙商证券",
-      "score": 7.8627149474247675,
+      "score": 7.8535513006873945,
       "ref_close": 8.56
     },
     {
       "code": "001965",
       "name": "招商公路",
-      "score": 7.859088585777287,
+      "score": 7.848905821993279,
       "ref_close": 11.05
     },
     {
       "code": "601825",
       "name": "沪农商行",
-      "score": 7.839247354512446,
+      "score": 7.83624469728623,
       "ref_close": 9.9
     },
     {
       "code": "600295",
       "name": "鄂尔多斯",
-      "score": 7.699993129038155,
+      "score": 7.691138371965341,
       "ref_close": 15.69
     },
     {
       "code": "601000",
       "name": "唐山港",
-      "score": 7.6929749503651905,
+      "score": 7.685251129602108,
       "ref_close": 5.29
     },
     {
       "code": "600970",
       "name": "中材国际",
-      "score": 7.521402696286351,
+      "score": 7.5172028121375,
       "ref_close": 7.77
     },
     {
       "code": "600236",
       "name": "桂冠电力",
-      "score": 7.486128199159992,
+      "score": 7.482590291743312,
       "ref_close": 9.46
     },
     {
       "code": "600930",
       "name": "华电新能",
-      "score": 7.445890855317163,
+      "score": 7.442273752906595,
       "ref_close": 4.09
     },
     {
       "code": "600548",
       "name": "深高速",
-      "score": 7.424052302692031,
+      "score": 7.416506527826749,
       "ref_close": 8.67
     },
     {
       "code": "000921",
       "name": "海信家电",
-      "score": 7.375074500207715,
+      "score": 7.37193005538448,
       "ref_close": 26.47
     },
     {
       "code": "600511",
       "name": "国药股份",
-      "score": 7.353472632995464,
+      "score": 7.341802025027327,
       "ref_close": 28.5
     }
   ],
@@ -147,11 +147,9 @@
     "label": "原版配置"
   },
   "coverage": {
-    "loaded": 1599,
+    "loaded": 1600,
     "expected": 1600,
-    "inactive_errors": {
-      "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
-    },
+    "inactive_errors": {},
     "vendors": [
       "Eastmoney",
       "Tencent rich kline"
