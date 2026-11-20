@@ -1,0 +1,54 @@
+{
+  "strategy": "wild",
+  "label": "狂暴配置",
+  "status": "ok",
+  "asof": "2026-11-20",
+  "exec_day": "2026-11-23",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "score": 10.183941373125023,
+      "ref_close": 2.98
+    },
+    {
+      "code": "601298",
+      "name": "青岛港",
+      "score": 9.135655262463487,
+      "ref_close": 10.22
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1599,
+    "expected": 1600,
+    "inactive_errors": {
+      "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}

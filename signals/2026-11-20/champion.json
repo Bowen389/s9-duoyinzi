@@ -1,0 +1,162 @@
+{
+  "strategy": "champion",
+  "label": "冠军配置",
+  "status": "ok",
+  "asof": "2026-11-20",
+  "exec_day": "2026-11-23",
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002157",
+      "name": "正邦科技",
+      "score": 13.941257586967613,
+      "ref_close": 2.98
+    },
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "score": 12.34877804845101,
+      "ref_close": 13.52
+    },
+    {
+      "code": "300628",
+      "name": "亿联网络",
+      "score": 10.730115176386807,
+      "ref_close": 40.88
+    },
+    {
+      "code": "301638",
+      "name": "南网数字",
+      "score": 10.64541886524945,
+      "ref_close": 17.55
+    },
+    {
+      "code": "600039",
+      "name": "四川路桥",
+      "score": 10.409196259482954,
+      "ref_close": 8.99
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "score": 10.37532128123031,
+      "ref_close": 4.9
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 9.815612123883865,
+      "ref_close": 30.61
+    },
+    {
+      "code": "000598",
+      "name": "兴蓉环境",
+      "score": 9.479232859460005,
+      "ref_close": 7.48
+    },
+    {
+      "code": "601298",
+      "name": "青岛港",
+      "score": 9.420567018439165,
+      "ref_close": 10.22
+    },
+    {
+      "code": "600098",
+      "name": "广州发展",
+      "score": 9.369436897483684,
+      "ref_close": 7.04
+    },
+    {
+      "code": "600236",
+      "name": "桂冠电力",
+      "score": 8.908251946055644,
+      "ref_close": 9.46
+    },
+    {
+      "code": "601228",
+      "name": "广州港",
+      "score": 8.868991747949263,
+      "ref_close": 3.09
+    },
+    {
+      "code": "000166",
+      "name": "申万宏源",
+      "score": 8.805030707826361,
+      "ref_close": 4.35
+    },
+    {
+      "code": "600930",
+      "name": "华电新能",
+      "score": 8.782370264247167,
+      "ref_close": 4.09
+    },
+    {
+      "code": "600323",
+      "name": "瀚蓝环境",
+      "score": 8.732464429274424,
+      "ref_close": 31.37
+    },
+    {
+      "code": "600295",
+      "name": "鄂尔多斯",
+      "score": 8.57052595738064,
+      "ref_close": 15.69
+    },
+    {
+      "code": "688009",
+      "name": "中国通号",
+      "score": 8.400126238788495,
+      "ref_close": 5.13
+    },
+    {
+      "code": "603766",
+      "name": "隆鑫通用",
+      "score": 8.386191774384546,
+      "ref_close": 16.28
+    },
+    {
+      "code": "600886",
+      "name": "国投电力",
+      "score": 8.311859295786707,
+      "ref_close": 16.82
+    },
+    {
+      "code": "001965",
+      "name": "招商公路",
+      "score": 8.224645912006837,
+      "ref_close": 11.05
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1599,
+    "expected": 1600,
+    "inactive_errors": {
+      "301583": "301583: 301583: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
+}
