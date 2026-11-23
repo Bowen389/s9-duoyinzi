@@ -1,8 +1,159 @@
 {
   "strategy": "balanced",
-  "status": "data_error",
+  "label": "稳健配置",
+  "status": "ok",
   "asof": "2026-11-23",
   "exec_day": "2026-11-24",
-  "error": "stock coverage 1112/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "601136",
+      "name": "首创证券",
+      "score": 11.28776855054927,
+      "ref_close": 13.27
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "score": 10.344212853680329,
+      "ref_close": 10.41
+    },
+    {
+      "code": "600511",
+      "name": "国药股份",
+      "score": 8.496914784021861,
+      "ref_close": 28.29
+    },
+    {
+      "code": "300972",
+      "name": "万辰集团",
+      "score": 8.349420389199159,
+      "ref_close": 136.5
+    },
+    {
+      "code": "002948",
+      "name": "青岛银行",
+      "score": 8.33927079799359,
+      "ref_close": 6.5
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 8.23737311781365,
+      "ref_close": 41.73
+    },
+    {
+      "code": "601916",
+      "name": "浙商银行",
+      "score": 8.00577413881439,
+      "ref_close": 3.06
+    },
+    {
+      "code": "600803",
+      "name": "新奥股份",
+      "score": 7.918173729616968,
+      "ref_close": 22.0
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "score": 7.685923762862874,
+      "ref_close": 9.96
+    },
+    {
+      "code": "600566",
+      "name": "济川药业",
+      "score": 7.322366854538563,
+      "ref_close": 30.6
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 7.23008000503035,
+      "ref_close": 89.32
+    },
+    {
+      "code": "600926",
+      "name": "杭州银行",
+      "score": 7.180555339214894,
+      "ref_close": 17.82
+    },
+    {
+      "code": "601665",
+      "name": "齐鲁银行",
+      "score": 7.103138684894801,
+      "ref_close": 6.77
+    },
+    {
+      "code": "601298",
+      "name": "青岛港",
+      "score": 7.1005254566832905,
+      "ref_close": 10.03
+    },
+    {
+      "code": "600177",
+      "name": "雅戈尔",
+      "score": 7.0635678246026785,
+      "ref_close": 9.03
+    },
+    {
+      "code": "600007",
+      "name": "中国国贸",
+      "score": 7.061087242368694,
+      "ref_close": 21.76
+    },
+    {
+      "code": "600025",
+      "name": "华能水电",
+      "score": 7.042663857905856,
+      "ref_close": 11.59
+    },
+    {
+      "code": "601998",
+      "name": "中信银行",
+      "score": 6.98326128743718,
+      "ref_close": 9.66
+    },
+    {
+      "code": "600930",
+      "name": "华电新能",
+      "score": 6.841615538466351,
+      "ref_close": 3.99
+    },
+    {
+      "code": "600023",
+      "name": "浙能电力",
+      "score": 6.765959504332262,
+      "ref_close": 5.53
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "稳健配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

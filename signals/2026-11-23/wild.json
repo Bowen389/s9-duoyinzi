@@ -1,8 +1,51 @@
 {
   "strategy": "wild",
-  "status": "data_error",
+  "label": "狂暴配置",
+  "status": "ok",
   "asof": "2026-11-23",
   "exec_day": "2026-11-24",
-  "error": "stock coverage 1112/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "score": 13.055310333868121,
+      "ref_close": 10.41
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 10.815579543505923,
+      "ref_close": 41.73
+    }
+  ],
+  "config": {
+    "hold": 1,
+    "top_n": 2,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 3,
+      "to_window": 20,
+      "pos_window": 60
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 1.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "狂暴配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

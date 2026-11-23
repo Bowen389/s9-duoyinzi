@@ -1,8 +1,159 @@
 {
   "strategy": "runner",
-  "status": "data_error",
+  "label": "奔跑配置",
+  "status": "ok",
   "asof": "2026-11-23",
   "exec_day": "2026-11-24",
-  "error": "stock coverage 1112/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "601136",
+      "name": "首创证券",
+      "score": 13.76975475946424,
+      "ref_close": 13.27
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "score": 13.366167191961399,
+      "ref_close": 10.41
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 11.13512530515313,
+      "ref_close": 41.73
+    },
+    {
+      "code": "300972",
+      "name": "万辰集团",
+      "score": 10.621520546548815,
+      "ref_close": 136.5
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 10.308355765963904,
+      "ref_close": 89.32
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "score": 9.503837411952714,
+      "ref_close": 52.92
+    },
+    {
+      "code": "601916",
+      "name": "浙商银行",
+      "score": 9.310492400698523,
+      "ref_close": 3.06
+    },
+    {
+      "code": "600988",
+      "name": "赤峰黄金",
+      "score": 8.377920485214641,
+      "ref_close": 35.3
+    },
+    {
+      "code": "000893",
+      "name": "亚钾国际",
+      "score": 8.355650624780603,
+      "ref_close": 30.68
+    },
+    {
+      "code": "600177",
+      "name": "雅戈尔",
+      "score": 7.970926811391158,
+      "ref_close": 9.03
+    },
+    {
+      "code": "688475",
+      "name": "萤石网络",
+      "score": 7.968139633613752,
+      "ref_close": 30.3
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "score": 7.807922624258303,
+      "ref_close": 26.68
+    },
+    {
+      "code": "300085",
+      "name": "银之杰",
+      "score": 7.651373196660664,
+      "ref_close": 28.76
+    },
+    {
+      "code": "600511",
+      "name": "国药股份",
+      "score": 7.450504203293731,
+      "ref_close": 28.29
+    },
+    {
+      "code": "002948",
+      "name": "青岛银行",
+      "score": 7.320292894346013,
+      "ref_close": 6.5
+    },
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 7.303646271447306,
+      "ref_close": 178.99
+    },
+    {
+      "code": "301656",
+      "name": "联合动力",
+      "score": 7.303338116034364,
+      "ref_close": 13.77
+    },
+    {
+      "code": "301606",
+      "name": "绿联科技",
+      "score": 7.283250330965933,
+      "ref_close": 64.99
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "score": 7.142883241000665,
+      "ref_close": 22.05
+    },
+    {
+      "code": "300903",
+      "name": "科翔股份",
+      "score": 7.068533311028831,
+      "ref_close": 59.08
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
