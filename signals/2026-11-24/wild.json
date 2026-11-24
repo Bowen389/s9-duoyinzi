@@ -1,0 +1,8 @@
+{
+  "strategy": "wild",
+  "status": "data_error",
+  "asof": "2026-11-24",
+  "exec_day": "2026-11-25",
+  "error": "stock coverage 669/1600",
+  "picks": []
+}
