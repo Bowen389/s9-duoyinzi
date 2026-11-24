@@ -1,8 +1,159 @@
 {
   "strategy": "balanced",
-  "status": "data_error",
+  "label": "稳健配置",
+  "status": "ok",
   "asof": "2026-11-24",
   "exec_day": "2026-11-25",
-  "error": "stock coverage 669/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "301716",
+      "name": "鸿富诚",
+      "score": 11.082271490509697,
+      "ref_close": 317.0
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 11.046827258864305,
+      "ref_close": 95.45
+    },
+    {
+      "code": "603119",
+      "name": "浙江荣泰",
+      "score": 9.922747849282025,
+      "ref_close": 54.45
+    },
+    {
+      "code": "300903",
+      "name": "科翔股份",
+      "score": 9.616934545865952,
+      "ref_close": 64.65
+    },
+    {
+      "code": "001246",
+      "name": "力勤资源",
+      "score": 7.658880709318618,
+      "ref_close": 25.42
+    },
+    {
+      "code": "002414",
+      "name": "高德红外",
+      "score": 7.513633276657866,
+      "ref_close": 10.42
+    },
+    {
+      "code": "002966",
+      "name": "苏州银行",
+      "score": 7.27962745498459,
+      "ref_close": 9.95
+    },
+    {
+      "code": "300811",
+      "name": "铂科新材",
+      "score": 7.009094476524713,
+      "ref_close": 55.15
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "score": 6.964637551320806,
+      "ref_close": 27.24
+    },
+    {
+      "code": "300806",
+      "name": "斯迪克",
+      "score": 6.838456676153364,
+      "ref_close": 39.33
+    },
+    {
+      "code": "601689",
+      "name": "拓普集团",
+      "score": 6.6106404232726605,
+      "ref_close": 54.31
+    },
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 6.536624509289283,
+      "ref_close": 191.87
+    },
+    {
+      "code": "603799",
+      "name": "华友钴业",
+      "score": 6.4391549339212455,
+      "ref_close": 31.6
+    },
+    {
+      "code": "300476",
+      "name": "胜宏科技",
+      "score": 6.406214261337352,
+      "ref_close": 122.32
+    },
+    {
+      "code": "688300",
+      "name": "联瑞新材",
+      "score": 6.225861188182555,
+      "ref_close": 73.62
+    },
+    {
+      "code": "601138",
+      "name": "工业富联",
+      "score": 6.197765404650518,
+      "ref_close": 40.96
+    },
+    {
+      "code": "601228",
+      "name": "广州港",
+      "score": 6.129552072675693,
+      "ref_close": 3.11
+    },
+    {
+      "code": "603920",
+      "name": "世运电路",
+      "score": 5.830879889839169,
+      "ref_close": 35.8
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 5.691120681198411,
+      "ref_close": 44.77
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 5.689079556972592,
+      "ref_close": 35.05
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "稳健配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

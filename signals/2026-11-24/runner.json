@@ -1,8 +1,159 @@
 {
   "strategy": "runner",
-  "status": "data_error",
+  "label": "奔跑配置",
+  "status": "ok",
   "asof": "2026-11-24",
   "exec_day": "2026-11-25",
-  "error": "stock coverage 669/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "301716",
+      "name": "鸿富诚",
+      "score": 16.357003448321112,
+      "ref_close": 317.0
+    },
+    {
+      "code": "300903",
+      "name": "科翔股份",
+      "score": 14.920503889611709,
+      "ref_close": 64.65
+    },
+    {
+      "code": "603175",
+      "name": "超颖电子",
+      "score": 14.822245652305792,
+      "ref_close": 95.45
+    },
+    {
+      "code": "603119",
+      "name": "浙江荣泰",
+      "score": 13.749876524560735,
+      "ref_close": 54.45
+    },
+    {
+      "code": "300476",
+      "name": "胜宏科技",
+      "score": 11.415994406736113,
+      "ref_close": 122.32
+    },
+    {
+      "code": "601138",
+      "name": "工业富联",
+      "score": 11.32068714226363,
+      "ref_close": 40.96
+    },
+    {
+      "code": "300811",
+      "name": "铂科新材",
+      "score": 10.977617427066253,
+      "ref_close": 55.15
+    },
+    {
+      "code": "603799",
+      "name": "华友钴业",
+      "score": 10.55863431165563,
+      "ref_close": 31.6
+    },
+    {
+      "code": "688585",
+      "name": "上纬新材",
+      "score": 10.40376630238234,
+      "ref_close": 191.87
+    },
+    {
+      "code": "300806",
+      "name": "斯迪克",
+      "score": 10.35879726925469,
+      "ref_close": 39.33
+    },
+    {
+      "code": "002241",
+      "name": "歌尔股份",
+      "score": 9.879733227274318,
+      "ref_close": 22.82
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 9.793953950053243,
+      "ref_close": 35.05
+    },
+    {
+      "code": "688037",
+      "name": "芯源微",
+      "score": 9.766565199002638,
+      "ref_close": 245.0
+    },
+    {
+      "code": "603179",
+      "name": "新泉股份",
+      "score": 9.608470187048901,
+      "ref_close": 44.77
+    },
+    {
+      "code": "001246",
+      "name": "力勤资源",
+      "score": 9.255416471490127,
+      "ref_close": 25.42
+    },
+    {
+      "code": "002831",
+      "name": "裕同科技",
+      "score": 9.22571347023485,
+      "ref_close": 25.41
+    },
+    {
+      "code": "300136",
+      "name": "信维通信",
+      "score": 8.799168770179804,
+      "ref_close": 39.62
+    },
+    {
+      "code": "688300",
+      "name": "联瑞新材",
+      "score": 8.513045030716796,
+      "ref_close": 73.62
+    },
+    {
+      "code": "688025",
+      "name": "杰普特",
+      "score": 8.338696666939269,
+      "ref_close": 236.83
+    },
+    {
+      "code": "603228",
+      "name": "景旺电子",
+      "score": 8.037318253890467,
+      "ref_close": 58.65
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma60",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": -0.5,
+      "theme_rank": 0.0,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "奔跑配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-17"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
