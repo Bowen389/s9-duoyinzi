@@ -1,7 +1,7 @@
 {
   "purpose": "S9 independent post-close recovery",
   "market_date": "2026-11-25",
-  "requested_at": "2026-11-25T16:40:50+08:00",
+  "requested_at": "2026-11-25T17:45:27+08:00",
   "missing_strategies": [
     "champion",
     "balanced",
@@ -12,5 +12,5 @@
     "K3",
     "K5"
   ],
-  "reason": "Current report and all eight signals are missing; all eight accounts last_settled is 2026-11-24; no main daily.yml runs exist today after 15:10 Beijing time."
+  "reason": "All eight current signals have status=data_error: five stock signals report Eastmoney push2 disconnection/temporary rate limiting; three ETF signals report history coverage 1606/1753 eligible records. All accounts last_settled today, but signals remain incomplete. Latest main daily.yml run 45580318929 failed; no eligible queued or running scan."
 }
