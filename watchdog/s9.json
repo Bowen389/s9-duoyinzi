@@ -1,7 +1,7 @@
 {
   "purpose": "S9 independent post-close recovery",
-  "market_date": "2026-11-24",
-  "requested_at": "2026-11-24T17:40:53+08:00",
+  "market_date": "2026-11-25",
+  "requested_at": "2026-11-25T16:40:50+08:00",
   "missing_strategies": [
     "champion",
     "balanced",
@@ -12,5 +12,5 @@
     "K3",
     "K5"
   ],
-  "reason": "All eight current signals have status=data_error: stock coverage 669/1600; ETF history coverage 1548/1752 eligible records. All accounts last_settled today, but signals remain incomplete. Previous main daily.yml run 45358587219 failed; no eligible queued or running scan."
+  "reason": "Current report and all eight signals are missing; all eight accounts last_settled is 2026-11-24; no main daily.yml runs exist today after 15:10 Beijing time."
 }
