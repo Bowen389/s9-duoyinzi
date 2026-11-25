@@ -1,0 +1,242 @@
+{
+  "asof": "2026-11-25",
+  "generated_at": "2026-11-25 16:53:06.838226+08:00",
+  "start": "2026-11-06",
+  "strategies": {
+    "champion": {
+      "strategy": "champion",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "picks": []
+    },
+    "balanced": {
+      "strategy": "balanced",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "picks": []
+    },
+    "runner": {
+      "strategy": "runner",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "picks": []
+    },
+    "original": {
+      "strategy": "original",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "picks": []
+    },
+    "wild": {
+      "strategy": "wild",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+      "picks": []
+    },
+    "B0": {
+      "strategy": "B0",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "picks": []
+    },
+    "K3": {
+      "strategy": "K3",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "picks": []
+    },
+    "K5": {
+      "strategy": "K5",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "picks": []
+    },
+    "DUAL55": {
+      "strategy": "DUAL55",
+      "status": "data_error",
+      "asof": "2026-11-25",
+      "exec_day": "2026-11-26",
+      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "picks": []
+    }
+  },
+  "stock_hits": {},
+  "accounts": {
+    "champion": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-25",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "balanced": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-25",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "runner": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-25",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "original": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-25",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "wild": {
+      "cash": 200000.0,
+      "equity": 200000.0,
+      "positions": [],
+      "last_settled": "2026-11-25",
+      "return_pct": 0.0,
+      "corporate_review": []
+    },
+    "B0": {
+      "cash": 19382.825128503988,
+      "equity": 186191.925128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 135.83,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 7.169,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-25",
+      "return_pct": -6.904037435748,
+      "corporate_review": []
+    },
+    "K3": {
+      "cash": 21532.572845091985,
+      "equity": 199545.372845092,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 1300,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 176798.42715490801,
+          "mark": 135.83,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 200,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 1669.0,
+          "mark": 7.169,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-25",
+      "return_pct": -0.2273135774540025,
+      "corporate_review": []
+    },
+    "K5": {
+      "cash": 19382.825128503988,
+      "equity": 186191.925128504,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 600,
+          "entry": "2026-11-06",
+          "entry_px": 135.9851916,
+          "cost": 81599.27407149601,
+          "mark": 135.83,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "518880",
+          "qty": 11900,
+          "entry": "2026-11-06",
+          "entry_px": 8.32,
+          "cost": 99017.9008,
+          "mark": 7.169,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-25",
+      "return_pct": -6.904037435748,
+      "corporate_review": []
+    },
+    "DUAL55": {
+      "cash": 4979.581600000003,
+      "equity": 29982.481600000006,
+      "positions": [
+        {
+          "code": "511260",
+          "qty": 100,
+          "entry": "2026-11-12",
+          "entry_px": 135.947184,
+          "cost": 13599.7184,
+          "mark": 135.83,
+          "due": null,
+          "sell_at": null
+        },
+        {
+          "code": "511360",
+          "qty": 100,
+          "entry": "2026-11-12",
+          "entry_px": 114.157,
+          "cost": 11420.699999999999,
+          "mark": 114.199,
+          "due": null,
+          "sell_at": null
+        }
+      ],
+      "last_settled": "2026-11-25",
+      "return_pct": -0.058394666666650163,
+      "corporate_review": []
+    }
+  },
+  "errors": {
+    "stock": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
+    "etf": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']"
+  }
+}
