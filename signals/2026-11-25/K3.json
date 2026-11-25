@@ -9,7 +9,7 @@
     {
       "code": "159798",
       "name": "消费ETF易方达",
-      "score": 1.2457837278619581
+      "score": 1.2457837278619568
     },
     {
       "code": "515650",
@@ -19,32 +19,32 @@
     {
       "code": "516130",
       "name": "消费龙头ETF华宝",
-      "score": 1.0426325021803993
+      "score": 1.0426325021804235
     },
     {
       "code": "159887",
       "name": "银行ETF富国",
-      "score": 0.7713934698018703
+      "score": 0.7713934698018697
     },
     {
       "code": "515450",
       "name": "红利低波50ETF南方",
-      "score": 0.741864666658308
+      "score": 0.7418646666583608
     },
     {
       "code": "159735",
       "name": "港股消费ETF银华",
-      "score": 0.6275350518654367
+      "score": 0.6275350518654481
     },
     {
       "code": "513230",
       "name": "港股通消费ETF华夏",
-      "score": 0.6132268470615446
+      "score": 0.6132268470615444
     },
     {
       "code": "515300",
       "name": "300红利低波ETF嘉实",
-      "score": 0.5401837174953255
+      "score": 0.5401837174953263
     },
     {
       "code": "516900",
@@ -54,7 +54,7 @@
     {
       "code": "563510",
       "name": "A500红利低波ETF易方达",
-      "score": 0.50037809562512
+      "score": 0.5003780956251198
     }
   ],
   "weights": {},
@@ -111,13 +111,13 @@
   "data_warnings": {
     "159319": "159319: 159319: Tencent rich kline missing amount/turnover | 159319: no Eastmoney history",
     "159585": "159585: 159585: Tencent rich kline missing amount/turnover | 159585: no Eastmoney history",
-    "159756": "159756: 159756: Tencent rich kline missing amount/turnover | 159756: no Eastmoney history",
-    "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
-    "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
-    "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-    "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
-    "560430": "560430: 560430: Tencent rich kline missing amount/turnover | 560430: no Eastmoney history",
-    "561270": "561270: 561270: Tencent rich kline missing amount/turnover | 561270: no Eastmoney history",
+    "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+    "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+    "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+    "561270": "561270: 561270: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+    "560430": "560430: 560430: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
     "159528": "missing current-session history; excluded from ranking",
     "511820": "missing current-session history; excluded from ranking",
     "512390": "missing current-session history; excluded from ranking",
@@ -398,13 +398,13 @@
     "unresolved": {
       "159319": "159319: 159319: Tencent rich kline missing amount/turnover | 159319: no Eastmoney history",
       "159585": "159585: 159585: Tencent rich kline missing amount/turnover | 159585: no Eastmoney history",
-      "159756": "159756: 159756: Tencent rich kline missing amount/turnover | 159756: no Eastmoney history",
-      "159799": "159799: 159799: Tencent rich kline missing amount/turnover | 159799: no Eastmoney history",
-      "512830": "512830: 512830: Tencent rich kline missing amount/turnover | 512830: no Eastmoney history",
-      "516170": "516170: 516170: Tencent rich kline missing amount/turnover | 516170: no Eastmoney history",
-      "517980": "517980: 517980: Tencent rich kline missing amount/turnover | 517980: no Eastmoney history",
-      "560430": "560430: 560430: Tencent rich kline missing amount/turnover | 560430: no Eastmoney history",
-      "561270": "561270: 561270: Tencent rich kline missing amount/turnover | 561270: no Eastmoney history",
+      "159756": "159756: 159756: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "159799": "159799: 159799: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+      "516170": "516170: 516170: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+      "517980": "517980: 517980: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+      "512830": "512830: 512830: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+      "561270": "561270: 561270: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
+      "560430": "560430: 560430: Tencent rich kline missing amount/turnover | push2his.eastmoney.com: circuit open after vendor connection/rate-limit errors; batch skipped",
       "159528": "missing current-session history; excluded from ranking",
       "511820": "missing current-session history; excluded from ranking",
       "512390": "missing current-session history; excluded from ranking",
