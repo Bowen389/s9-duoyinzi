@@ -9,10 +9,10 @@
 |runner|data_error|东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。|200000.00|200000.00|+0.00%|
 |original|data_error|东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。|200000.00|200000.00|+0.00%|
 |wild|data_error|东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。|200000.00|200000.00|+0.00%|
-|B0|data_error|ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']|19382.83|186191.93|-6.90%|
-|K3|data_error|ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']|21532.57|199545.37|-0.23%|
-|K5|data_error|ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']|19382.83|186191.93|-6.90%|
-|DUAL55|data_error|ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']|4979.58|29982.48|-85.01%|
+|B0|data_error|ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']|19382.83|186191.93|-6.90%|
+|K3|data_error|ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']|21532.57|199545.37|-0.23%|
+|K5|data_error|ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']|19382.83|186191.93|-6.90%|
+|DUAL55|data_error|ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']|4979.58|29982.48|-85.01%|
 
 ## 每日 Top 候选（无论门控是否通过均展示）
 
@@ -38,19 +38,19 @@
 
 ### B0
 
-当日排名暂缺：ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']。不使用旧日排名替代。
+当日排名暂缺：ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']。不使用旧日排名替代。
 
 ### K3
 
-当日排名暂缺：ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']。不使用旧日排名替代。
+当日排名暂缺：ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']。不使用旧日排名替代。
 
 ### K5
 
-当日排名暂缺：ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']。不使用旧日排名替代。
+当日排名暂缺：ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']。不使用旧日排名替代。
 
 ### DUAL55
 
-当日排名暂缺：ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']。不使用旧日排名替代。
+当日排名暂缺：ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']。不使用旧日排名替代。
 
 命中表示进入当日各版本Top候选，门控另行判断；按5个版本统计，稳健与原版选股规则相同。
 

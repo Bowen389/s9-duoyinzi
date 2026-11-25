@@ -1,6 +1,6 @@
 {
   "asof": "2026-11-25",
-  "generated_at": "2026-11-25 16:53:06.838226+08:00",
+  "generated_at": "2026-11-25 16:56:31.009696+08:00",
   "start": "2026-11-06",
   "strategies": {
     "champion": {
@@ -48,7 +48,7 @@
       "status": "data_error",
       "asof": "2026-11-25",
       "exec_day": "2026-11-26",
-      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
       "picks": []
     },
     "K3": {
@@ -56,7 +56,7 @@
       "status": "data_error",
       "asof": "2026-11-25",
       "exec_day": "2026-11-26",
-      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
       "picks": []
     },
     "K5": {
@@ -64,7 +64,7 @@
       "status": "data_error",
       "asof": "2026-11-25",
       "exec_day": "2026-11-26",
-      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
       "picks": []
     },
     "DUAL55": {
@@ -72,7 +72,7 @@
       "status": "data_error",
       "asof": "2026-11-25",
       "exec_day": "2026-11-26",
-      "error": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']",
+      "error": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']",
       "picks": []
     }
   },
@@ -237,6 +237,6 @@
   },
   "errors": {
     "stock": "东方财富 push2 行情服务器断开了连接，通常是短时间内请求过多，当前 IP 被临时限流。首次限流一般约 5 分钟后恢复，反复触发后可能需要 40 分钟以上；等待期间不要重复调用东方财富的行情接口，否则会延长限流。",
-    "etf": "ETF history coverage 1582/1758 eligible records; 19 verified age-ineligible; unresolved ['158087', '159319', '159585', '159756', '159799', '512490', '512830', '516170', '517980', '526020']"
+    "etf": "ETF history coverage 1606/1753 eligible records; 24 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '159915']"
   }
 }
