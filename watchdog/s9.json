@@ -1,13 +1,16 @@
 {
   "purpose": "S9 independent post-close recovery",
-  "market_date": "2026-11-25",
-  "requested_at": "2026-11-25T18:36:48+08:00",
+  "market_date": "2026-11-26",
+  "requested_at": "2026-11-26T18:41:46+08:00",
   "missing_strategies": [
     "champion",
     "balanced",
     "runner",
     "original",
-    "wild"
+    "wild",
+    "B0",
+    "K3",
+    "K5"
   ],
-  "reason": "Report generated 17:47 Beijing: five stock signals remain status=data_error reporting Eastmoney push2 disconnection/temporary rate limiting. ETF B0/K3/K5 signals are now ok; all eight accounts last_settled today. Latest main daily.yml run 45588432000 failed; no eligible queued or running scan. Recovery guard should select only unfinished stock family."
+  "reason": "All eight current signals have status=data_error: stock coverage 964/1600; ETF history coverage 1671/1754 eligible records. Report asof and all account last_settled are today, but signals remain incomplete. Latest main daily.yml run 45786141881 failed; no eligible queued or running scan."
 }
