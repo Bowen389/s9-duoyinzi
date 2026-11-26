@@ -1,0 +1,8 @@
+{
+  "strategy": "champion",
+  "status": "data_error",
+  "asof": "2026-11-26",
+  "exec_day": "2026-11-27",
+  "error": "stock coverage 600/1600",
+  "picks": []
+}
