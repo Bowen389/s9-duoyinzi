@@ -3,6 +3,6 @@
   "status": "data_error",
   "asof": "2026-11-26",
   "exec_day": "2026-11-27",
-  "error": "stock coverage 964/1600",
+  "error": "No recent verified Eastmoney board name catalog",
   "picks": []
 }
