@@ -1,8 +1,160 @@
 {
   "strategy": "champion",
-  "status": "data_error",
+  "label": "冠军配置",
+  "status": "ok",
   "asof": "2026-11-27",
   "exec_day": "2026-11-30",
-  "error": "stock coverage 675/1600",
-  "picks": []
+  "gate_on": false,
+  "picks": [
+    {
+      "code": "300339",
+      "name": "润和软件",
+      "score": 15.609753579522444,
+      "ref_close": 34.69
+    },
+    {
+      "code": "301236",
+      "name": "软通动力",
+      "score": 13.825447595727173,
+      "ref_close": 35.86
+    },
+    {
+      "code": "600095",
+      "name": "湘财股份",
+      "score": 11.789145358380285,
+      "ref_close": 7.15
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 10.973807747621455,
+      "ref_close": 111.0
+    },
+    {
+      "code": "600536",
+      "name": "中国软件",
+      "score": 9.74653175723584,
+      "ref_close": 28.05
+    },
+    {
+      "code": "601788",
+      "name": "光大证券",
+      "score": 9.424038308814996,
+      "ref_close": 13.81
+    },
+    {
+      "code": "002152",
+      "name": "广电运通",
+      "score": 9.20508456389854,
+      "ref_close": 8.49
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 9.165181068189234,
+      "ref_close": 32.26
+    },
+    {
+      "code": "601727",
+      "name": "上海电气",
+      "score": 8.753310685388234,
+      "ref_close": 6.21
+    },
+    {
+      "code": "601162",
+      "name": "天风证券",
+      "score": 8.094262134601095,
+      "ref_close": 3.12
+    },
+    {
+      "code": "301396",
+      "name": "宏景科技",
+      "score": 7.9000136611674,
+      "ref_close": 115.45
+    },
+    {
+      "code": "688432",
+      "name": "有研硅",
+      "score": 7.708450677249924,
+      "ref_close": 31.62
+    },
+    {
+      "code": "688318",
+      "name": "财富趋势",
+      "score": 7.619819011989353,
+      "ref_close": 62.15
+    },
+    {
+      "code": "300085",
+      "name": "银之杰",
+      "score": 7.527456325199029,
+      "ref_close": 29.34
+    },
+    {
+      "code": "601881",
+      "name": "中国银河",
+      "score": 7.408125741099868,
+      "ref_close": 11.21
+    },
+    {
+      "code": "601878",
+      "name": "浙商证券",
+      "score": 7.1743987503592646,
+      "ref_close": 8.52
+    },
+    {
+      "code": "603301",
+      "name": "振德医疗",
+      "score": 6.935652999487949,
+      "ref_close": 80.97
+    },
+    {
+      "code": "002423",
+      "name": "中粮资本",
+      "score": 6.8302532181372975,
+      "ref_close": 9.0
+    },
+    {
+      "code": "301018",
+      "name": "申菱环境",
+      "score": 6.787893463868749,
+      "ref_close": 59.0
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 6.756428317984019,
+      "ref_close": 6.63
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma120",
+    "windows": {
+      "vol_ma": 10,
+      "to_window": 40,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": -0.5,
+      "theme_zt": -0.5,
+      "theme_rank": -0.5,
+      "theme_rs": 2.0,
+      "zt_premium": -0.5
+    },
+    "label": "冠军配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-27"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }

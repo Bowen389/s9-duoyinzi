@@ -1,8 +1,160 @@
 {
   "strategy": "balanced",
-  "status": "data_error",
+  "label": "稳健配置",
+  "status": "ok",
   "asof": "2026-11-27",
   "exec_day": "2026-11-30",
-  "error": "stock coverage 675/1600",
-  "picks": []
+  "gate_on": true,
+  "picks": [
+    {
+      "code": "300339",
+      "name": "润和软件",
+      "score": 11.59092331130029,
+      "ref_close": 34.69
+    },
+    {
+      "code": "600095",
+      "name": "湘财股份",
+      "score": 10.701338200634451,
+      "ref_close": 7.15
+    },
+    {
+      "code": "301236",
+      "name": "软通动力",
+      "score": 10.552771684462472,
+      "ref_close": 35.86
+    },
+    {
+      "code": "301660",
+      "name": "粤芯半导",
+      "score": 10.096633986598693,
+      "ref_close": 32.26
+    },
+    {
+      "code": "600536",
+      "name": "中国软件",
+      "score": 10.06537739698829,
+      "ref_close": 28.05
+    },
+    {
+      "code": "000158",
+      "name": "常山北明",
+      "score": 9.720168399237732,
+      "ref_close": 15.27
+    },
+    {
+      "code": "002152",
+      "name": "广电运通",
+      "score": 9.511205853384205,
+      "ref_close": 8.49
+    },
+    {
+      "code": "688037",
+      "name": "芯源微",
+      "score": 9.21361610231258,
+      "ref_close": 275.4
+    },
+    {
+      "code": "688502",
+      "name": "茂莱光学",
+      "score": 9.183361940777852,
+      "ref_close": 427.2
+    },
+    {
+      "code": "600839",
+      "name": "四川长虹",
+      "score": 8.713293525474917,
+      "ref_close": 6.63
+    },
+    {
+      "code": "002815",
+      "name": "崇达技术",
+      "score": 8.150095291539266,
+      "ref_close": 16.79
+    },
+    {
+      "code": "300803",
+      "name": "指南针",
+      "score": 8.095447389551639,
+      "ref_close": 46.45
+    },
+    {
+      "code": "688797",
+      "name": "臻宝科技",
+      "score": 7.748510104546258,
+      "ref_close": 172.45
+    },
+    {
+      "code": "002261",
+      "name": "拓维信息",
+      "score": 7.604235369348085,
+      "ref_close": 23.06
+    },
+    {
+      "code": "688629",
+      "name": "华丰科技",
+      "score": 7.586994104726324,
+      "ref_close": 111.0
+    },
+    {
+      "code": "002242",
+      "name": "九阳股份",
+      "score": 7.558401530149932,
+      "ref_close": 42.15
+    },
+    {
+      "code": "002265",
+      "name": "建设工业",
+      "score": 7.355013971093099,
+      "ref_close": 19.7
+    },
+    {
+      "code": "301717",
+      "name": "超纯应材",
+      "score": 7.016924291033339,
+      "ref_close": 259.42
+    },
+    {
+      "code": "000066",
+      "name": "中国长城",
+      "score": 6.698741580813485,
+      "ref_close": 11.66
+    },
+    {
+      "code": "601933",
+      "name": "永辉超市",
+      "score": 6.5459106522445465,
+      "ref_close": 2.94
+    }
+  ],
+  "config": {
+    "hold": 3,
+    "top_n": 20,
+    "sell_at": "close",
+    "gate": "ma20",
+    "windows": {
+      "vol_ma": 5,
+      "to_window": 20,
+      "pos_window": 120
+    },
+    "weights": {
+      "theme_mom5": 1.0,
+      "theme_zt": 0.0,
+      "theme_rank": -0.5,
+      "theme_rs": 0.5,
+      "zt_premium": -0.5
+    },
+    "label": "稳健配置"
+  },
+  "coverage": {
+    "loaded": 1600,
+    "expected": 1600,
+    "inactive_errors": {},
+    "vendors": [
+      "Eastmoney",
+      "Tencent rich kline"
+    ],
+    "board_catalog_asof": "2026-11-27"
+  },
+  "live_patch": "causal turnover expanding bounds; constant premium contributes zero; no stale-date fallback"
 }
