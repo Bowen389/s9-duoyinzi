@@ -1,0 +1,8 @@
+{
+  "strategy": "B0",
+  "status": "data_error",
+  "asof": "2026-11-27",
+  "exec_day": "2026-11-30",
+  "error": "ETF history coverage 1564/1754 eligible records; 23 verified age-ineligible; unresolved ['159319', '159585', '159756', '159799', '512830', '516170', '517980', '560430', '561270', '510300']",
+  "picks": []
+}

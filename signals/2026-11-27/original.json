@@ -1,0 +1,8 @@
+{
+  "strategy": "original",
+  "status": "data_error",
+  "asof": "2026-11-27",
+  "exec_day": "2026-11-30",
+  "error": "stock coverage 273/1600",
+  "picks": []
+}
